@@ -1,0 +1,4 @@
+* The player wasn't sure of the game's objective, i.e. growing the tree into the box. The objective now has particle effect flowing into it and changes color constantly, to provide visual emphasis.
+* The player wasn't aware of the cost constraint when growing the tree. We turned the textual cost display into a progress bar that is centered that catches the eye of the player immediately.
+* The player didn't know what each symbol represented. We provided visual legends that explain each tree cell.
+* Sometimes the game crashes when the tree grows too large. We now prune the tree to prevent this issue.
