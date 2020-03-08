@@ -54,19 +54,19 @@ public class BranchController : MonoBehaviour
             // Y-shaped
             gene = new List<Context>{
                 new Context {
-                    offset = new Vector2(0.2f, 0),
+                    offset = new Vector2(0.3f, 0),
                     direction = 0.0f,
                     cost = 100,
                     subContexts = new List<Context>{
                         new Context {
-                            offset = new Vector2(0.2f, 0),
-                            direction = 45.0f,
+                            offset = new Vector2(0.3f, 0),
+                            direction = 25.0f,
                             cost = 100,
                             subContexts = new List<Context>{},
                         },
                         new Context {
-                            offset = new Vector2(0.2f, 0),
-                            direction = -45.0f,
+                            offset = new Vector2(0.3f, 0),
+                            direction = -25.0f,
                             cost = 100,
                             subContexts = new List<Context>{},
                         }
@@ -74,6 +74,7 @@ public class BranchController : MonoBehaviour
                 },
             };
         }
+        StartCoroutine(AutoGrow());
     }
 
     // Update is called once per frame
@@ -183,6 +184,18 @@ public class BranchController : MonoBehaviour
         }
         Destroy(gameObject);
         return resources + cost;
+    }
+
+     IEnumerator AutoGrow() {
+        while (true){
+            yield return new WaitForSeconds(1f);
+            Grow(100);
+        }
+    }
+
+    void OnTriggerStay(Collider coll) {
+        PlayerMovement player = coll.GetComponent<PlayerMovement>();
+        if (player && player.pruning) Damage(50);
     }
 
 }

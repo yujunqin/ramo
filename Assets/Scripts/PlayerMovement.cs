@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     Rigidbody rb;
     public float MoveSpeed = 4f;
+    public bool pruning = false;
     void Start() {
         rb = GetComponent<Rigidbody>();
     }
@@ -26,9 +27,12 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void Prune() {
-        if ((PlayerID == 1 && Input.GetKeyDown(KeyCode.Q)) || (PlayerID == 2 && Input.GetKeyDown(KeyCode.Slash))){
-            EventBus.Publish<PruneEvent>(new PruneEvent(PlayerID));
-            Debug.Log("Player " + PlayerID.ToString() + " prunes at " + transform.position.ToString() + "!");
+        if ((PlayerID == 1 && Input.GetKey(KeyCode.Q)) || (PlayerID == 2 && Input.GetKey(KeyCode.Slash))){
+            //EventBus.Publish<PruneEvent>(new PruneEvent(PlayerID));
+            //Debug.Log("Player " + PlayerID.ToString() + " prunes at " + transform.position.ToString() + "!");
+            pruning = true;
+        } else {
+            pruning = false;
         }
     }
 

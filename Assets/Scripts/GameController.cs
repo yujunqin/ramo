@@ -21,7 +21,7 @@ public class GameController : MonoBehaviour
     void Start()
     {
         UnityEngine.Object prefab = Resources.Load("Prefabs/Branch");
-        plantRoot = (GameObject) GameObject.Instantiate(prefab, Vector2.zero, Quaternion.identity, transform);
+        plantRoot = (GameObject) GameObject.Instantiate(prefab, transform.position, Quaternion.identity, transform);
         plantRoot.GetComponent<BranchController>().offset = new Vector2(0.2f, 0);
         plantRoot.GetComponent<BranchController>().subBranches = new List<GameObject>();
         plantRoot.GetComponent<BranchController>().type = new BranchType();
