@@ -9,6 +9,12 @@ public class BranchController : MonoBehaviour
 
     public bool root = false;
     // Start is called before the first frame update
+
+    public List<BranchController> subBranches;
+    public int hits;
+
+    public BranchType type;
+
     void Start()
     {
         // if (root)
@@ -43,4 +49,35 @@ public class BranchController : MonoBehaviour
         GetComponent<Transform>().GetChild(0).GetComponent<Transform>().localScale = new Vector2(100.0f * offset.x, localScale.y);
         GetComponent<Transform>().localEulerAngles = new Vector3(0.0f, 0.0f, direction);
     }
+
+    public void Grow()
+    {
+        // grow branches according to the current branch's properties
+    }
+    
+    public int Damage()
+    {
+        // damage the branch's HP
+
+        // if the branch is destroyed, destroy all sub branches
+    
+        // return the amount of resources dropped if the branch is destroyed
+        // otherwise return zero
+        return 0;
+    }
+
+    public int Destroy()
+    {
+        return 0;
+    }
+
+    int Cost()
+    {
+        // TODO: determine the cost according to the branch's type
+        return 0;
+    }
+}
+
+public class BranchType {
+
 }
