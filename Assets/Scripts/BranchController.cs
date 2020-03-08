@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class BranchController : MonoBehaviour
 {
     public Vector2 offset;
     public float direction;
+
+    public int cost;
 
     public bool root = false;
     // Start is called before the first frame update
@@ -15,6 +18,11 @@ public class BranchController : MonoBehaviour
 
     public BranchType type;
 
+    static int maxHits = 100;
+
+    public int resourcesDeposit = 0;
+
+    public List<Context> gene;
     void Start()
     {
         // if (root)
@@ -35,6 +43,7 @@ public class BranchController : MonoBehaviour
         //     var testContext = Context.reducePrimitiveTree(testPrimitiveTree);
         //     Context.SpawnBranchesWithContext(gameObject, testContext);
         // }
+        hits = maxHits;
     }
 
     // Update is called once per frame
@@ -45,39 +54,110 @@ public class BranchController : MonoBehaviour
     
     void Render()
     {
-        var localScale = GetComponent<Transform>().GetChild(0).GetComponent<Transform>().localScale;
-        GetComponent<Transform>().GetChild(0).GetComponent<Transform>().localScale = new Vector2(100.0f * offset.x, localScale.y);
+        var branchSprite = GetComponent<Transform>().GetChild(0);
+        var localScale = branchSprite.GetComponent<Transform>().localScale;
+        branchSprite.GetComponent<Transform>().localScale = new Vector2(100.0f * offset.x, localScale.y);
         GetComponent<Transform>().localEulerAngles = new Vector3(0.0f, 0.0f, direction);
+        // TODO: visually represent the branch's maturity and resourceDeposit
+        branchSprite.GetComponent<SpriteRenderer>().color = new Color(1.0f, (float)hits / maxHits, (float)hits / maxHits);
     }
 
-    public void Grow()
+    public int ResourcesNeeded()
+    {
+        var resourcesNeeded = 0;
+        foreach (var genome in gene)
+        {
+            resourcesNeeded += Context.countCost(genome);
+        }
+        return resourcesNeeded;
+    }
+
+    public int Grow(int resources)
     {
         // grow branches according to the current branch's properties
+        // return the amount of resources consumed
+        subBranches.RemoveAll(obj => obj == null);
+        if (type.GetBType() == BranchType.BType.Old && subBranches.Count != 0)
+        {
+            // a non-leaf branch cannot be grown or revitalized
+            return 0;
+        } else if (type.GetBType() == BranchType.BType.Old)
+        {
+            // a leaf branch can be revitalized if it's old
+            return type.Revitalize(resources);
+        } else
+        {
+            // a growing leaf branch needs enough resources to sprout
+            // first, deposit
+            var consumed = Math.Max(ResourcesNeeded() - resourcesDeposit, resources);
+            resourcesDeposit += consumed;
+            if (resourcesDeposit == ResourcesNeeded())
+            {
+                resourcesDeposit = 0;
+                // TODO: spawn its subBranches according to the given gene
+            }
+            return consumed;
+        }
     }
     
-    public int Damage()
+    public int Damage(int damage)
     {
         // damage the branch's HP
+        hits -= damage;
 
-        // if the branch is destroyed, destroy all sub branches
-    
         // return the amount of resources dropped if the branch is destroyed
+        if (hits <= 0)
+        {
+            return DestroyBranch();
+        }
+
         // otherwise return zero
         return 0;
     }
 
-    public int Destroy()
+    public int DestroyBranch()
     {
-        return 0;
+        subBranches.RemoveAll(obj => obj == null);
+        int resources = 0;
+        foreach (var subBranch in subBranches)
+        {
+            resources += subBranch.DestroyBranch();
+        }
+        Destroy(this);
+        return resources + cost;
     }
 
-    int Cost()
-    {
-        // TODO: determine the cost according to the branch's type
-        return 0;
-    }
 }
 
 public class BranchType {
+    public enum BType {
+        Growing,
+        Old,
+    }
+    BType type;
+    int progress = 0;
+    static int maxProgress = 100;
 
+    public BType GetBType()
+    {
+        return type;
+    }
+
+    public int Revitalize(int resources)
+    {
+        // revitalize/grow a leaf branch
+        // return the amount of resources consumed
+        if (type != BType.Old)
+        {
+            return 0;
+        }
+        var consumed = Math.Max(maxProgress - progress, resources);
+        progress += consumed;
+        if (progress == maxProgress)
+        {
+            type = BType.Growing;
+            progress = 0;
+        }
+        return consumed;
+    }
 }
