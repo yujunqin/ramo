@@ -13,7 +13,7 @@ public class BranchController : MonoBehaviour
     public bool root = false;
     // Start is called before the first frame update
 
-    public List<BranchController> subBranches;
+    public List<GameObject> subBranches;
     public int hits;
 
     public BranchType type;
@@ -44,6 +44,10 @@ public class BranchController : MonoBehaviour
         //     Context.SpawnBranchesWithContext(gameObject, testContext);
         // }
         hits = maxHits;
+        if (subBranches.Count != 0)
+        {
+            type.Mature();
+        }
     }
 
     // Update is called once per frame
@@ -95,6 +99,10 @@ public class BranchController : MonoBehaviour
             {
                 resourcesDeposit = 0;
                 // TODO: spawn its subBranches according to the given gene
+                foreach (var genome in gene)
+                {
+                    Context.SpawnBranchesWithContext(gameObject, genome);
+                }
             }
             return consumed;
         }
@@ -121,7 +129,7 @@ public class BranchController : MonoBehaviour
         int resources = 0;
         foreach (var subBranch in subBranches)
         {
-            resources += subBranch.DestroyBranch();
+            resources += subBranch.GetComponent<BranchController>().DestroyBranch();
         }
         Destroy(this);
         return resources + cost;
@@ -134,7 +142,7 @@ public class BranchType {
         Growing,
         Old,
     }
-    BType type;
+    BType type = BType.Growing;
     int progress = 0;
     static int maxProgress = 100;
 
@@ -159,5 +167,10 @@ public class BranchType {
             progress = 0;
         }
         return consumed;
+    }
+
+    public void Mature()
+    {
+        type = BType.Old;
     }
 }

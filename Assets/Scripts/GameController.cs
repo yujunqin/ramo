@@ -20,7 +20,8 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        plantRoot = new GameObject();
+        UnityEngine.Object prefab = Resources.Load("Prefabs/Branch");
+        plantRoot = (GameObject) GameObject.Instantiate(prefab, Vector2.zero, Quaternion.identity, transform);
         rules = new Dictionary<char, string>();
         // initial rules
         rules['1'] = "11";
@@ -37,7 +38,8 @@ public class GameController : MonoBehaviour
     void RenderPlant()
     {
         Destroy(plantRoot);
-        plantRoot = new GameObject();
+        UnityEngine.Object prefab = Resources.Load("Prefabs/Branch");
+        plantRoot = (GameObject) GameObject.Instantiate(prefab, Vector2.zero, Quaternion.identity, transform);
         var primitiveParseData = PrimitiveTree.makePrimitiveForest(cells);
         // tree pruning, so that the unused tree won't get too large and hang the game
         cells = primitiveParseData.consumedCells;
@@ -301,22 +303,25 @@ public class Context {
         };
     }
 
-    public static void SpawnBranchesWithContext(GameObject parentObject, Context context)
+    public static GameObject SpawnBranchesWithContext(GameObject parentObject, Context context)
     {
         var transform = parentObject.GetComponent<Transform>();
-        var offset = new Vector2(0.0f, 0.0f);
-        if (parentObject.GetComponent<BranchController>())
-        {
-            offset = parentObject.GetComponent<BranchController>().offset;
-        }
+        var offset = parentObject.GetComponent<BranchController>().offset;
+        var subBranches = new List<GameObject>();
+        var gene = new List<Context>(parentObject.GetComponent<BranchController>().gene);
         UnityEngine.Object prefab = Resources.Load("Prefabs/Branch");
         GameObject newObject = (GameObject) GameObject.Instantiate(prefab, Vector2.zero, Quaternion.identity, transform);
         newObject.GetComponent<Transform>().localPosition = offset;
         newObject.GetComponent<BranchController>().offset = context.offset;
         newObject.GetComponent<BranchController>().direction = context.direction;
+        newObject.GetComponent<BranchController>().cost = context.cost;
+        newObject.GetComponent<BranchController>().subBranches = subBranches;
+        newObject.GetComponent<BranchController>().type = new BranchType();
+        newObject.GetComponent<BranchController>().gene = gene;
         foreach (var subContext in context.subContexts)
         {
-            SpawnBranchesWithContext(newObject, subContext);
+            newObject.GetComponent<BranchController>().subBranches.Add(SpawnBranchesWithContext(newObject, subContext));
         }
+        return newObject;
     }
 }
