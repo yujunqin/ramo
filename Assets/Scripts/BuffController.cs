@@ -35,6 +35,7 @@ public class BuffController : MonoBehaviour
             
             // TODO: get player index here
             EventBus.Publish<BuffEvent>(new BuffEvent(type, playerIndex, Time.time));
+            this.gameObject.SetActive(false);
         }
     }
 }
@@ -45,6 +46,7 @@ public class BuffEvent
     public int playerIndex;
     public float effectiveTime;
     public float duration = 10f;
+    public float resourceNum = 10f;
     public BuffEvent(BuffController.buffType _type, int _playerIndex, float _effectiveTime)
     { 
         type = _type;
