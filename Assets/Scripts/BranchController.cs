@@ -108,12 +108,6 @@ public class BranchController : MonoBehaviour
         return resourcesNeeded;
     }
 
-    [ContextMenu("Grow")]
-    public void Grow100()
-    {
-        Grow(100);
-    }
-
     public int Grow(int resources)
     {
         // grow branches according to the current branch's properties
@@ -145,12 +139,6 @@ public class BranchController : MonoBehaviour
             return consumed;
         }
     }
-
-    [ContextMenu("Damage")]
-    public void Damage50()
-    {
-        Damage(50);
-    }
     
     public int Damage(int damage)
     {
@@ -181,7 +169,7 @@ public class BranchController : MonoBehaviour
         {
             resources += subBranch.GetComponent<BranchController>().DestroyBranch();
         }
-        Destroy(gameObject);
+        Destroy(this);
         return resources + cost;
     }
 
