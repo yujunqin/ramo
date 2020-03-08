@@ -10,7 +10,7 @@ public class GameController : MonoBehaviour
     public Text resultText;
     // public Text costText;
     public ProgressBar progressBar;
-    public float maxCost = 35.0f;
+    public int maxCost = 3500;
 
     GameObject plantRoot;
     Dictionary<char, string> rules;
@@ -50,7 +50,7 @@ public class GameController : MonoBehaviour
             cost += Context.countCost(c);
         }
         // costText.text = "Cost used: " + cost.ToString() + "/" + maxCost.ToString();
-        float t = cost / maxCost;
+        float t = (float) cost / maxCost;
         // costText.color = new Color(0.5f + 0.5f * t, 1.0f - 0.5f * t, 0.5f);
         progressBar.BarValue = Mathf.Round((1.0f - t) * 100);
         // check if the cost limit has been exceeded
@@ -233,7 +233,7 @@ public class PrimitiveTree {
 public class Context {
     public Vector2 offset;
     public float direction;
-    public float cost;
+    public int cost;
     public List<Context> subContexts;
 
     public static string printContext(Context context)
@@ -250,9 +250,9 @@ public class Context {
         return str;
     }
 
-    public static float countCost(Context context)
+    public static int countCost(Context context)
     {
-        float cost = context.cost;
+        int cost = context.cost;
         foreach (var subContext in context.subContexts)
         {
             cost += countCost(subContext);
@@ -280,14 +280,17 @@ public class Context {
         {
             direction = tree.label.value;
         }
-        float cost;
+        // float cost;
+        int cost;
         if (tree.label.kind == "move")
         {
-            cost = tree.label.value;
+            // cost = tree.label.value;
+            cost = 100;
         }
         else
         {
-            cost = 1.0f;
+            // cost = 1.0f;
+            cost = 0;
         }
         List<Context> subContexts = tree.subForest.ConvertAll( tr => reducePrimitiveTree(tr));
         return new Context {
