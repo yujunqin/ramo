@@ -48,6 +48,32 @@ public class BranchController : MonoBehaviour
         {
             type.Mature();
         }
+        if (gene == null)
+        {
+            // initialize default gene
+            // Y-shaped
+            gene = new List<Context>{
+                new Context {
+                    offset = new Vector2(0.2f, 0),
+                    direction = 0.0f,
+                    cost = 100,
+                    subContexts = new List<Context>{
+                        new Context {
+                            offset = new Vector2(0.2f, 0),
+                            direction = 45.0f,
+                            cost = 100,
+                            subContexts = new List<Context>{},
+                        },
+                        new Context {
+                            offset = new Vector2(0.2f, 0),
+                            direction = -45.0f,
+                            cost = 100,
+                            subContexts = new List<Context>{},
+                        }
+                    }
+                },
+            };
+        }
     }
 
     // Update is called once per frame
@@ -62,8 +88,14 @@ public class BranchController : MonoBehaviour
         var localScale = branchSprite.GetComponent<Transform>().localScale;
         branchSprite.GetComponent<Transform>().localScale = new Vector2(100.0f * offset.x, localScale.y);
         GetComponent<Transform>().localEulerAngles = new Vector3(0.0f, 0.0f, direction);
-        // TODO: visually represent the branch's maturity and resourceDeposit
-        branchSprite.GetComponent<SpriteRenderer>().color = new Color(1.0f, (float)hits / maxHits, (float)hits / maxHits);
+        // TODO: find a better way to visually represent the branch's maturity and resourceDeposit
+        float maturity = 1.0f;
+        if (GetComponent<BranchController>().type.GetBType() == BranchType.BType.Old) {
+            maturity = 0.0f;
+        }
+        float deposit = (float) resourcesDeposit / ResourcesNeeded();
+        float hp = (float) hits / maxHits;
+        branchSprite.GetComponent<SpriteRenderer>().color = new Color(deposit, maturity, hp);
     }
 
     public int ResourcesNeeded()
@@ -85,7 +117,7 @@ public class BranchController : MonoBehaviour
         {
             // a non-leaf branch cannot be grown or revitalized
             return 0;
-        } else if (type.GetBType() == BranchType.BType.Old)
+        } else if (type.GetBType() == BranchType.BType.Old && subBranches.Count == 0)
         {
             // a leaf branch can be revitalized if it's old
             return type.Revitalize(resources);
@@ -93,16 +125,16 @@ public class BranchController : MonoBehaviour
         {
             // a growing leaf branch needs enough resources to sprout
             // first, deposit
-            var consumed = Math.Max(ResourcesNeeded() - resourcesDeposit, resources);
+            var consumed = Math.Min(ResourcesNeeded() - resourcesDeposit, resources);
             resourcesDeposit += consumed;
             if (resourcesDeposit == ResourcesNeeded())
             {
                 resourcesDeposit = 0;
-                // TODO: spawn its subBranches according to the given gene
                 foreach (var genome in gene)
                 {
-                    Context.SpawnBranchesWithContext(gameObject, genome);
+                    subBranches.Add(Context.SpawnBranchesWithContext(gameObject, genome));
                 }
+                type.Mature();
             }
             return consumed;
         }
@@ -110,6 +142,12 @@ public class BranchController : MonoBehaviour
     
     public int Damage(int damage)
     {
+        if (root)
+        {
+            // root branch cannot be damaged
+            return 0;
+        }
+
         // damage the branch's HP
         hits -= damage;
 
@@ -123,7 +161,7 @@ public class BranchController : MonoBehaviour
         return 0;
     }
 
-    public int DestroyBranch()
+    int DestroyBranch()
     {
         subBranches.RemoveAll(obj => obj == null);
         int resources = 0;
@@ -159,7 +197,7 @@ public class BranchType {
         {
             return 0;
         }
-        var consumed = Math.Max(maxProgress - progress, resources);
+        var consumed = Math.Min(maxProgress - progress, resources);
         progress += consumed;
         if (progress == maxProgress)
         {

@@ -22,11 +22,16 @@ public class GameController : MonoBehaviour
     {
         UnityEngine.Object prefab = Resources.Load("Prefabs/Branch");
         plantRoot = (GameObject) GameObject.Instantiate(prefab, Vector2.zero, Quaternion.identity, transform);
+        plantRoot.GetComponent<BranchController>().offset = new Vector2(0.2f, 0);
+        plantRoot.GetComponent<BranchController>().subBranches = new List<GameObject>();
+        plantRoot.GetComponent<BranchController>().type = new BranchType();
+        // plantRoot.GetComponent<BranchController>().gene = gene;
+        plantRoot.GetComponent<BranchController>().root = true;
         rules = new Dictionary<char, string>();
         // initial rules
         rules['1'] = "11";
         rules['0'] = "1[0]0";
-        RenderPlant();
+        // RenderPlant();
     }
 
     // Update is called once per frame
@@ -97,7 +102,8 @@ public class GameController : MonoBehaviour
         if (!lost && !won)
         {
             cells = PrimitiveTree.Grow(cells, rules);
-            RenderPlant();
+            plantRoot.GetComponent<BranchController>().Grow(100);
+            // RenderPlant();
         }
     }
     
