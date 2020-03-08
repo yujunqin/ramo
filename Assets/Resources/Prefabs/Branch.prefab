@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 8928748364990540530}
   - component: {fileID: 2869027264417957803}
   - component: {fileID: -4404229074567813427}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Branch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.6, y: 0.2, z: 1}
+  m_Size: {x: 0.5, y: 0.2, z: 1}
   m_Center: {x: 0.2, y: 0, z: 0}
 --- !u!1 &6611014670354713713
 GameObject:
