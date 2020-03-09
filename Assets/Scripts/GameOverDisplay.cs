@@ -17,10 +17,10 @@ public class GameOverDisplay : MonoBehaviour
     void GameOver(GameOverEvent e) {
         t.enabled = true;
         if (e.winner == 1) {
-            t.text = "Blue Wins! Press R to restart.";
+            t.text = "Blue Bird Wins! Press R to restart.";
         } else {
-            t.text = "Red Wins! Press R to restart.";
-            t.color = new Color(1f, 0, 0);
+            t.text = "Yellow Bird Wins! Press R to restart.";
+            t.color = Color.yellow;
         }
     }
 
