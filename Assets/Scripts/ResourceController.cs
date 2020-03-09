@@ -6,8 +6,9 @@ using UnityEngine.UI;
 public class ResourceController : MonoBehaviour
 {
     public Text woodQuantityText;
+    public float resourceNum = 0f;
     public int PlayerID = 1;
-    float resource = 0f;
+    public float resource = 0f;
     Subscription<BuffEvent> buffSubscription;
 
     // Start is called before the first frame update
@@ -29,6 +30,7 @@ public class ResourceController : MonoBehaviour
             switch(e.type)
             {
                 case BuffController.buffType.resourceUp:
+                    resourceNum = e.resourceNum;
                     resource += e.resourceNum;
                 break;
             }

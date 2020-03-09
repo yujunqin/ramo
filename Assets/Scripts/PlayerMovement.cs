@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody rb;
     public float MoveSpeed = 4f;
     public bool pruning = false;
+    public Text speedBuffStatus;
+
     Subscription<BuffEvent> buffSubscription;
     bool isSpeedingUp = false;
     bool isSpeedingDown = false;
@@ -23,14 +26,17 @@ public class PlayerMovement : MonoBehaviour
         if (isSpeedingUp && curBuffTime + duration > Time.time)
         {
             MoveSpeed = 6f;
+            speedBuffStatus.text = "SPEED UP";
         }
         else if (isSpeedingDown && curBuffTime + duration > Time.time)
         {
             MoveSpeed = 2f;
+            speedBuffStatus.text = "SPEED DOWN";
         }
         else 
         {
             MoveSpeed = 4f;
+            speedBuffStatus.text = "";
         }
     }
 
