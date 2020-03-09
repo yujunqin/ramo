@@ -7,13 +7,18 @@ public class ResourceController : MonoBehaviour
 {
     public Text woodQuantityText;
     public int PlayerID = 1;
-    float resource = 0f;
+    int resource = 0;
+    public int NaturalGrowth = 100;
     Subscription<BuffEvent> buffSubscription;
+    Subscription<ResourceChangeEvent> resSub;
 
     // Start is called before the first frame update
     void Start()
     {
         buffSubscription = EventBus.Subscribe<BuffEvent>(_OnBuffUpdated);
+        resSub = EventBus.Subscribe<ResourceChangeEvent>(ResourceChangeHandler);
+        EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, 1000));
+        StartCoroutine(AutoGenerate());
     }
 
     // Update is called once per frame
@@ -30,8 +35,45 @@ public class ResourceController : MonoBehaviour
             {
                 case BuffController.buffType.resourceUp:
                     resource += e.resourceNum;
+                    EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
+                break;
+                case BuffController.buffType.speedUp:
+                    NaturalGrowth += e.SpeedUP;
+                    EventBus.Publish<SpeedChangeEvent>(new SpeedChangeEvent(PlayerID, NaturalGrowth));
                 break;
             }
         }
+    }
+
+    void ResourceChangeHandler(ResourceChangeEvent rc) {
+        if (rc.PlayerID == PlayerID) {
+            resource = rc.resource;
+        }
+    }
+
+    IEnumerator AutoGenerate() {
+        while (true) {
+            yield return new WaitForSeconds(1f);
+            resource += NaturalGrowth;
+            EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
+        }
+    }
+}
+
+class ResourceChangeEvent {
+    public int PlayerID;
+    public int resource;
+    public ResourceChangeEvent(int id, int res) {
+        PlayerID = id;
+        resource = res;
+    }
+}
+
+class SpeedChangeEvent {
+    public int PlayerID;
+    public int speed;
+    public SpeedChangeEvent(int id, int spd) {
+        PlayerID = id;
+        speed = spd;
     }
 }
