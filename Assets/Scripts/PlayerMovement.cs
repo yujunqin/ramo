@@ -1,20 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody rb;
     public float MoveSpeed = 4f;
     public bool pruning = false;
-    public Text speedBuffStatus;
 
     Subscription<BuffEvent> buffSubscription;
     bool isSpeedingUp = false;
     bool isSpeedingDown = false;
     float curBuffTime = 0f;
     float duration = 0f;
+
+    public int PlayerID = 1;
     void Start() {
         rb = GetComponent<Rigidbody>();
         buffSubscription = EventBus.Subscribe<BuffEvent>(_OnBuffUpdated);
@@ -26,21 +26,21 @@ public class PlayerMovement : MonoBehaviour
         if (isSpeedingUp && curBuffTime + duration > Time.time)
         {
             MoveSpeed = 6f;
-            speedBuffStatus.text = "SPEED UP";
+            EventBus.Publish<BuffStatusEvent>(new BuffStatusEvent("SPEED UP", PlayerID));
         }
         else if (isSpeedingDown && curBuffTime + duration > Time.time)
         {
             MoveSpeed = 2f;
-            speedBuffStatus.text = "SPEED DOWN";
+            EventBus.Publish<BuffStatusEvent>(new BuffStatusEvent("SPEED DOWN", PlayerID));
         }
         else 
         {
             MoveSpeed = 4f;
-            speedBuffStatus.text = "";
+            EventBus.Publish<BuffStatusEvent>(new BuffStatusEvent("", PlayerID));
         }
     }
 
-    public int PlayerID = 1;
+    
 
     void Move() {
         //Temporary, will move to controllers

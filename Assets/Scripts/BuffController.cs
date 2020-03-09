@@ -54,3 +54,14 @@ public class BuffEvent
     }
 }
 
+public class BuffStatusEvent
+{
+    public string buffText = "";
+    public int playerIndex;
+    public BuffStatusEvent(string _buffText, int _playerIndex)
+    { 
+        playerIndex = _playerIndex;
+        buffText = _buffText;
+    }
+}
+
