@@ -6,12 +6,14 @@ using UnityEngine.SceneManagement;
 public class GameMaster : MonoBehaviour
 {
     Subscription<HeightChangeEvent> sub;
+    bool finished = false;
 
     private void Start() {
         sub = EventBus.Subscribe<HeightChangeEvent>(Judge);
     }
     void Judge(HeightChangeEvent h) {
-        if (h.height >= 100f) {
+        if (!finished && h.height >= 100f) {
+            finished = true;
             EventBus.Publish<GameOverEvent>(new GameOverEvent(h.PlayerID));
         }
     }
