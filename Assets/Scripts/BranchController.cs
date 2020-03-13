@@ -23,6 +23,10 @@ public class BranchController : MonoBehaviour
     public int resourcesDeposit = 0;
 
     public List<Context> gene;
+
+    int resources;
+    public int PlayerID;
+    Subscription<ResourceChangeEvent> resSub;
     void Start()
     {
         // if (root)
@@ -74,7 +78,9 @@ public class BranchController : MonoBehaviour
                 },
             };
         }
-        StartCoroutine(AutoGrow());
+        resSub = EventBus.Subscribe<ResourceChangeEvent>(ResourceChangeHandler);
+        PlayerID = GetPlayerID();
+        //StartCoroutine(AutoGrow());
     }
 
     // Update is called once per frame
@@ -183,19 +189,51 @@ public class BranchController : MonoBehaviour
             resources += subBranch.GetComponent<BranchController>().DestroyBranch();
         }
         Destroy(gameObject);
-        return resources + cost;
+        return resources + Mathf.FloorToInt(cost * 0.5f);
     }
 
      IEnumerator AutoGrow() {
         while (true){
             yield return new WaitForSeconds(1f);
-            Grow(100);
+            if (resources == 0) continue;
+            Debug.Log("Before: " + resources.ToString());
+            resources -= Grow(resources);
+            Debug.Log("After: " + resources.ToString());
+            EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resources));
         }
     }
 
     void OnTriggerStay(Collider coll) {
         PlayerMovement player = coll.GetComponent<PlayerMovement>();
-        if (player && player.pruning) Damage(50);
+        if (player && player.pruning) {
+            resources += Damage(50);
+            EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resources));
+        }
+        if (player && player.growing) {
+            Debug.Log("Before: " + resources.ToString());
+            resources -= Grow(Mathf.Min(100, resources));
+            Debug.Log("After: " + resources.ToString());
+            EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resources));
+        }
+    }
+
+    void ResourceChangeHandler(ResourceChangeEvent rc) {
+        if (rc.PlayerID == PlayerID) {
+            resources = rc.resource;
+        }
+    }
+
+    int GetPlayerID() {
+        if (PlayerID != 0) {
+            return PlayerID;
+        } else {
+            BranchController bc = transform.parent.gameObject.GetComponent<BranchController>();
+            if (bc) return bc.GetPlayerID();
+            GameController gc = transform.parent.gameObject.GetComponent<GameController>();
+            if (gc) return gc.PlayerID;
+            Debug.Log("Fail to find player ID!");
+            return 0;
+        }
     }
 
 }

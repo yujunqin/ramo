@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody rb;
     public float MoveSpeed = 4f;
     public bool pruning = false;
+    public bool growing = false;
 
     Subscription<BuffEvent> buffSubscription;
     bool isSpeedingUp = false;
@@ -23,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     void Update() {
         Move();
         Prune();
+        Grow();
         if (isSpeedingUp && curBuffTime + duration > Time.time)
         {
             MoveSpeed = 6f;
@@ -57,6 +59,16 @@ public class PlayerMovement : MonoBehaviour
             pruning = true;
         } else {
             pruning = false;
+        }
+    }
+
+    void Grow() {
+        if ((PlayerID == 1 && Input.GetKey(KeyCode.E)) || (PlayerID == 2 && Input.GetKey(KeyCode.Period))){
+            //EventBus.Publish<PruneEvent>(new PruneEvent(PlayerID));
+            //Debug.Log("Player " + PlayerID.ToString() + " prunes at " + transform.position.ToString() + "!");
+            growing = true;
+        } else {
+            growing = false;
         }
     }
 
