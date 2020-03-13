@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ResourceReader : MonoBehaviour
+/*public class ResourceReader : MonoBehaviour
 {
     public int PlayerID = 1;
     Subscription<ResourceStatusEvent> resourceStatusSubscription;
@@ -30,3 +30,4 @@ public class ResourceReader : MonoBehaviour
         }
     }
 }
+*/

@@ -22,7 +22,7 @@ public class ResourceController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        EventBus.Publish<ResourceStatusEvent>(new ResourceStatusEvent(resource, PlayerID));
+        //EventBus.Publish<ResourceStatusEvent>(new ResourceStatusEvent(resource, PlayerID));
     }
 
     void _OnBuffUpdated(BuffEvent e)

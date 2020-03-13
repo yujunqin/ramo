@@ -30,7 +30,7 @@ public class BuffController : MonoBehaviour
     void OnTriggerEnter(Collider collider)
     {
         // respond when get touch to branch
-        if(other.gameObject.CompareTag("Branch") && !touched)
+        if(collider.gameObject.CompareTag("Branch") && !touched)
         {
             // publish current buff type event to player
             touched = true;
