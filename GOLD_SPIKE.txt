@@ -1,1 +1,1 @@
-The game features a dynamic "tree growing" mechanism based on some rewriting rules.
+Ramo is a double-player competitve game where player grow, prune and graft their tree to take the lead for an objective.

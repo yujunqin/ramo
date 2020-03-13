@@ -13,7 +13,7 @@ public class BuffController : MonoBehaviour
 
     public buffType type;
     public int playerIndex = 1;
-    
+    bool touched = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,17 +26,16 @@ public class BuffController : MonoBehaviour
         
     }
 
+
     void OnTriggerEnter(Collider collider)
     {
         // respond when get touch to branch
-        if(collider.gameObject.CompareTag("Branch"))
+        if(other.gameObject.CompareTag("Branch") && !touched)
         {
             // publish current buff type event to player
-            Debug.Log("Buff seized!");
-            // TODO: get player index here
+            touched = true;
             EventBus.Publish<BuffEvent>(new BuffEvent(type, playerIndex, Time.time));
             gameObject.SetActive(false);
-            //Destroy(gameObject);
         }
     }
 }
@@ -54,6 +53,17 @@ public class BuffEvent
         type = _type;
         playerIndex = _playerIndex;
         effectiveTime = _effectiveTime;
+    }
+}
+
+public class BuffStatusEvent
+{
+    public string buffText = "";
+    public int playerIndex;
+    public BuffStatusEvent(string _buffText, int _playerIndex)
+    { 
+        playerIndex = _playerIndex;
+        buffText = _buffText;
     }
 }
 

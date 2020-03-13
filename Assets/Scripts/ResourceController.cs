@@ -1,11 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ResourceController : MonoBehaviour
 {
-    public Text woodQuantityText;
     public int PlayerID = 1;
     int resource = 0;
     public int NaturalGrowth = 100;
@@ -24,7 +22,7 @@ public class ResourceController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        woodQuantityText.text = "X " + resource.ToString();
+        EventBus.Publish<ResourceStatusEvent>(new ResourceStatusEvent(resource, PlayerID));
     }
 
     void _OnBuffUpdated(BuffEvent e)
@@ -77,3 +75,4 @@ class SpeedChangeEvent {
         speed = spd;
     }
 }
+
