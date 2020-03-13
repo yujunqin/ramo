@@ -1,59 +1,96 @@
-#+title: Ramo Tasks
-* Mouseover Tooltips
-** Input buttons
-   functionality, cost, etc.
-** Tree parts
-   needs to inherit cell information during rendering
-* Level design
-** Introduce 0 and 1
-** Introduce lbracket
-** Introduce rbracket
-* Mechanics
-** penalize changing rules during growth
-* Juices
-** Growth sound effects
-** UI-related sound effects
-** UI-related visual effects
-** ...
-* Music
-* Rule Editing and Displaying
-** cell-list editing, cell-list displaying
-** cell-list editing, cell-list displaying with opportunistic mouseover rendering
-** fully structural editing and rendering
-* Animated Growth
-* Undo Tree
-  
-#+title: Gold spike playtesting
-* Controller support
-** Refine the movement/acceleration
-** Illustrate the controls
+* Ramo Tasks
+** Mouseover Tooltips
+*** Input buttons
+    functionality, cost, etc.
+*** Tree parts
+    needs to inherit cell information during rendering
+** Level design
+*** Introduce 0 and 1
+*** Introduce lbracket
+*** Introduce rbracket
+** Mechanics
+*** penalize changing rules during growth
+** Juices
+*** Growth sound effects
+*** UI-related sound effects
+*** UI-related visual effects
+*** ...
+** Music
+** Rule Editing and Displaying
+*** cell-list editing, cell-list displaying
+*** cell-list editing, cell-list displaying with opportunistic mouseover rendering
+*** fully structural editing and rendering
+** Animated Growth
+** Undo Tree
+
+* Gold spike playtesting
+** Controller support []
+*** Refine the movement/acceleration
+*** Illustrate the controls
  
-* UI/UX/sound improvements
-** tree operations
-*** insufficient resources for growth
-*** resources successfully deposited
-*** subtree sprouted
-*** old branch revitalized
-*** branches pruned
-** highlight the root of the tree
-** highlight what is going to be grown
-** indicate how much resource is needed for the growth
-** rework the pick-up
-*** clarify its effects
-*** make it unambiguously "something you should grow the tree into"
-** clarify the objective
-** clarify the pruning mechanics
+** UI/UX/sound improvements
+*** tree operations
+**** insufficient resources for growth
+**** resources successfully deposited
+**** subtree sprouted
+**** old branch revitalized
+**** branches pruned
+*** highlight the root of the tree
+*** highlight what is going to be grown
+*** indicate how much resource is needed for the growth
+*** rework the pick-up
+**** clarify its effects
+**** make it unambiguously "something you should grow the tree into"
+*** clarify the objective
+*** clarify the pruning mechanics
+*** Theming? Background story?
 
-* better level design
-** balancing across different strategies
-*** growing straight up?
-*** collect pick-ups?
-*** sabotage the other player's tree?
+** better level design
+*** balancing across different strategies
+**** growing straight up?
+**** collect pick-ups?
+**** sabotage the other player's tree?
+** Multiplayer interactions
+*** damaging your opponent's tree?
 
-* Multiplayer interactions
-** damaging your opponent's tree?
+** Additional mechanics
+*** walls?
+*** more than 1 player within each team?
+*** thunderstorms?
+*** become the first to collect all the pickups?
+*** limiting the time you could spend in your opponent's arena?
+*** Pruning your opponent's tree needs to cost something?
+*** Bombarding your opponent's tree?
+*** Pick-ups as checkpoints?
+**** once the tree hits the checkpoint, the existing parts of the tree cannot be pruned
+**** Place the checkpoints off center?
+*** Removing the wall in the middle?
+**** Grow your tree into their tree and kill it?
+**** Prune your opponent's branch?
+    
+* Milestone Tasks
+** New mechanics
+*** bombarding the opponent's tree?
+*** randomized checkpoints?
+** Controller support
+*** Refine the movement/acceleration
+*** Illustrate the controls
+** UI/UX/sound improvements
+*** tree operations
+**** insufficient resources for growth
+**** resources successfully deposited
+**** subtree sprouted
+**** old branch revitalized
+**** branches pruned
+*** highlight the root of the tree
+*** highlight what is going to be grown
+*** indicate how much resource is needed for the growth
+*** rework the pick-up
+**** clarify its effects
+**** make it unambiguously "something you should grow the tree into"
+*** clarify the objective
+*** clarify the pruning mechanics
+*** Theming? Background story?
 
-* Additional mechanics
-** walls?
-** thunderstorms?
-** become the first to collect all the pickups?
+ 
+
