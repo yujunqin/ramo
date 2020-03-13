@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public float MoveSpeed = 4f;
     public bool pruning = false;
     public bool growing = false;
+    public HashSet<BranchController> selected_branches;
 
     Subscription<BuffEvent> buffSubscription;
     bool isSpeedingUp = false;
@@ -16,9 +17,13 @@ public class PlayerMovement : MonoBehaviour
     float duration = 0f;
 
     public int PlayerID = 1;
+    int resource;
+    Subscription<ResourceChangeEvent> resSub;
     void Start() {
         rb = GetComponent<Rigidbody>();
+        selected_branches = new HashSet<BranchController>();
         buffSubscription = EventBus.Subscribe<BuffEvent>(_OnBuffUpdated);
+        resSub = EventBus.Subscribe<ResourceChangeEvent>(ResourceChangeHandler);
     }
 
     void Update() {
@@ -53,22 +58,36 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void Prune() {
-        if ((PlayerID == 1 && Input.GetKey(KeyCode.Q)) || (PlayerID == 2 && Input.GetKey(KeyCode.Slash))){
-            //EventBus.Publish<PruneEvent>(new PruneEvent(PlayerID));
-            //Debug.Log("Player " + PlayerID.ToString() + " prunes at " + transform.position.ToString() + "!");
-            pruning = true;
-        } else {
-            pruning = false;
+        if (InputController.PrunePressed(PlayerID)){
+            List<BranchController> deletion_list = new List<BranchController>();
+            foreach (var branch in selected_branches) {
+                if (!branch) {
+                    deletion_list.Add(branch);
+                    continue;
+                }
+                resource += branch.Damage(1000);
+                EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
+            }
+            foreach (var branch in deletion_list) {
+                selected_branches.Remove(branch);
+            }
         }
     }
 
     void Grow() {
-        if ((PlayerID == 1 && Input.GetKey(KeyCode.E)) || (PlayerID == 2 && Input.GetKey(KeyCode.Period))){
-            //EventBus.Publish<PruneEvent>(new PruneEvent(PlayerID));
-            //Debug.Log("Player " + PlayerID.ToString() + " prunes at " + transform.position.ToString() + "!");
-            growing = true;
-        } else {
-            growing = false;
+        if (InputController.GrowPressed(PlayerID)){
+            List<BranchController> deletion_list = new List<BranchController>();
+            foreach (var branch in selected_branches) {
+                if (!branch) {
+                    deletion_list.Add(branch);
+                    continue;
+                }
+                resource -= branch.Grow(resource);
+                EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
+            }
+            foreach (var branch in deletion_list) {
+                selected_branches.Remove(branch);
+            }
         }
     }
 
@@ -115,7 +134,15 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    void ResourceChangeHandler(ResourceChangeEvent rc) {
+        if (rc.PlayerID == PlayerID) {
+            resource = rc.resource;
+        }
+    }
+
 }
+
+
 
 
 class PruneEvent {

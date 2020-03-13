@@ -23,9 +23,15 @@ public class HeightScanner : MonoBehaviour
         left.x -= transform.localScale.x / 2f;
         RaycastHit[] hits = Physics.RaycastAll(left, new Vector3(transform.localScale.x, 0, 0), transform.localScale.x, 1 << 8);
         if (hits.Length > 0) {
-            rb.velocity = new Vector3(0, 0.5f, 0);
+            rb.AddForce(new Vector3(0, 5f, 0));
         } else {
-            rb.AddForce(new Vector3(0, -10f, 0));
+            left.y -= 0.05f;
+            RaycastHit[] lower_hits = Physics.RaycastAll(left, new Vector3(transform.localScale.x, 0, 0), transform.localScale.x, 1 << 8);
+            if (lower_hits.Length > 0) {
+                rb.velocity = Vector3.zero;
+            } else {
+                rb.AddForce(new Vector3(0, -5f, 0));
+            }
         }
     }
 
