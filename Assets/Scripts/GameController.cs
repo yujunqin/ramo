@@ -16,6 +16,7 @@ public class GameController : MonoBehaviour
     Dictionary<char, string> rules;
     bool won = false;
     bool lost = false;
+    public int PlayerID; 
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +33,7 @@ public class GameController : MonoBehaviour
         rules['1'] = "11";
         rules['0'] = "1[0]0";
         // RenderPlant();
+        
     }
 
     // Update is called once per frame
