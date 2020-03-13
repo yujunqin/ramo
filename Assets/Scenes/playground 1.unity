@@ -7764,7 +7764,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1e925e7c71de449a4520534d77ad42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  woodQuantityText: {fileID: 1832596521}
   PlayerID: 1
   NaturalGrowth: 50
 --- !u!1 &1094089958
@@ -9046,7 +9045,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac1e925e7c71de449a4520534d77ad42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  woodQuantityText: {fileID: 1868204114}
   PlayerID: 2
   NaturalGrowth: 50
 --- !u!1001 &1648346090
@@ -9923,6 +9921,7 @@ GameObject:
   - component: {fileID: 1832596520}
   - component: {fileID: 1832596522}
   - component: {fileID: 1832596521}
+  - component: {fileID: 1832596523}
   m_Layer: 5
   m_Name: WoodQuantity
   m_TagString: Untagged
@@ -9989,6 +9988,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1832596519}
   m_CullTransparentMesh: 0
+--- !u!114 &1832596523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832596519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aa232d5e7a1b2c469e6e313a931109b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerID: 1
 --- !u!1 &1868204112
 GameObject:
   m_ObjectHideFlags: 0
@@ -10000,6 +10012,7 @@ GameObject:
   - component: {fileID: 1868204113}
   - component: {fileID: 1868204115}
   - component: {fileID: 1868204114}
+  - component: {fileID: 1868204116}
   m_Layer: 5
   m_Name: WoodQuantity
   m_TagString: Untagged
@@ -10066,6 +10079,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1868204112}
   m_CullTransparentMesh: 0
+--- !u!114 &1868204116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868204112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aa232d5e7a1b2c469e6e313a931109b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerID: 2
 --- !u!1001 &4101382952959908569
 PrefabInstance:
   m_ObjectHideFlags: 0

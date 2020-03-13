@@ -210,7 +210,9 @@ public class BranchController : MonoBehaviour
             EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resources));
         }
         if (player && player.growing) {
+            Debug.Log("Before: " + resources.ToString());
             resources -= Grow(Mathf.Min(100, resources));
+            Debug.Log("After: " + resources.ToString());
             EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resources));
         }
     }
