@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public bool pruning = false;
     public bool growing = false;
     public HashSet<BranchController> selected_branches;
+    public GameObject bomb;
 
     Subscription<BuffEvent> buffSubscription;
     bool isSpeedingUp = false;
@@ -30,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
         Move();
         Prune();
         Grow();
+        Bomb();
         if (isSpeedingUp && curBuffTime + duration > Time.time)
         {
             MoveSpeed = 6f;
@@ -88,6 +90,13 @@ public class PlayerMovement : MonoBehaviour
             foreach (var branch in deletion_list) {
                 selected_branches.Remove(branch);
             }
+        }
+    }
+
+    void Bomb() {
+        if (InputController.BombPressed(PlayerID)) {
+            GameObject bombIns = Instantiate(bomb, transform.position, Quaternion.identity);
+            bombIns.GetComponent<BombController>().PlayerID = PlayerID;
         }
     }
 

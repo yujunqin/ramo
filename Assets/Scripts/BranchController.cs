@@ -220,7 +220,7 @@ public class BranchController : MonoBehaviour
         }
     }
 
-    int GetPlayerID() {
+    public int GetPlayerID() {
         if (PlayerID != 0) {
             return PlayerID;
         } else {

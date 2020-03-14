@@ -23,4 +23,8 @@ public class InputController : MonoBehaviour
     public static bool GrowPressed(int PlayerID) {
         return (PlayerID == 1 && Input.GetKey(KeyCode.E)) || (PlayerID == 2 && Input.GetKey(KeyCode.Period));
     }
+
+    public static bool BombPressed(int PlayerID) {
+        return (PlayerID == 1 && Input.GetKeyDown(KeyCode.Z)) || (PlayerID == 2 && Input.GetKeyDown(KeyCode.Quote));
+    }
 }
