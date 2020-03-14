@@ -1,0 +1,18 @@
+Player 1 (Left)
+    Movement: WASD
+    Grow: E
+    Prune: Q
+    Generate Bomb: Z
+    Launch Bomb: V
+    Change Launch Direction (Counter-clockwise): B
+    Change Launch Direction (Clockwise): N
+
+Player 2 (Right)
+    Movement: Arrow Keys
+    Grow: . (period)
+    Prune: /
+    Generate Bomb: ' (quote)
+    Launch Bomb: I
+    Change Launch Direction (Counter-clockwise): Y
+    Change Launch Direction (Clockwise): U
+
