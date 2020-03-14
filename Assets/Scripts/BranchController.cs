@@ -27,6 +27,11 @@ public class BranchController : MonoBehaviour
     int resources;
     public int PlayerID;
     Subscription<ResourceChangeEvent> resSub;
+
+    // checkpoint-related variables
+    bool isChecked;
+    float createdTime;
+    Subscription<CheckPointEvent> checkpointSub;
     void Start()
     {
         // if (root)
@@ -81,6 +86,10 @@ public class BranchController : MonoBehaviour
         resSub = EventBus.Subscribe<ResourceChangeEvent>(ResourceChangeHandler);
         PlayerID = GetPlayerID();
         //StartCoroutine(AutoGrow());
+
+        isChecked = false;
+        createdTime = Time.time;
+        checkpointSub = EventBus.Subscribe<CheckPointEvent>(CheckPointHandler);
     }
 
     // Update is called once per frame
@@ -230,6 +239,15 @@ public class BranchController : MonoBehaviour
             if (gc) return gc.PlayerID;
             Debug.Log("Fail to find player ID!");
             return 0;
+        }
+    }
+
+    void CheckPointHandler(CheckPointEvent e)
+    {
+        //check playerID if multiple mode
+        if (createdTime < e.checkedTime)
+        {
+            isChecked = true;
         }
     }
 
