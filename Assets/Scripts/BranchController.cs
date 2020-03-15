@@ -27,6 +27,11 @@ public class BranchController : MonoBehaviour
     int resources;
     public int PlayerID;
     Subscription<ResourceChangeEvent> resSub;
+
+    // checkpoint-related variables
+    bool isChecked;
+    float createdTime;
+    Subscription<CheckPointEvent> checkpointSub;
     void Start()
     {
         // if (root)
@@ -81,6 +86,10 @@ public class BranchController : MonoBehaviour
         resSub = EventBus.Subscribe<ResourceChangeEvent>(ResourceChangeHandler);
         PlayerID = GetPlayerID();
         //StartCoroutine(AutoGrow());
+
+        isChecked = false;
+        createdTime = Time.time;
+        checkpointSub = EventBus.Subscribe<CheckPointEvent>(CheckPointHandler);
     }
 
     // Update is called once per frame
@@ -203,19 +212,16 @@ public class BranchController : MonoBehaviour
         }
     }
 
-    void OnTriggerStay(Collider coll) {
-        PlayerMovement player = coll.GetComponent<PlayerMovement>();
-        if (player && player.pruning) {
-            resources += Damage(50);
-            EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resources));
-        }
-        if (player && player.growing) {
-            Debug.Log("Before: " + resources.ToString());
-            resources -= Grow(Mathf.Min(100, resources));
-            Debug.Log("After: " + resources.ToString());
-            EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resources));
-        }
+    private void OnTriggerEnter(Collider other) {
+        PlayerMovement player = other.GetComponent<PlayerMovement>();
+        if (player) player.selected_branches.Add(this);
     }
+
+    private void OnTriggerExit(Collider other) {
+        PlayerMovement player = other.GetComponent<PlayerMovement>();
+        if (player) player.selected_branches.Remove(this);
+    }
+
 
     void ResourceChangeHandler(ResourceChangeEvent rc) {
         if (rc.PlayerID == PlayerID) {
@@ -223,7 +229,7 @@ public class BranchController : MonoBehaviour
         }
     }
 
-    int GetPlayerID() {
+    public int GetPlayerID() {
         if (PlayerID != 0) {
             return PlayerID;
         } else {
@@ -233,6 +239,15 @@ public class BranchController : MonoBehaviour
             if (gc) return gc.PlayerID;
             Debug.Log("Fail to find player ID!");
             return 0;
+        }
+    }
+
+    void CheckPointHandler(CheckPointEvent e)
+    {
+        //check playerID if multiple mode
+        if (createdTime < e.checkedTime)
+        {
+            isChecked = true;
         }
     }
 
