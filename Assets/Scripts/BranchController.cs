@@ -32,6 +32,10 @@ public class BranchController : MonoBehaviour
     bool isChecked;
     float createdTime;
     Subscription<CheckPointEvent> checkpointSub;
+
+    // Visual highlighting
+    bool isSelected;
+
     void Start()
     {
         // if (root)
@@ -104,14 +108,32 @@ public class BranchController : MonoBehaviour
         var localScale = branchSprite.GetComponent<Transform>().localScale;
         branchSprite.GetComponent<Transform>().localScale = new Vector2(100.0f * offset.x, localScale.y);
         GetComponent<Transform>().localEulerAngles = new Vector3(0.0f, 0.0f, direction);
-        // TODO: find a better way to visually represent the branch's maturity and resourceDeposit
-        float maturity = 1.0f;
+        branchSprite.GetComponent<SpriteRenderer>().color = GetColor();
+    }
+
+    Color GetColor()
+    {
+        byte hp = (byte) (((float) hits / maxHits) * 255);
+        Color32[] palette = {
+            new Color32(0x60, 0x5B, 0x56, hp),
+            new Color32(0x83, 0x7A, 0x75, hp),
+            new Color32(0xAC, 0xC1, 0x8A, hp),
+            new Color32(0xDA, 0xFE, 0xB7, hp),
+            new Color32(0xF2, 0xFB, 0xE0, hp),
+        };
+        if (isSelected)
+        {
+            //return UnityEngine.Random.ColorHSV(0.0f, 1.0f, 0.5f, 1.0f, 0.8f, 0.8f);
+            return palette[4];
+        }
+        // float maturity = 1.0f;
         if (GetComponent<BranchController>().type.GetBType() == BranchType.BType.Old) {
-            maturity = 0.0f;
+            // maturity = 0.0f;
+            return palette[0];
         }
         float deposit = (float) resourcesDeposit / ResourcesNeeded();
-        float hp = (float) hits / maxHits;
-        branchSprite.GetComponent<SpriteRenderer>().color = new Color(deposit, maturity, hp);
+        return palette[1 + (int)Mathf.Floor(deposit * 3.0f)];
+        // return new Color(deposit, maturity, hp);
     }
 
     public int ResourcesNeeded()
@@ -214,12 +236,29 @@ public class BranchController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         PlayerMovement player = other.GetComponent<PlayerMovement>();
-        if (player) player.selected_branches.Add(this);
+        if (player)
+        {
+            player.selected_branches.Add(this);
+            isSelected = true;
+        } 
+    }
+
+    private void OnTriggerStay(Collider other) {
+        PlayerMovement player = other.GetComponent<PlayerMovement>();
+        if (player)
+        {
+            var branchSprite = GetComponent<Transform>().GetChild(0);
+            branchSprite.GetComponent<SpriteRenderer>().color = UnityEngine.Random.ColorHSV(0.0f, 1.0f, 0.5f, 1.0f, 0.8f, 0.8f);
+        } 
     }
 
     private void OnTriggerExit(Collider other) {
         PlayerMovement player = other.GetComponent<PlayerMovement>();
-        if (player) player.selected_branches.Remove(this);
+        if (player)
+        {
+            player.selected_branches.Remove(this);
+            isSelected = false;
+        }
     }
 
 
