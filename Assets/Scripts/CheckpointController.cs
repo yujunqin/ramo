@@ -5,7 +5,7 @@ using UnityEngine;
 public class CheckpointController : MonoBehaviour
 {
     bool isChecked;
-    // public int playerID;
+    public int playerID;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,18 +19,20 @@ public class CheckpointController : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.gameObject.CompareTag("Branch"))
+        if (other.gameObject.CompareTag("Branch") && !isChecked)
         {
-            EventBus.Publish<CheckPointEvent>(new CheckPointEvent(Time.time));
+            EventBus.Publish<CheckPointEvent>(new CheckPointEvent(Time.time, playerID));
+            isChecked = true;
         }
     }
 }
 
 class CheckPointEvent{
     public float checkedTime;
-
-    public CheckPointEvent(float _checkedTime)
+    public int playerID;
+    public CheckPointEvent(float _checkedTime, int _playerID)
     {
         checkedTime = _checkedTime;
+        playerID = _playerID;
     }
 }

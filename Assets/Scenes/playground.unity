@@ -1160,6 +1160,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpeedDebuff
       objectReference: {fileID: 0}
+    - target: {fileID: 9032292196113037039, guid: 42d1dc4d5fb0f7643bcd2675e147c796,
+        type: 3}
+      propertyPath: playerIndex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42d1dc4d5fb0f7643bcd2675e147c796, type: 3}
 --- !u!4 &459904433 stripped
@@ -1963,7 +1968,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &637747688
 Transform:
   m_ObjectHideFlags: 0
@@ -7729,6 +7734,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 4
   pruning: 0
+  growing: 0
+  bomb: {fileID: 0}
   PlayerID: 1
 --- !u!135 &1051653298
 SphereCollider:
@@ -7833,7 +7840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerID: 1
-  resource: 0
+  NaturalGrowth: 100
 --- !u!1 &1094089958
 GameObject:
   m_ObjectHideFlags: 0
@@ -8031,6 +8038,7 @@ MonoBehaviour:
   resultText: {fileID: 642170270}
   progressBar: {fileID: 1556382727}
   maxCost: 35
+  PlayerID: 0
 --- !u!4 &1170635644
 Transform:
   m_ObjectHideFlags: 0
@@ -8909,6 +8917,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 4
   pruning: 0
+  growing: 0
+  bomb: {fileID: 0}
   PlayerID: 2
 --- !u!135 &1633071635
 SphereCollider:
@@ -8997,7 +9007,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerID: 2
-  resource: 0
+  NaturalGrowth: 100
 --- !u!1001 &1648346090
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9326,6 +9336,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1765793988}
   - component: {fileID: 1765793987}
+  - component: {fileID: 1765793989}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -9348,6 +9359,7 @@ MonoBehaviour:
   resultText: {fileID: 642170270}
   progressBar: {fileID: 1556382727}
   maxCost: 35
+  PlayerID: 0
 --- !u!4 &1765793988
 Transform:
   m_ObjectHideFlags: 0
@@ -9362,6 +9374,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1765793989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765793986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c7584a8d0c3595459257a253468c917, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  checkPointPrefab: {fileID: 5430527204032625361, guid: f3fc3d4092f97a840a9744856b81f0d4,
+    type: 3}
 --- !u!1 &1795291155
 GameObject:
   m_ObjectHideFlags: 0
@@ -9815,6 +9841,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SpeedBuff
+      objectReference: {fileID: 0}
+    - target: {fileID: 9032292196113037039, guid: 432a09841379f624493c2f13dc54f95d,
+        type: 3}
+      propertyPath: playerIndex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 432a09841379f624493c2f13dc54f95d, type: 3}

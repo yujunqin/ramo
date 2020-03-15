@@ -12,7 +12,7 @@ public class BuffController : MonoBehaviour
     }
 
     public buffType type;
-    public int playerIndex = 1;
+    public int playerIndex;
     bool touched = false;
     // Start is called before the first frame update
     void Start()
@@ -27,7 +27,7 @@ public class BuffController : MonoBehaviour
     }
 
 
-    void OnTriggerEnter(Collider collider)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
         // respond when get touch to branch
         if(collider.gameObject.CompareTag("Branch") && !touched)

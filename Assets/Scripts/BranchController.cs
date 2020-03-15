@@ -284,6 +284,10 @@ public class BranchController : MonoBehaviour
     void CheckPointHandler(CheckPointEvent e)
     {
         //check playerID if multiple mode
+        if (PlayerID != e.playerID)
+        {
+            return;
+        }
         if (createdTime < e.checkedTime)
         {
             isChecked = true;

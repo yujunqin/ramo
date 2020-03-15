@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ResourceController : MonoBehaviour
 {
-    public int PlayerID = 1;
+    public int PlayerID;
     int resource = 0;
     public int NaturalGrowth = 100;
     Subscription<BuffEvent> buffSubscription;
