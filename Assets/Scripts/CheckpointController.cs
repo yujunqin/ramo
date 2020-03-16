@@ -18,11 +18,12 @@ public class CheckpointController : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
+    private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Branch") && !isChecked)
         {
             EventBus.Publish<CheckPointEvent>(new CheckPointEvent(Time.time, playerID));
             isChecked = true;
+            gameObject.SetActive(false);
         }
     }
 }

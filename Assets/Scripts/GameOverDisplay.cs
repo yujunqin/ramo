@@ -17,9 +17,9 @@ public class GameOverDisplay : MonoBehaviour
     void GameOver(GameOverEvent e) {
         t.enabled = true;
         if (e.winner == 1) {
-            t.text = "Blue Bird Wins! Press R to restart.";
+            t.text = "Blue Bird Wins! Press Y button / R key to restart.";
         } else {
-            t.text = "Yellow Bird Wins! Press R to restart.";
+            t.text = "Yellow Bird Wins! Press Y button / R key to restart.";
             t.color = Color.yellow;
         }
     }

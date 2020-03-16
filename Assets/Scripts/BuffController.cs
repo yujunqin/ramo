@@ -27,8 +27,10 @@ public class BuffController : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter2D(Collider2D collider)
+    private void OnTriggerEnter(Collider collider)
     {
+        Debug.Log("collision");
+        Debug.Log(collider.tag);
         // respond when get touch to branch
         if(collider.gameObject.CompareTag("Branch") && !touched)
         {
