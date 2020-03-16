@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -17,10 +18,25 @@ public class PlayerMovement : MonoBehaviour
     float curBuffTime = 0f;
     float duration = 0f;
 
-    public int PlayerID = 1;
+    static int nextPlayerID = 1;
+    public int PlayerID;
+
     int resource;
     Subscription<ResourceChangeEvent> resSub;
     void Start() {
+        PlayerID = nextPlayerID;
+        nextPlayerID++;
+        Debug.Log(nextPlayerID);
+        // Assign sprites; blue is 1, yellow is 2
+        if (PlayerID == 1)
+        {
+            Sprite sprite = Resources.LoadAll<Sprite>("External/Cute Birds/PNG Files/Blue Bird")[0];
+            transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = sprite;
+        } else
+        {
+            Sprite sprite = Resources.LoadAll<Sprite>("External/Cute Birds/PNG Files/Yellow Bird")[0];
+            transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = sprite;
+        }
         rb = GetComponent<Rigidbody>();
         selected_branches = new HashSet<BranchController>();
         buffSubscription = EventBus.Subscribe<BuffEvent>(_OnBuffUpdated);
@@ -28,9 +44,8 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void Update() {
-        Move();
-        Prune();
-        Grow();
+        // Prune();
+        // Grow();
         Bomb();
         if (isSpeedingUp && curBuffTime + duration > Time.time)
         {
@@ -49,16 +64,30 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    
-
-    void Move() {
-        //Temporary, will move to controllers
-        Vector2 velocity = Vector2.zero;
-        velocity.x = Input.GetAxis("Horizontal" + PlayerID.ToString());
-        velocity.y = Input.GetAxis("Vertical" + PlayerID.ToString());
-        rb.velocity = MoveSpeed * velocity.normalized;
+    public void OnMove(InputAction.CallbackContext context)
+    {
+        Vector2 velocity = context.ReadValue<Vector2>();
+        // rb.velocity = MoveSpeed * velocity.normalized;
+        // rb.velocity = MoveSpeed * velocity;
+        GetComponent<Rigidbody>().velocity = MoveSpeed * velocity;
     }
 
+    public void OnGrow(InputAction.CallbackContext context)
+    {
+        List<BranchController> deletion_list = new List<BranchController>();
+        foreach (var branch in selected_branches) {
+            if (!branch) {
+                deletion_list.Add(branch);
+                continue;
+            }
+            resource -= branch.Grow(resource);
+            EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
+        }
+        foreach (var branch in deletion_list) {
+            selected_branches.Remove(branch);
+        }
+    }
+    
     void Prune() {
         if (InputController.PrunePressed(PlayerID)){
             List<BranchController> deletion_list = new List<BranchController>();
