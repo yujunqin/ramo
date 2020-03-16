@@ -7644,7 +7644,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1051653297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7660,6 +7660,7 @@ MonoBehaviour:
   MoveSpeed: 4
   pruning: 0
   growing: 0
+  bomb: {fileID: 3145063767699502241, guid: 5e9767b6695b94915bfd7f383d1b46cd, type: 3}
   PlayerID: 1
 --- !u!135 &1051653298
 SphereCollider:
@@ -8925,7 +8926,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!54 &1633071633
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8957,6 +8958,7 @@ MonoBehaviour:
   MoveSpeed: 4
   pruning: 0
   growing: 0
+  bomb: {fileID: 3145063767699502241, guid: 5e9767b6695b94915bfd7f383d1b46cd, type: 3}
   PlayerID: 2
 --- !u!135 &1633071635
 SphereCollider:

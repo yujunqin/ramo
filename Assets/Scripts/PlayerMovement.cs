@@ -23,10 +23,21 @@ public class PlayerMovement : MonoBehaviour
 
     int resource;
     Subscription<ResourceChangeEvent> resSub;
-    void Start() {
+
+    void Awake()
+    {
         PlayerID = nextPlayerID;
-        nextPlayerID++;
-        Debug.Log(nextPlayerID);
+        if (nextPlayerID == 1)
+        {
+            nextPlayerID = 2;
+        } else
+        {
+            nextPlayerID = 1;
+        }
+        Debug.Log(PlayerID);
+    }
+
+    void Start() {
         // Assign sprites; blue is 1, yellow is 2
         if (PlayerID == 1)
         {
@@ -44,7 +55,8 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void Update() {
-        // Prune();
+        // Move();
+        Prune();
         // Grow();
         Bomb();
         if (isSpeedingUp && curBuffTime + duration > Time.time)
@@ -86,6 +98,14 @@ public class PlayerMovement : MonoBehaviour
         foreach (var branch in deletion_list) {
             selected_branches.Remove(branch);
         }
+    }
+
+    void Move() {
+        //Temporary, will move to controllers
+        Vector2 velocity = Vector2.zero;
+        velocity.x = Input.GetAxis("Horizontal" + PlayerID.ToString());
+        velocity.y = Input.GetAxis("Vertical" + PlayerID.ToString());
+        rb.velocity = MoveSpeed * velocity.normalized;
     }
     
     void Prune() {

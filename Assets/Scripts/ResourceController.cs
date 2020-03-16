@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ResourceController : MonoBehaviour
 {
-    public int PlayerID = 1;
+    public int PlayerID;
     int resource = 0;
     public int NaturalGrowth = 100;
     Subscription<BuffEvent> buffSubscription;
@@ -13,6 +13,7 @@ public class ResourceController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PlayerID = GetComponent<PlayerMovement>().PlayerID;
         buffSubscription = EventBus.Subscribe<BuffEvent>(_OnBuffUpdated);
         resSub = EventBus.Subscribe<ResourceChangeEvent>(ResourceChangeHandler);
         EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, 1000));
