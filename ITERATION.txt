@@ -7,6 +7,7 @@
 ** UI/UX/sound improvements
 *** highlight the root of the tree
 *** highlight what is going to be grown
+*** add background music
 
 ** Additional mechanics
 *** Bombarding your opponent's tree
