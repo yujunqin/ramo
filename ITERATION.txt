@@ -1,4 +1,16 @@
-* The player wasn't sure of the game's objective, i.e. growing the tree into the box. The objective now has particle effect flowing into it and changes color constantly, to provide visual emphasis.
-* The player wasn't aware of the cost constraint when growing the tree. We turned the textual cost display into a progress bar that is centered that catches the eye of the player immediately.
-* The player didn't know what each symbol represented. We provided visual legends that explain each tree cell.
-* Sometimes the game crashes when the tree grows too large. We now prune the tree to prevent this issue.
+* iterations since gold spike
+
+** Controller support
+*** Refine the movement/acceleration
+*** Illustrate the controls
+
+** UI/UX/sound improvements
+*** highlight the root of the tree
+*** highlight what is going to be grown
+
+** Additional mechanics
+*** Bombarding your opponent's tree
+You may now produce a bomb by pressing RStick/Z, aim with RStick/V&B, and launch it by releasing RStick/Z.
+Each bomb costs 1000.
+*** Random checkpoint
+Growing your tree into the cherry flower will make all of your tree thus far invincible to the bomb.
