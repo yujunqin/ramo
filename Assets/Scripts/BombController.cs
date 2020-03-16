@@ -40,13 +40,13 @@ public class BombController : MonoBehaviour
     void Update()
     {
         if (!isThrown) { // before throw
-            if (RightPressed())
-                direction.x += 0.02f;
-            else if (LeftPressed())
-                direction.x -= 0.02f;
-            if (ShootPressed()) {
-                ThrowBomb(direction);
-            }
+            // if (RightPressed())
+            //     direction.x += 0.02f;
+            // else if (LeftPressed())
+            //     direction.x -= 0.02f;
+            // if (ShootPressed()) {
+            //     ThrowBomb();
+            // }
             for (int i = 0; i < TrajectoryPointNum; i++)
                 TrajactoryPoints[i].transform.position = Trajectory(timeIntvl*i);
         }
@@ -67,13 +67,13 @@ public class BombController : MonoBehaviour
     }
 
 
-    public void ThrowBomb(Vector3 dir)
+    public void ThrowBomb()
     {
         rb.isKinematic = false;
         isThrown = true;
         for (int i = 0; i < TrajectoryPointNum; i++)
             Destroy(TrajactoryPoints[i]);
-        rb.velocity = initSpeed * dir;
+        rb.velocity = initSpeed * direction;
     }
 
     Vector3 Trajectory(float time)

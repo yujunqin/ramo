@@ -13,6 +13,7 @@ public class ResourceController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PlayerID = GetComponent<PlayerMovement>().PlayerID;
         buffSubscription = EventBus.Subscribe<BuffEvent>(_OnBuffUpdated);
         resSub = EventBus.Subscribe<ResourceChangeEvent>(ResourceChangeHandler);
         EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, 1000));

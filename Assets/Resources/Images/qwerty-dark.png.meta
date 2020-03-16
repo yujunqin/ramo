@@ -1,0 +1,3619 @@
+fileFormatVersion: 2
+guid: 752e90e7fbc121b43b7546d0067c287f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -643923313865562693
+    second: qwerty-dark_0
+  - first:
+      213: 7265325097423135113
+    second: qwerty-dark_1
+  - first:
+      213: 4386142891775808002
+    second: qwerty-dark_2
+  - first:
+      213: 1990160828681824031
+    second: qwerty-dark_3
+  - first:
+      213: -3827429324319793817
+    second: qwerty-dark_4
+  - first:
+      213: -8606969291705548936
+    second: qwerty-dark_5
+  - first:
+      213: 5775490297885123820
+    second: qwerty-dark_6
+  - first:
+      213: 5611023038493540312
+    second: qwerty-dark_7
+  - first:
+      213: 4867740969874136978
+    second: qwerty-dark_8
+  - first:
+      213: 9014006082137638772
+    second: qwerty-dark_9
+  - first:
+      213: -2736736815428213579
+    second: qwerty-dark_10
+  - first:
+      213: -1885371180732562587
+    second: qwerty-dark_11
+  - first:
+      213: 5408497440556311438
+    second: qwerty-dark_12
+  - first:
+      213: -1621162062722553182
+    second: qwerty-dark_13
+  - first:
+      213: 6089818396164929231
+    second: qwerty-dark_14
+  - first:
+      213: 8678628150463762331
+    second: qwerty-dark_15
+  - first:
+      213: -6011047582078520674
+    second: qwerty-dark_16
+  - first:
+      213: -3322757819011722503
+    second: qwerty-dark_17
+  - first:
+      213: -138349601699455439
+    second: qwerty-dark_18
+  - first:
+      213: -7803915256491171399
+    second: qwerty-dark_19
+  - first:
+      213: -6790711517226991256
+    second: qwerty-dark_20
+  - first:
+      213: -839986094851099884
+    second: qwerty-dark_21
+  - first:
+      213: 2415333992576864133
+    second: qwerty-dark_22
+  - first:
+      213: 2912354751627864978
+    second: qwerty-dark_23
+  - first:
+      213: 608041576361514575
+    second: qwerty-dark_24
+  - first:
+      213: 4202251891685915142
+    second: qwerty-dark_25
+  - first:
+      213: 2261729732815372539
+    second: qwerty-dark_26
+  - first:
+      213: -5568258962236296356
+    second: qwerty-dark_27
+  - first:
+      213: -5468455099141596720
+    second: qwerty-dark_28
+  - first:
+      213: 76464219513755321
+    second: qwerty-dark_29
+  - first:
+      213: -4230625046983736210
+    second: qwerty-dark_30
+  - first:
+      213: -2531238678361773373
+    second: qwerty-dark_31
+  - first:
+      213: 1170851959843338611
+    second: qwerty-dark_32
+  - first:
+      213: 6652720867135037029
+    second: qwerty-dark_33
+  - first:
+      213: -8037351811276116372
+    second: qwerty-dark_34
+  - first:
+      213: 5872315774082433959
+    second: qwerty-dark_35
+  - first:
+      213: 6031791657749361371
+    second: qwerty-dark_36
+  - first:
+      213: -5996577781363821894
+    second: qwerty-dark_37
+  - first:
+      213: 4630351050036698945
+    second: qwerty-dark_38
+  - first:
+      213: -8933542359050518156
+    second: qwerty-dark_39
+  - first:
+      213: 9059040622406569577
+    second: qwerty-dark_40
+  - first:
+      213: 7362619063409784762
+    second: qwerty-dark_41
+  - first:
+      213: -4973240168632604252
+    second: qwerty-dark_42
+  - first:
+      213: -2156299649928988793
+    second: qwerty-dark_43
+  - first:
+      213: -7885105846508035583
+    second: qwerty-dark_44
+  - first:
+      213: -7392217292650331849
+    second: qwerty-dark_45
+  - first:
+      213: 7788611089310371827
+    second: qwerty-dark_46
+  - first:
+      213: -8539699793636895715
+    second: qwerty-dark_47
+  - first:
+      213: -2736175631734108158
+    second: qwerty-dark_48
+  - first:
+      213: -2002194196573680771
+    second: qwerty-dark_49
+  - first:
+      213: -4665740237263593505
+    second: qwerty-dark_50
+  - first:
+      213: 8762335410069871127
+    second: qwerty-dark_51
+  - first:
+      213: 1623141773515171284
+    second: qwerty-dark_52
+  - first:
+      213: 369850886718514678
+    second: qwerty-dark_53
+  - first:
+      213: -2824106731901560542
+    second: qwerty-dark_54
+  - first:
+      213: 8586281949377679890
+    second: qwerty-dark_55
+  - first:
+      213: -520997477426231380
+    second: qwerty-dark_56
+  - first:
+      213: 1674676688963482269
+    second: qwerty-dark_57
+  - first:
+      213: -4364814393934678807
+    second: qwerty-dark_58
+  - first:
+      213: -4730198257807298142
+    second: qwerty-dark_59
+  - first:
+      213: -2829893386309825803
+    second: qwerty-dark_60
+  - first:
+      213: 3691354063150174433
+    second: qwerty-dark_61
+  - first:
+      213: -7153455922378735116
+    second: qwerty-dark_62
+  - first:
+      213: 3940131188414027800
+    second: qwerty-dark_63
+  - first:
+      213: -4834439698628990498
+    second: qwerty-dark_64
+  - first:
+      213: -8446111945606972598
+    second: qwerty-dark_65
+  - first:
+      213: -6024689941486710079
+    second: qwerty-dark_66
+  - first:
+      213: -3329029409192184972
+    second: qwerty-dark_67
+  - first:
+      213: 1964445752904908392
+    second: qwerty-dark_68
+  - first:
+      213: -2153588316109168621
+    second: qwerty-dark_69
+  - first:
+      213: -5742115933909723938
+    second: qwerty-dark_70
+  - first:
+      213: -8258044433098765733
+    second: qwerty-dark_71
+  - first:
+      213: -6711260420788414605
+    second: qwerty-dark_72
+  - first:
+      213: -1827806336106713193
+    second: qwerty-dark_73
+  - first:
+      213: 6900773423281210740
+    second: qwerty-dark_74
+  - first:
+      213: -2541315970078533754
+    second: qwerty-dark_75
+  - first:
+      213: -8205208412538592119
+    second: qwerty-dark_76
+  - first:
+      213: 370434693875342894
+    second: qwerty-dark_77
+  - first:
+      213: 2972029819597076827
+    second: qwerty-dark_78
+  - first:
+      213: -8103511676052648252
+    second: qwerty-dark_79
+  - first:
+      213: 4584850627692402839
+    second: qwerty-dark_80
+  - first:
+      213: -6911078488614091282
+    second: qwerty-dark_81
+  - first:
+      213: -2995393169426474264
+    second: qwerty-dark_82
+  - first:
+      213: -7415170302601033105
+    second: qwerty-dark_83
+  - first:
+      213: -492185709673168438
+    second: qwerty-dark_84
+  - first:
+      213: 8971500328684123528
+    second: qwerty-dark_85
+  - first:
+      213: -4754280716339297642
+    second: qwerty-dark_86
+  - first:
+      213: -4195771081652497
+    second: qwerty-dark_87
+  - first:
+      213: -356366335228683132
+    second: qwerty-dark_88
+  - first:
+      213: 7935171158097965513
+    second: qwerty-dark_89
+  - first:
+      213: -722989973430333012
+    second: qwerty-dark_90
+  - first:
+      213: 9045278208451507747
+    second: qwerty-dark_91
+  - first:
+      213: -2832511102394140720
+    second: qwerty-dark_92
+  - first:
+      213: 4341518470547220493
+    second: qwerty-dark_93
+  - first:
+      213: -1363898473017751305
+    second: qwerty-dark_94
+  - first:
+      213: -8499289339122276767
+    second: qwerty-dark_95
+  - first:
+      213: -1275678605529370332
+    second: qwerty-dark_96
+  - first:
+      213: 7218926625270499445
+    second: qwerty-dark_97
+  - first:
+      213: -899183404007745535
+    second: qwerty-dark_98
+  - first:
+      213: 8234808485488138767
+    second: qwerty-dark_99
+  - first:
+      213: -2805439968465137969
+    second: qwerty-dark_100
+  - first:
+      213: 8602053997720578559
+    second: qwerty-dark_101
+  - first:
+      213: -8872552816291677954
+    second: qwerty-dark_102
+  - first:
+      213: -7249356919305350576
+    second: qwerty-dark_103
+  - first:
+      213: 6412492780750810332
+    second: qwerty-dark_104
+  - first:
+      213: -4756367868323065928
+    second: qwerty-dark_105
+  - first:
+      213: -739402553498166903
+    second: qwerty-dark_106
+  - first:
+      213: 4963960048347833860
+    second: qwerty-dark_107
+  - first:
+      213: -1271548809789763497
+    second: qwerty-dark_108
+  - first:
+      213: -7505180856792772529
+    second: qwerty-dark_109
+  - first:
+      213: 5407973254012865542
+    second: qwerty-dark_110
+  - first:
+      213: 4991383950767118622
+    second: qwerty-dark_111
+  - first:
+      213: 6719664427613540197
+    second: qwerty-dark_112
+  - first:
+      213: 3999604846168634489
+    second: qwerty-dark_113
+  - first:
+      213: 824064122256428729
+    second: qwerty-dark_114
+  - first:
+      213: 320838479539064929
+    second: qwerty-dark_115
+  - first:
+      213: -7911044665371425880
+    second: qwerty-dark_116
+  - first:
+      213: 8962609077043013151
+    second: qwerty-dark_117
+  - first:
+      213: -3043577236026839191
+    second: qwerty-dark_118
+  - first:
+      213: 848759085211575019
+    second: qwerty-dark_119
+  - first:
+      213: -5015065326612123866
+    second: qwerty-dark_120
+  - first:
+      213: 7903663827768531242
+    second: qwerty-dark_121
+  - first:
+      213: -1704776207432449922
+    second: qwerty-dark_122
+  - first:
+      213: -6501530912963862106
+    second: qwerty-dark_123
+  - first:
+      213: 959861801228696046
+    second: qwerty-dark_124
+  - first:
+      213: -5299371154729298277
+    second: qwerty-dark_125
+  - first:
+      213: -7478053813700056040
+    second: qwerty-dark_126
+  - first:
+      213: 7736742206617732022
+    second: qwerty-dark_127
+  - first:
+      213: 6617305853314877413
+    second: qwerty-dark_128
+  - first:
+      213: -6575986365015593010
+    second: qwerty-dark_129
+  - first:
+      213: 7465147101537572376
+    second: qwerty-dark_130
+  - first:
+      213: -3987821961438808564
+    second: qwerty-dark_131
+  - first:
+      213: -2684559306507606522
+    second: qwerty-dark_132
+  - first:
+      213: -1688912615629835406
+    second: qwerty-dark_133
+  - first:
+      213: -960224221903200993
+    second: qwerty-dark_134
+  - first:
+      213: 573420624683772691
+    second: qwerty-dark_135
+  - first:
+      213: 760400616627087496
+    second: qwerty-dark_136
+  - first:
+      213: 3823293057819074104
+    second: qwerty-dark_137
+  - first:
+      213: -7116105253353315734
+    second: qwerty-dark_138
+  - first:
+      213: 1859072559409052461
+    second: qwerty-dark_139
+  - first:
+      213: -3204634837927614806
+    second: qwerty-dark_140
+  - first:
+      213: -6742162919089992411
+    second: qwerty-dark_141
+  - first:
+      213: 1790083835304671510
+    second: qwerty-dark_142
+  - first:
+      213: 8903637229948061886
+    second: qwerty-dark_143
+  - first:
+      213: -8279814450263137506
+    second: qwerty-dark_144
+  - first:
+      213: 795568841511150709
+    second: qwerty-dark_145
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: qwerty-dark_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5637e58235017f0800000000000000
+      internalID: -643923313865562693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_1
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981e2a9ceae93d460800000000000000
+      internalID: 7265325097423135113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_2
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 202d666a8b5bedc30800000000000000
+      internalID: 4386142891775808002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_3
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f172a77bab87e9b10800000000000000
+      internalID: 1990160828681824031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_4
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d5101ee4d32eac0800000000000000
+      internalID: -3827429324319793817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_5
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ff137e707ed8880800000000000000
+      internalID: -8606969291705548936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_6
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4682973d9a62050800000000000000
+      internalID: 5775490297885123820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_7
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dfb0fb99bb5edd40800000000000000
+      internalID: 5611023038493540312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_8
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29f96f72f90bd8340800000000000000
+      internalID: 4867740969874136978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_9
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477460106ce281d70800000000000000
+      internalID: 9014006082137638772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_10
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b4eaa0cd58250ad0800000000000000
+      internalID: -2736736815428213579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_11
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5634da676e0d5d5e0800000000000000
+      internalID: -1885371180732562587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_12
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e83e7f844c7de0b40800000000000000
+      internalID: 5408497440556311438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_13
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa251871b97089e0800000000000000
+      internalID: -1621162062722553182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_14
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6bc0ae091638450800000000000000
+      internalID: 6089818396164929231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_15
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f091e425ea07870800000000000000
+      internalID: 8678628150463762331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_16
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e923d3e6218749ca0800000000000000
+      internalID: -6011047582078520674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_17
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f2972b4e5133e1d0800000000000000
+      internalID: -3322757819011722503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_18
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e13ef25cb741ef0800000000000000
+      internalID: -138349601699455439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_19
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b1a79fcb6ce2b390800000000000000
+      internalID: -7803915256491171399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_20
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86108839adb82c1a0800000000000000
+      internalID: -6790711517226991256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_21
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 413f120e815c754f0800000000000000
+      internalID: -839986094851099884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_22
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f4871287df48120800000000000000
+      internalID: 2415333992576864133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_23
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b23be5733ca6820800000000000000
+      internalID: 2912354751627864978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_24
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4652b79792307800800000000000000
+      internalID: 608041576361514575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_25
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60af6acb4d5615a30800000000000000
+      internalID: 4202251891685915142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1632
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf046667537436f10800000000000000
+      internalID: 2261729732815372539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_27
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1632
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c53358ac9f199b2b0800000000000000
+      internalID: -5568258962236296356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_28
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1632
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d9dd797f052c14b0800000000000000
+      internalID: -5468455099141596720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_29
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1632
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b615227dc7af0100800000000000000
+      internalID: 76464219513755321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_30
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1632
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e640aa04fecc945c0800000000000000
+      internalID: -4230625046983736210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_31
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1632
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca648645db3fdcd0800000000000000
+      internalID: -2531238678361773373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_32
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 1632
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379380f67a3bf3010800000000000000
+      internalID: 1170851959843338611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_33
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 1632
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56e996b8166335c50800000000000000
+      internalID: 6652720867135037029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_34
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 1632
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e6b028c17957090800000000000000
+      internalID: -8037351811276116372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_35
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 1632
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a34b1b6518ae7150800000000000000
+      internalID: 5872315774082433959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_36
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 1632
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd2b05f0e8a35b350800000000000000
+      internalID: 6031791657749361371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_37
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 1632
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab23fc17740e7cca0800000000000000
+      internalID: -5996577781363821894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_38
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 1632
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f5bc25fbf424040800000000000000
+      internalID: 4630351050036698945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_39
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47183ee6e8ea50480800000000000000
+      internalID: -8933542359050518156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_40
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e8060037d28bd70800000000000000
+      internalID: 9059040622406569577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_41
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab73f0387074d2660800000000000000
+      internalID: 7362619063409784762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_42
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a923fd7a608bfab0800000000000000
+      internalID: -4973240168632604252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_43
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 787fea894e84312e0800000000000000
+      internalID: -2156299649928988793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_44
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 102688a720a729290800000000000000
+      internalID: -7885105846508035583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_45
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 731c319b981996990800000000000000
+      internalID: -7392217292650331849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_46
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff43081584b61c60800000000000000
+      internalID: 7788611089310371827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_47
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d14dbcf6844ec7980800000000000000
+      internalID: -8539699793636895715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_48
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 200986382c6270ad0800000000000000
+      internalID: -2736175631734108158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_49
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7b80ed7cf6c634e0800000000000000
+      internalID: -2002194196573680771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_50
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf18af69f5ff3fb0800000000000000
+      internalID: -4665740237263593505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_51
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71a9a0071a11a9970800000000000000
+      internalID: 8762335410069871127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1370
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d5287ed7de868610800000000000000
+      internalID: 1623141773515171284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_53
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1370
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f568b20c69f12500800000000000000
+      internalID: 369850886718514678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_54
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1370
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229d73dd3e1cec8d0800000000000000
+      internalID: -2824106731901560542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_55
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1370
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 212510ed0f9982770800000000000000
+      internalID: 8586281949377679890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_56
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1370
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7822dfd8b05c8f0800000000000000
+      internalID: -520997477426231380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_57
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1370
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92bb476395ad3710800000000000000
+      internalID: 1674676688963482269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_58
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 1370
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e4f20b3f601d63c0800000000000000
+      internalID: -4364814393934678807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_59
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 1370
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a179360fb5fa5eb0800000000000000
+      internalID: -4730198257807298142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_60
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 1370
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa86c465f23ab8d0800000000000000
+      internalID: -2829893386309825803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_61
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 1370
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0d24a76f25a3330800000000000000
+      internalID: 3691354063150174433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_62
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 1370
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f1833e3db1d9bc90800000000000000
+      internalID: -7153455922378735116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_63
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 1370
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8181bdda0782ea630800000000000000
+      internalID: 3940131188414027800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_64
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 1370
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed92c2345be98ecb0800000000000000
+      internalID: -4834439698628990498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_65
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4bb9e45fe169ca80800000000000000
+      internalID: -8446111945606972598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_66
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c2d0db1b60046ca0800000000000000
+      internalID: -6024689941486710079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_67
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473754ae369ecc1d0800000000000000
+      internalID: -3329029409192184972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_68
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86efb62110d134b10800000000000000
+      internalID: 1964445752904908392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_69
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310a1e136daec12e0800000000000000
+      internalID: -2153588316109168621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_70
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed4533c2bf7ef40b0800000000000000
+      internalID: -5742115933909723938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_71
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a81c15758856d80800000000000000
+      internalID: -8258044433098765733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_72
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37794cf7430dcd2a0800000000000000
+      internalID: -6711260420788414605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_73
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79fa62a42d352a6e0800000000000000
+      internalID: -1827806336106713193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_74
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 475022addd874cf50800000000000000
+      internalID: 6900773423281210740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_75
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6871175f69e6bbcd0800000000000000
+      internalID: -2541315970078533754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_76
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984279efb6e312e80800000000000000
+      internalID: -8205208412538592119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_77
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e9be4346c042500800000000000000
+      internalID: 370434693875342894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1108
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59b3fadf55ce3920800000000000000
+      internalID: 2972029819597076827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_79
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1108
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cec6ab901b8a8f80800000000000000
+      internalID: -8103511676052648252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_80
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1108
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79815d3ba59a0af30800000000000000
+      internalID: 4584850627692402839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_81
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1108
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee540572bbae610a0800000000000000
+      internalID: -6911078488614091282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_82
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1108
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea14bd58c93e66d0800000000000000
+      internalID: -2995393169426474264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_83
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1108
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a8074a5e5081990800000000000000
+      internalID: -7415170302601033105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_84
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 1108
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac1486b64b76b29f0800000000000000
+      internalID: -492185709673168438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_85
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 1108
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8857481140c218c70800000000000000
+      internalID: 8971500328684123528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_86
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 1108
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6924b14b0e6650eb0800000000000000
+      internalID: -4754280716339297642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_87
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 1108
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe68e1be7f711fff0800000000000000
+      internalID: -4195771081652497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_88
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 1108
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c59cac4beed0bf0800000000000000
+      internalID: -356366335228683132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_89
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 1108
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1ba5e30246f1e60800000000000000
+      internalID: 7935171158097965513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_90
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 1108
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca11481237c67f5f0800000000000000
+      internalID: -722989973430333012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_91
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326755d4b98478d70800000000000000
+      internalID: 9045278208451507747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_92
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7727fd826e0b8d0800000000000000
+      internalID: -2832511102394140720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_93
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d08a3ceeb0c204c30800000000000000
+      internalID: 4341518470547220493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_94
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f84416a095721de0800000000000000
+      internalID: -1363898473017751305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_95
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1662a5290657c0a80800000000000000
+      internalID: -8499289339122276767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_96
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4213bdd2111eb4ee0800000000000000
+      internalID: -1275678605529370332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_97
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5788bd6a487ce2460800000000000000
+      internalID: 7218926625270499445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_98
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 108113845757583f0800000000000000
+      internalID: -899183404007745535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_99
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a94ea00bae74270800000000000000
+      internalID: 8234808485488138767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_100
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcec3f866331119d0800000000000000
+      internalID: -2805439968465137969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_101
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff92dd80982a06770800000000000000
+      internalID: 8602053997720578559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_102
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8fa0ee83c5ed480800000000000000
+      internalID: -8872552816291677954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_103
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 052d8c66a4c156b90800000000000000
+      internalID: -7249356919305350576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_104
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 846
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdca8619530cdf850800000000000000
+      internalID: 6412492780750810332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_105
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 846
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf8583cf9cfdfdb0800000000000000
+      internalID: -4756367868323065928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_106
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 846
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98999bc8b4d1db5f0800000000000000
+      internalID: -739402553498166903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_107
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 846
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 406e0012d5783e440800000000000000
+      internalID: 4963960048347833860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_108
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 846
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75019ed281d8a5ee0800000000000000
+      internalID: -1271548809789763497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_109
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 846
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f401ecf56cd38d790800000000000000
+      internalID: -7505180856792772529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_110
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 846
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60c0048950bfc0b40800000000000000
+      internalID: 5407973254012865542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_111
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 846
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e195f0bf145f44540800000000000000
+      internalID: 4991383950767118622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_112
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 846
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56fcbb1d13b014d50800000000000000
+      internalID: 6719664427613540197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_113
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 846
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974ffc1ba63718730800000000000000
+      internalID: 3999604846168634489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_114
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 846
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be0d3ff3f9af6b00800000000000000
+      internalID: 824064122256428729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_115
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 846
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160d333b5e8d37400800000000000000
+      internalID: 320838479539064929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_116
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 846
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a389469ac2563290800000000000000
+      internalID: -7911044665371425880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_117
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1627d93875916c70800000000000000
+      internalID: 8962609077043013151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_118
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96fa72021aa03c5d0800000000000000
+      internalID: -3043577236026839191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_119
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2ebed14e567cb00800000000000000
+      internalID: 848759085211575019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_120
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62fe7e908a8e66ab0800000000000000
+      internalID: -5015065326612123866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_121
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a295f3e30647fad60800000000000000
+      internalID: 7903663827768531242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_122
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e708376521b6758e0800000000000000
+      internalID: -1704776207432449922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_123
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a1619cc41ce5c5a0800000000000000
+      internalID: -6501530912963862106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_124
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee9f3bff83d125d00800000000000000
+      internalID: 959861801228696046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_125
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b969865130ad476b0800000000000000
+      internalID: -5299371154729298277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_126
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c27274dad983890800000000000000
+      internalID: -7478053813700056040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_127
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b3c830cb0e6e5b60800000000000000
+      internalID: 7736742206617732022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_128
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e742f41d9465db50800000000000000
+      internalID: 6617305853314877413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_129
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecfee69fd376db4a0800000000000000
+      internalID: -6575986365015593010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_130
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 584
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8161f2f9cb7899760800000000000000
+      internalID: 7465147101537572376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_131
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 584
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0630f0fd0968a8c0800000000000000
+      internalID: -3987821961438808564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_132
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 584
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606252db8878ebad0800000000000000
+      internalID: -2684559306507606522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_133
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 584
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27335b0ace6cf88e0800000000000000
+      internalID: -1688912615629835406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_134
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 584
+        width: 1025
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ddbbc58299ca2f0800000000000000
+      internalID: -960224221903200993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_135
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 584
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31ba821250335f700800000000000000
+      internalID: 573420624683772691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_136
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 454
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888ab01055c7d8a00800000000000000
+      internalID: 760400616627087496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_137
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 454
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ed58787c01f0530800000000000000
+      internalID: 3823293057819074104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_138
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 454
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a62a59d89f38e3d90800000000000000
+      internalID: -7116105253353315734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_139
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 454
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2bb04b94a0ccc910800000000000000
+      internalID: 1859072559409052461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_140
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 454
+        width: 1023
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6ab720899d683d0800000000000000
+      internalID: -3204634837927614806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_141
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 454
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d84ddeb860f62a0800000000000000
+      internalID: -6742162919089992411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_142
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 322
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619f08193c7a7d810800000000000000
+      internalID: 1790083835304671510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_143
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 322
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb84ffb13e2109b70800000000000000
+      internalID: 8903637229948061886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_144
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 192
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e136be530a0381d80800000000000000
+      internalID: -8279814450263137506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-dark_145
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 192
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57424a075ad6a0b00800000000000000
+      internalID: 795568841511150709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
