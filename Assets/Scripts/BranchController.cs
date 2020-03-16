@@ -192,7 +192,7 @@ public class BranchController : MonoBehaviour
     
     public int Damage(int damage)
     {
-        if (root)
+        if (root || isChecked)
         {
             // root branch cannot be damaged
             return 0;
@@ -284,7 +284,7 @@ public class BranchController : MonoBehaviour
     void CheckPointHandler(CheckPointEvent e)
     {
         //check playerID if multiple mode
-        if (PlayerID != e.playerID)
+        if (GetPlayerID() != e.playerID)
         {
             return;
         }
