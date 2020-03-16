@@ -41,6 +41,14 @@ public class @PlayerInputActionController : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Prune"",
+                    ""type"": ""Button"",
+                    ""id"": ""f69e753e-6b68-4099-ae17-b972db749e49"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -261,6 +269,17 @@ public class @PlayerInputActionController : IInputActionCollection, IDisposable
                     ""processors"": """",
                     ""groups"": ""XR"",
                     ""action"": ""Grow"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""76f9d62a-6844-4d26-8cc1-aa4ec033cd17"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Prune"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -841,6 +860,7 @@ public class @PlayerInputActionController : IInputActionCollection, IDisposable
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
         m_Player_Grow = m_Player.FindAction("Grow", throwIfNotFound: true);
+        m_Player_Prune = m_Player.FindAction("Prune", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -905,6 +925,7 @@ public class @PlayerInputActionController : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_Look;
     private readonly InputAction m_Player_Grow;
+    private readonly InputAction m_Player_Prune;
     public struct PlayerActions
     {
         private @PlayerInputActionController m_Wrapper;
@@ -912,6 +933,7 @@ public class @PlayerInputActionController : IInputActionCollection, IDisposable
         public InputAction @Move => m_Wrapper.m_Player_Move;
         public InputAction @Look => m_Wrapper.m_Player_Look;
         public InputAction @Grow => m_Wrapper.m_Player_Grow;
+        public InputAction @Prune => m_Wrapper.m_Player_Prune;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -930,6 +952,9 @@ public class @PlayerInputActionController : IInputActionCollection, IDisposable
                 @Grow.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnGrow;
                 @Grow.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnGrow;
                 @Grow.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnGrow;
+                @Prune.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPrune;
+                @Prune.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPrune;
+                @Prune.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnPrune;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -943,6 +968,9 @@ public class @PlayerInputActionController : IInputActionCollection, IDisposable
                 @Grow.started += instance.OnGrow;
                 @Grow.performed += instance.OnGrow;
                 @Grow.canceled += instance.OnGrow;
+                @Prune.started += instance.OnPrune;
+                @Prune.performed += instance.OnPrune;
+                @Prune.canceled += instance.OnPrune;
             }
         }
     }
@@ -1102,6 +1130,7 @@ public class @PlayerInputActionController : IInputActionCollection, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
         void OnGrow(InputAction.CallbackContext context);
+        void OnPrune(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

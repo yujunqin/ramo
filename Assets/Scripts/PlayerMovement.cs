@@ -56,7 +56,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update() {
         // Move();
-        Prune();
+        // Prune();
         // Grow();
         Bomb();
         if (isSpeedingUp && curBuffTime + duration > Time.time)
@@ -93,6 +93,22 @@ public class PlayerMovement : MonoBehaviour
                 continue;
             }
             resource -= branch.Grow(resource);
+            EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
+        }
+        foreach (var branch in deletion_list) {
+            selected_branches.Remove(branch);
+        }
+    }
+
+    public void OnPrune(InputAction.CallbackContext context)
+    {
+        List<BranchController> deletion_list = new List<BranchController>();
+        foreach (var branch in selected_branches) {
+            if (!branch) {
+                deletion_list.Add(branch);
+                continue;
+            }
+            resource += branch.Damage(1000);
             EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
         }
         foreach (var branch in deletion_list) {
