@@ -27,7 +27,7 @@ public class @PlayerInputActionController : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Look"",
+                    ""name"": ""Aim"",
                     ""type"": ""Value"",
                     ""id"": ""eebb41d4-7e02-4975-8694-2d8cd3034f02"",
                     ""expectedControlType"": ""Vector2"",
@@ -54,6 +54,14 @@ public class @PlayerInputActionController : IInputActionCollection, IDisposable
                     ""name"": ""Restart"",
                     ""type"": ""Button"",
                     ""id"": ""019f7cc7-9731-43a0-af01-dd82bc371256"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Bombard"",
+                    ""type"": ""Button"",
+                    ""id"": ""6ab1bb49-1664-4c1d-8a54-8dee23a46138"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
@@ -155,18 +163,7 @@ public class @PlayerInputActionController : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Gamepad"",
-                    ""action"": ""Look"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""8c8e490b-c610-4785-884f-f04217b23ca4"",
-                    ""path"": ""<Pointer>/delta"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": "";Keyboard&Mouse;Touch"",
-                    ""action"": ""Look"",
+                    ""action"": ""Aim"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -177,40 +174,62 @@ public class @PlayerInputActionController : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Joystick"",
-                    ""action"": ""Look"",
+                    ""action"": ""Aim"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""1D Axis"",
-                    ""id"": ""f4ced3dc-74d7-43d3-a1c9-f66344da8f88"",
-                    ""path"": ""1DAxis"",
+                    ""name"": ""2D Vector"",
+                    ""id"": ""0916363d-d2f0-4ee9-8aa3-a18315f6a1ab"",
+                    ""path"": ""2DVector"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Look"",
+                    ""action"": ""Aim"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""negative"",
-                    ""id"": ""ff746270-3e2c-4d19-b317-458e6f6d42b6"",
-                    ""path"": ""<Keyboard>/v"",
+                    ""name"": ""up"",
+                    ""id"": ""30693b24-bb69-46a9-96e5-59cbe267e9f3"",
+                    ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Look"",
+                    ""action"": ""Aim"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""positive"",
-                    ""id"": ""f73640ae-af49-425d-9323-d7ad1c9e9fe2"",
-                    ""path"": ""<Keyboard>/b"",
+                    ""name"": ""down"",
+                    ""id"": ""5a518c0f-3bb2-4a59-8023-9bdf2755c794"",
+                    ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Look"",
+                    ""action"": ""Aim"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""65760a1d-c570-49c5-8ecd-2bb68f0ef2f8"",
+                    ""path"": ""<Keyboard>/v"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Aim"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""6615222e-988d-4492-b4de-379826e9fb50"",
+                    ""path"": ""<Keyboard>/b"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Aim"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -229,7 +248,7 @@ public class @PlayerInputActionController : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""05f6913d-c316-48b2-a6bb-e225f14c7960"",
                     ""path"": ""<Keyboard>/e"",
-                    ""interactions"": ""Press"",
+                    ""interactions"": """",
                     ""processors"": """",
                     ""groups"": "";Keyboard&Mouse"",
                     ""action"": ""Grow"",
@@ -284,7 +303,7 @@ public class @PlayerInputActionController : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""c85930d3-8c44-4e5b-b866-799566ca5a49"",
                     ""path"": ""<Keyboard>/q"",
-                    ""interactions"": ""Press"",
+                    ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Prune"",
@@ -306,10 +325,32 @@ public class @PlayerInputActionController : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""f416606d-97ad-412a-8c2e-d6db2bae74bf"",
                     ""path"": ""<Keyboard>/r"",
-                    ""interactions"": ""Press"",
+                    ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
                     ""action"": ""Restart"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""cf79c108-79ca-4f67-b3cd-8fd510935be0"",
+                    ""path"": ""<Gamepad>/rightStickPress"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Gamepad"",
+                    ""action"": ""Bombard"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4fe92997-dd7a-4f12-bf7c-9a92b8517a1d"",
+                    ""path"": ""<Keyboard>/z"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""Bombard"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -888,10 +929,11 @@ public class @PlayerInputActionController : IInputActionCollection, IDisposable
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
-        m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
+        m_Player_Aim = m_Player.FindAction("Aim", throwIfNotFound: true);
         m_Player_Grow = m_Player.FindAction("Grow", throwIfNotFound: true);
         m_Player_Prune = m_Player.FindAction("Prune", throwIfNotFound: true);
         m_Player_Restart = m_Player.FindAction("Restart", throwIfNotFound: true);
+        m_Player_Bombard = m_Player.FindAction("Bombard", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -954,19 +996,21 @@ public class @PlayerInputActionController : IInputActionCollection, IDisposable
     private readonly InputActionMap m_Player;
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_Player_Move;
-    private readonly InputAction m_Player_Look;
+    private readonly InputAction m_Player_Aim;
     private readonly InputAction m_Player_Grow;
     private readonly InputAction m_Player_Prune;
     private readonly InputAction m_Player_Restart;
+    private readonly InputAction m_Player_Bombard;
     public struct PlayerActions
     {
         private @PlayerInputActionController m_Wrapper;
         public PlayerActions(@PlayerInputActionController wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_Player_Move;
-        public InputAction @Look => m_Wrapper.m_Player_Look;
+        public InputAction @Aim => m_Wrapper.m_Player_Aim;
         public InputAction @Grow => m_Wrapper.m_Player_Grow;
         public InputAction @Prune => m_Wrapper.m_Player_Prune;
         public InputAction @Restart => m_Wrapper.m_Player_Restart;
+        public InputAction @Bombard => m_Wrapper.m_Player_Bombard;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -979,9 +1023,9 @@ public class @PlayerInputActionController : IInputActionCollection, IDisposable
                 @Move.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
                 @Move.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
                 @Move.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
-                @Look.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLook;
-                @Look.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLook;
-                @Look.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnLook;
+                @Aim.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAim;
+                @Aim.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAim;
+                @Aim.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAim;
                 @Grow.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnGrow;
                 @Grow.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnGrow;
                 @Grow.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnGrow;
@@ -991,6 +1035,9 @@ public class @PlayerInputActionController : IInputActionCollection, IDisposable
                 @Restart.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnRestart;
                 @Restart.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnRestart;
                 @Restart.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnRestart;
+                @Bombard.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBombard;
+                @Bombard.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBombard;
+                @Bombard.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnBombard;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -998,9 +1045,9 @@ public class @PlayerInputActionController : IInputActionCollection, IDisposable
                 @Move.started += instance.OnMove;
                 @Move.performed += instance.OnMove;
                 @Move.canceled += instance.OnMove;
-                @Look.started += instance.OnLook;
-                @Look.performed += instance.OnLook;
-                @Look.canceled += instance.OnLook;
+                @Aim.started += instance.OnAim;
+                @Aim.performed += instance.OnAim;
+                @Aim.canceled += instance.OnAim;
                 @Grow.started += instance.OnGrow;
                 @Grow.performed += instance.OnGrow;
                 @Grow.canceled += instance.OnGrow;
@@ -1010,6 +1057,9 @@ public class @PlayerInputActionController : IInputActionCollection, IDisposable
                 @Restart.started += instance.OnRestart;
                 @Restart.performed += instance.OnRestart;
                 @Restart.canceled += instance.OnRestart;
+                @Bombard.started += instance.OnBombard;
+                @Bombard.performed += instance.OnBombard;
+                @Bombard.canceled += instance.OnBombard;
             }
         }
     }
@@ -1167,10 +1217,11 @@ public class @PlayerInputActionController : IInputActionCollection, IDisposable
     public interface IPlayerActions
     {
         void OnMove(InputAction.CallbackContext context);
-        void OnLook(InputAction.CallbackContext context);
+        void OnAim(InputAction.CallbackContext context);
         void OnGrow(InputAction.CallbackContext context);
         void OnPrune(InputAction.CallbackContext context);
         void OnRestart(InputAction.CallbackContext context);
+        void OnBombard(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

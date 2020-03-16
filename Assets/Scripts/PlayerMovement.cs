@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
     public HashSet<BranchController> selected_branches;
     public GameObject bomb;
 
+    GameObject bombIns;
+
     Subscription<BuffEvent> buffSubscription;
     bool isSpeedingUp = false;
     bool isSpeedingDown = false;
@@ -28,13 +30,7 @@ public class PlayerMovement : MonoBehaviour
     void Awake()
     {
         PlayerID = nextPlayerID;
-        if (nextPlayerID == 1)
-        {
-            nextPlayerID = 2;
-        } else
-        {
-            nextPlayerID = 1;
-        }
+        nextPlayerID++;
         Debug.Log(PlayerID);
     }
 
@@ -59,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
         // Move();
         // Prune();
         // Grow();
-        Bomb();
+        // Bomb();
         if (isSpeedingUp && curBuffTime + duration > Time.time)
         {
             MoveSpeed = 6f;
@@ -136,6 +132,40 @@ public class PlayerMovement : MonoBehaviour
         }
         PlayerMovement.nextPlayerID = 1;
         SceneManager.LoadScene("Menu", LoadSceneMode.Single);
+    }
+
+    public void OnBombard(InputAction.CallbackContext context)
+    {
+        if (context.phase == InputActionPhase.Performed)
+        {
+            if (!bombIns)
+            {
+                // TODO: Kill whoever wrote the fucking pile of shit called InputSystem
+                // This method is triggered for player 1 twice or even thrice for whatever reason
+                // Therefore this workaround is put in place
+                if (transform.position.x == 0.0f && transform.position.y == 0.0f)
+                {
+                    return;
+                }
+                bombIns = Instantiate(bomb, transform.position, Quaternion.identity);
+                bombIns.GetComponent<BombController>().PlayerID = PlayerID;
+            }
+        } else if (context.phase == InputActionPhase.Canceled)
+        {
+            if (bombIns)
+            {
+                bombIns.GetComponent<BombController>().ThrowBomb();
+                bombIns = null;
+            }
+        }
+    }
+
+    public void OnAim(InputAction.CallbackContext context)
+    {
+        if (bombIns)
+        {
+            bombIns.GetComponent<BombController>().direction.x += 0.02f * context.ReadValue<Vector2>().x;
+        }
     }
 
     void Move() {

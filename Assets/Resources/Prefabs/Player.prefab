@@ -187,13 +187,9 @@ MonoBehaviour:
     m_ActionId: a93b5642-a794-4900-939f-09d754269e94
     m_ActionName: Player/Move[/XInputControllerWindows/leftStick,/XInputControllerWindows/leftStick,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: eebb41d4-7e02-4975-8694-2d8cd3034f02
-    m_ActionName: Player/Look[/XInputControllerWindows/rightStick,/XInputControllerWindows/rightStick,/Mouse/delta]
-  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1645085332469419351}
-        m_MethodName: OnGrow
+        m_MethodName: OnAim
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -203,8 +199,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 7210476454204704447}
-        m_MethodName: DebugLogAction
+    m_ActionId: eebb41d4-7e02-4975-8694-2d8cd3034f02
+    m_ActionName: Player/Look[/XInputControllerWindows/rightStick,/XInputControllerWindows/rightStick,/Mouse/delta]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1645085332469419351}
+        m_MethodName: OnGrow
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -286,7 +286,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 019f7cc7-9731-43a0-af01-dd82bc371256
     m_ActionName: Player/Restart[/XInputControllerWindows/buttonNorth,/XInputControllerWindows/buttonNorth,/Keyboard/r]
-  m_NeverAutoSwitchControlSchemes: 0
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1645085332469419351}
+        m_MethodName: OnBombard
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 6ab1bb49-1664-4c1d-8a54-8dee23a46138
+    m_ActionName: Player/Bombard[/XInputControllerWindows/rightStickPress,/XInputControllerWindows/rightStickPress,/Keyboard/z]
+  m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: Gamepad
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
