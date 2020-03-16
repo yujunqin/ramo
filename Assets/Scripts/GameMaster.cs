@@ -19,10 +19,10 @@ public class GameMaster : MonoBehaviour
     }
 
     private void Update() {
-        if (Input.GetKeyDown(KeyCode.R)) {
-            // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            SceneManager.LoadScene("Menu", LoadSceneMode.Single);
-        }
+        // if (Input.GetKeyDown(KeyCode.R)) {
+        //     // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //     SceneManager.LoadScene("Menu", LoadSceneMode.Single);
+        // }
     }
 }
 

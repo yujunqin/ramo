@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -86,14 +87,21 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnGrow(InputAction.CallbackContext context)
     {
+        if (!context.performed)
+        {
+            return;
+        }
         List<BranchController> deletion_list = new List<BranchController>();
-        foreach (var branch in selected_branches) {
-            if (!branch) {
-                deletion_list.Add(branch);
-                continue;
+        if (selected_branches != null)
+        {
+            foreach (var branch in selected_branches) {
+                if (!branch) {
+                    deletion_list.Add(branch);
+                    continue;
+                }
+                resource -= branch.Grow(resource);
+                EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
             }
-            resource -= branch.Grow(resource);
-            EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
         }
         foreach (var branch in deletion_list) {
             selected_branches.Remove(branch);
@@ -102,6 +110,10 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnPrune(InputAction.CallbackContext context)
     {
+        if (!context.performed)
+        {
+            return;
+        }
         List<BranchController> deletion_list = new List<BranchController>();
         foreach (var branch in selected_branches) {
             if (!branch) {
@@ -114,6 +126,16 @@ public class PlayerMovement : MonoBehaviour
         foreach (var branch in deletion_list) {
             selected_branches.Remove(branch);
         }
+    }
+
+    public void OnRestart(InputAction.CallbackContext context)
+    {
+        if (!context.performed)
+        {
+            return;
+        }
+        PlayerMovement.nextPlayerID = 1;
+        SceneManager.LoadScene("Menu", LoadSceneMode.Single);
     }
 
     void Move() {
