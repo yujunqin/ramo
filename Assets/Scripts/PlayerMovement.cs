@@ -147,6 +147,14 @@ public class PlayerMovement : MonoBehaviour
                 {
                     return;
                 }
+
+                if (resource < 1000)
+                {
+                    return;
+                }
+                resource -= 1000;
+                EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
+
                 bombIns = Instantiate(bomb, transform.position, Quaternion.identity);
                 bombIns.GetComponent<BombController>().PlayerID = PlayerID;
             }
