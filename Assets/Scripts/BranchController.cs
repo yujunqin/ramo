@@ -179,6 +179,13 @@ public class BranchController : MonoBehaviour
                     subBranches.Add(Context.SpawnBranchesWithContext(gameObject, genome));
                 }
                 type.Mature();
+
+                EventBus.Publish<GrowProgressEvent>(new GrowProgressEvent(transform,
+                    10, 10, false, GetInstanceID()));
+            }
+            else {
+                EventBus.Publish<GrowProgressEvent>(new GrowProgressEvent(transform,
+                    ResourcesNeeded() - resourcesDeposit, ResourcesNeeded(), true, GetInstanceID()));
             }
             return consumed;
         }
@@ -219,6 +226,10 @@ public class BranchController : MonoBehaviour
         {
             resources += subBranch.GetComponent<BranchController>().DestroyBranch();
         }
+
+        EventBus.Publish<GrowProgressEvent>(new GrowProgressEvent(transform,
+                    10, 10, false, GetInstanceID()));
+
         Destroy(gameObject);
         return resources + Mathf.FloorToInt(cost * 0.5f);
     }
@@ -240,6 +251,10 @@ public class BranchController : MonoBehaviour
         {
             player.selected_branches.Add(this);
             isSelected = true;
+            if (type.GetBType() != BranchType.BType.Old) {
+                EventBus.Publish<GrowProgressEvent>(new GrowProgressEvent(transform,
+                    ResourcesNeeded()-resourcesDeposit, ResourcesNeeded(), true, GetInstanceID()));
+            }
         } 
     }
 
@@ -258,6 +273,8 @@ public class BranchController : MonoBehaviour
         {
             player.selected_branches.Remove(this);
             isSelected = false;
+            EventBus.Publish<GrowProgressEvent>(new GrowProgressEvent(transform,
+                10, 10, false, GetInstanceID()));
         }
     }
 
