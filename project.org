@@ -93,4 +93,15 @@
 *** Theming? Background story?
 
  
+* Milestone playtesting
+
+** The menu scene needs boundaries to prevent the player from flying out
+
+** An explicit finishing line might be better than a top-of-the-screen objective
+
+** Both pickups mechanisms need feedback
+
+** Better learning curve for checkpoint and bombarding
+
+** Axis sensitivity
 
