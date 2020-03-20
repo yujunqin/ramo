@@ -111,13 +111,16 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         List<BranchController> deletion_list = new List<BranchController>();
-        foreach (var branch in selected_branches) {
-            if (!branch) {
-                deletion_list.Add(branch);
-                continue;
+        if (selected_branches != null)
+        {
+            foreach (var branch in selected_branches) {
+                if (!branch) {
+                    deletion_list.Add(branch);
+                    continue;
+                }
+                resource += branch.Damage(1000);
+                EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
             }
-            resource += branch.Damage(1000);
-            EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
         }
         foreach (var branch in deletion_list) {
             selected_branches.Remove(branch);
