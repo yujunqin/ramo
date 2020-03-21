@@ -21,12 +21,13 @@ public class PlayerJoinBoxController : MonoBehaviour
             var rootObjects = SceneManager.GetActiveScene().GetRootGameObjects();
             foreach (var obj in rootObjects)
             {
-                if (!obj.CompareTag("Player"))
+                if (!obj.CompareTag("Player") && obj.name != "AudioListener")
                 {
                     Destroy(obj);
                 }
             }
-            SceneManager.LoadScene(1, LoadSceneMode.Additive);
+            StartCoroutine(LoadSceneAsync(1));
+            //SceneManager.LoadScene(1, LoadSceneMode.Additive);
         }
     }
 
@@ -40,5 +41,13 @@ public class PlayerJoinBoxController : MonoBehaviour
     {
         playersJoined -= 1;
         Debug.Log("playersJoined: " + playersJoined.ToString());
+    }
+
+    IEnumerator LoadSceneAsync(int SceneID) {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(SceneID, LoadSceneMode.Additive);
+
+        while (!asyncLoad.isDone) {
+            yield return null;
+        }
     }
 }
