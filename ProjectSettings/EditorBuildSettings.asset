@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/integration.unity
     guid: 37d00b0d5c3ac4061a96491ea385ae96
+  - enabled: 1
+    path: Assets/Scenes/finish line.unity
+    guid: 0642a2dd3ca927d4f98baf27038d628f
   m_configObjects: {}

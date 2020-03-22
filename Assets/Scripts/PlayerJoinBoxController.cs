@@ -26,7 +26,11 @@ public class PlayerJoinBoxController : MonoBehaviour
                     Destroy(obj);
                 }
             }
-            StartCoroutine(LoadSceneAsync(1));
+            for (int i = 1; i <= 2; ++i) {
+                StartCoroutine(LoadSceneAsync(i));
+            }
+            EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(1, 1000));
+            EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(2, 1000));
             //SceneManager.LoadScene(1, LoadSceneMode.Additive);
         }
     }
