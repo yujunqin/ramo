@@ -21,7 +21,7 @@ public class PlayerJoinBoxController : MonoBehaviour
             var rootObjects = SceneManager.GetActiveScene().GetRootGameObjects();
             foreach (var obj in rootObjects)
             {
-                if (!obj.CompareTag("Player") && obj.name != "AudioListener")
+                if (!obj.CompareTag("Player") && obj.name != "Main Camera")
                 {
                     Destroy(obj);
                 }
