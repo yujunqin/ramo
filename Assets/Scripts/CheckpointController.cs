@@ -6,15 +6,19 @@ public class CheckpointController : MonoBehaviour
 {
     bool isChecked;
     public int playerID;
+    public Sprite flower;
     float checkedTime;
-    // public AudioClip checkpointClip;
+    public AudioClip checkpointClip;
 
     Transform trans;
+    SpriteRenderer m_SpriteRenderer;
     // Start is called before the first frame update
     void Start()
     {
         isChecked = false;
+
         trans = GetComponent<Transform>();
+        m_SpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -22,14 +26,20 @@ public class CheckpointController : MonoBehaviour
     {
         if (isChecked)
         {
-            if (Time.time < checkedTime + 3f)
+            if (Time.time < checkedTime + 2f)
             {
-                float scale = 0.3f - 0.3f / (Time.time - checkedTime);
-                trans.localScale = new Vector3(scale, scale, 1);
+                float scale = 0.4f - (Time.time - checkedTime) / 5f;
+                trans.localScale = new Vector3(scale, scale, 1f);
             }
             else
             {
-
+                m_SpriteRenderer.sprite = flower;
+                if (Time.time < checkedTime + 4f)
+                {
+                    float scale = 0.25f * (Time.time - checkedTime - 2f);
+                    trans.localScale = new Vector3(scale, scale, 1f);
+                }
+                
             }
         }
     }
@@ -41,6 +51,7 @@ public class CheckpointController : MonoBehaviour
             isChecked = true;
             checkedTime = Time.time;
             // gameObject.SetActive(false);
+            AudioSource.PlayClipAtPoint(checkpointClip, Camera.main.transform.position);
         }
     }
 }
