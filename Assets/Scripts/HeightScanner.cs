@@ -40,7 +40,7 @@ public class HeightScanner : MonoBehaviour
     }
     
     float TransformToHeight(Transform t) {
-        float h = Mathf.Floor(11f * t.position.y + 45f);
+        float h = Mathf.Floor(13.253f * t.position.y + 54.217f);
         return (h > 0) ? h : 0;
     }
 }
