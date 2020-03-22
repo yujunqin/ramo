@@ -95,6 +95,18 @@ public class PlayerMovement : MonoBehaviour
                     deletion_list.Add(branch);
                     continue;
                 }
+
+                if (resource == 0)
+                {
+                    AudioClip clip = Resources.Load<AudioClip>("Sound Effects/GrowError");
+                    AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position, 1f);
+                }
+                else
+                {
+                    AudioClip clip = Resources.Load<AudioClip>("Sound Effects/Grow");
+                    AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position, 1f);
+                }
+
                 resource -= branch.Grow(resource);
                 EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
             }
@@ -118,6 +130,9 @@ public class PlayerMovement : MonoBehaviour
                     deletion_list.Add(branch);
                     continue;
                 }
+
+                AudioClip clip = Resources.Load<AudioClip>("Sound Effects/Prune");
+                AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position, 1f);
                 resource += branch.Damage(1000);
                 EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
             }
