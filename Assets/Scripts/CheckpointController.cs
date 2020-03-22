@@ -36,7 +36,7 @@ public class CheckpointController : MonoBehaviour
                 m_SpriteRenderer.sprite = flower;
                 if (Time.time < checkedTime + 4f)
                 {
-                    float scale = 0.25f * (Time.time - checkedTime - 2f);
+                    float scale = 0.2f * (Time.time - checkedTime - 2f);
                     trans.localScale = new Vector3(scale, scale, 1f);
                 }
                 

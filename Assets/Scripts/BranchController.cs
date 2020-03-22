@@ -308,6 +308,8 @@ public class BranchController : MonoBehaviour
         if (createdTime < e.checkedTime)
         {
             isChecked = true;
+            var jointSprite = GetComponent<Transform>().GetChild(1);
+            jointSprite.GetComponent<SpriteRenderer>().color = new Color(0.85f, 0.85f, 0.85f, 1f);
         }
     }
 
