@@ -249,6 +249,9 @@ public class BranchController : MonoBehaviour
         PlayerMovement player = other.GetComponent<PlayerMovement>();
         if (player)
         {
+            if (root) {
+                EventBus.Publish<PlayerProgressEvent>(new PlayerProgressEvent("reach root", GetPlayerID()));
+            }
             player.selected_branches.Add(this);
             isSelected = true;
             if (type.GetBType() != BranchType.BType.Old) {

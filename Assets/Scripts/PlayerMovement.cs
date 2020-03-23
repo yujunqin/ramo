@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public float MoveSpeed = 4f;
     public bool pruning = false;
     public bool growing = false;
+    bool first = true;
     public HashSet<BranchController> selected_branches;
     public GameObject bomb;
 
@@ -90,6 +91,10 @@ public class PlayerMovement : MonoBehaviour
         List<BranchController> deletion_list = new List<BranchController>();
         if (selected_branches != null)
         {
+            if (selected_branches.Count > 0 && first) {
+                EventBus.Publish<PlayerProgressEvent>(new PlayerProgressEvent("first grow", PlayerID));
+                first = false;
+            }
             foreach (var branch in selected_branches) {
                 if (!branch) {
                     deletion_list.Add(branch);
@@ -149,6 +154,7 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         PlayerMovement.nextPlayerID = 1;
+        PlayerManager.first = true;
         SceneManager.LoadScene("Menu", LoadSceneMode.Single);
     }
 

@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerJoinBoxController : MonoBehaviour
 {
     static public int playersJoined = 0;
+    public int PlayerID;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,14 +38,18 @@ public class PlayerJoinBoxController : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        playersJoined += 1;
-        Debug.Log("playersJoined: " + playersJoined.ToString());
+        if (other.CompareTag("Player") && other.GetComponent<PlayerMovement>().PlayerID == PlayerID){
+            playersJoined += 1;
+            Debug.Log("playersJoined: " + playersJoined.ToString());
+        }
     }
 
     void OnTriggerExit(Collider other)
     {
-        playersJoined -= 1;
-        Debug.Log("playersJoined: " + playersJoined.ToString());
+        if (other.CompareTag("Player") && other.GetComponent<PlayerMovement>().PlayerID == PlayerID){
+            playersJoined -= 1;
+            Debug.Log("playersJoined: " + playersJoined.ToString());
+        }
     }
 
     IEnumerator LoadSceneAsync(int SceneID) {

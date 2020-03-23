@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    static bool first = true;
+    static public bool first = true;
     void Start()
     {
         

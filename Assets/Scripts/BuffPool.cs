@@ -8,12 +8,12 @@ public class BuffPool : MonoBehaviour
 
     public GameObject buffPrefab;  
     public int buffCount;
-    float Ymax = 2f;
+    float Ymax = 1.5f;
     float Ymin = 0f;
     float Xmax = 7f;
     float Xmin = 1f;
 
-    float currentY = 1f;
+    float currentY = 2f;
     float currentX;
     GameObject currentCheckpointL;
     GameObject currentCheckpointR;
@@ -26,9 +26,14 @@ public class BuffPool : MonoBehaviour
         for (int i = 0; i < buffCount; i++)
         {
             currentY += Random.Range(Ymin, Ymax);
+            if (currentY > 7.5f) {
+                currentY = Random.Range(2f, 7.5f);
+            }
             currentX = Random.Range(Xmin, Xmax);
             currentCheckpointL = (GameObject)Instantiate(buffPrefab, new Vector2(-currentX, currentY) + (Vector2) transform.position, Quaternion.identity);
+            currentCheckpointL.GetComponent<BuffController>().playerIndex = 1;
             currentCheckpointR = (GameObject)Instantiate(buffPrefab, new Vector2(currentX, currentY) + (Vector2) transform.position, Quaternion.identity);
+            currentCheckpointR.GetComponent<BuffController>().playerIndex = 2;
         }
     }
 
