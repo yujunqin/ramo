@@ -269,7 +269,7 @@ public class @PlayerInputActionController : IInputActionCollection, IDisposable
                 {
                     ""name"": ""left"",
                     ""id"": ""6cfe074f-bad7-4703-80ab-84e1f1790bb3"",
-                    ""path"": ""<Keyboard>/numpad4"",
+                    ""path"": ""<Keyboard>/4"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard Right"",
@@ -280,10 +280,65 @@ public class @PlayerInputActionController : IInputActionCollection, IDisposable
                 {
                     ""name"": ""right"",
                     ""id"": ""6117d916-6e13-4596-ae48-3a9679f427d6"",
-                    ""path"": ""<Keyboard>/numpad6"",
+                    ""path"": ""<Keyboard>/6"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard Right"",
+                    ""action"": ""Aim"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""8c0749ce-c0bb-4b79-88ed-53e0b0fee185"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Aim"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""b1730f29-fd05-4eaf-b772-37cf2becd3e0"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard Right"",
+                    ""action"": ""Aim"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""e23edb6a-d920-4761-9b80-f52578db216d"",
+                    ""path"": """",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard Right"",
+                    ""action"": ""Aim"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""06d25f56-5ea7-4e4b-89b6-3187836923a8"",
+                    ""path"": ""<Keyboard>/v"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard Left"",
+                    ""action"": ""Aim"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""8d511cee-4189-4a7b-89ae-3dde92452aca"",
+                    ""path"": ""<Keyboard>/b"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard Left"",
                     ""action"": ""Aim"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -434,7 +489,7 @@ public class @PlayerInputActionController : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""f0bc7f94-f879-445d-b600-793d39969043"",
-                    ""path"": ""<Keyboard>/numpad5"",
+                    ""path"": ""<Keyboard>/5"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard Right"",
