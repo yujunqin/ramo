@@ -9,9 +9,32 @@
 *** highlight what is going to be grown
 *** add background music
 
+
 ** Additional mechanics
 *** Bombarding your opponent's tree
 You may now produce a bomb by pressing RStick/Z, aim with RStick/V&B, and launch it by releasing RStick/Z.
 Each bomb costs 1000.
 *** Random checkpoint
 Growing your tree into the cherry flower will make all of your tree thus far invincible to the bomb.
+
+
+* iterations since milestone 1
+
+** Control
+*** Allow split keyboard
+*** improve layout of control keys
+
+** UI/UX/sound improvements
+*** add progrssive hints
+*** add bomb panel
+*** improved animation/color changes
+*** change confusing sprites
+*** add finish line to clarify the goal
+*** add resource indicator on branches to show needed resources
+
+
+** game mechanics
+*** Randomized generation of pick-ups
+
+
+** bugs fixed
