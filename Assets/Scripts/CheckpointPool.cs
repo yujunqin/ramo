@@ -10,15 +10,19 @@ public class CheckpointPool : MonoBehaviour
     float Xmax = 7f;
     float Xmin = 3f;
 
-    float currentHeight = 3f;
-    GameObject currentCheckpoint;
+    float currentY = 3f;
+    float currentX;
+    GameObject currentCheckpointL;
+    GameObject currentCheckpointR;
     Subscription<CheckPointEvent> checkpointSub;
     
     // Start is called before the first frame update
     void Start()
     {
-        Random.InitState(494);
-        currentCheckpoint = (GameObject)Instantiate(checkPointPrefab, new Vector2(Random.Range(-Xmax, Xmax), currentHeight), Quaternion.identity);
+        Random.InitState((int)System.DateTime.Now.Ticks);
+        currentX = Random.Range(Xmin, Xmax);
+        currentCheckpointL = (GameObject)Instantiate(checkPointPrefab, new Vector2(-currentX, currentY) + (Vector2) transform.position, Quaternion.identity);
+        currentCheckpointR = (GameObject)Instantiate(checkPointPrefab, new Vector2(currentX, currentY) + (Vector2) transform.position, Quaternion.identity);
         checkpointSub = EventBus.Subscribe<CheckPointEvent>(CheckPointHandler);
     }
 
@@ -30,7 +34,9 @@ public class CheckpointPool : MonoBehaviour
 
     void CheckPointHandler(CheckPointEvent e)
     {
-        currentHeight += Random.Range(Ymin, Ymax);
-        currentCheckpoint = (GameObject)Instantiate(checkPointPrefab, new Vector2(Random.Range(-Xmax, Xmax), currentHeight), Quaternion.identity);
+        currentY += Random.Range(Ymin, Ymax);
+        currentX = Random.Range(Xmin, Xmax);
+        currentCheckpointL = (GameObject)Instantiate(checkPointPrefab, new Vector2(-currentX, currentY) + (Vector2) transform.position, Quaternion.identity);
+        currentCheckpointR = (GameObject)Instantiate(checkPointPrefab, new Vector2(currentX, currentY) + (Vector2) transform.position, Quaternion.identity);
     }
 }
