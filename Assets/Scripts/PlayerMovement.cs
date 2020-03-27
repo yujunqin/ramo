@@ -24,6 +24,10 @@ public class PlayerMovement : MonoBehaviour
 
     static int nextPlayerID = 1;
     public int PlayerID;
+    public GameObject player1;
+    public GameObject player2;
+    private GameObject playerIns;
+    private Animator playerAnim;
 
     int resource;
     Subscription<ResourceChangeEvent> resSub;
@@ -39,17 +43,27 @@ public class PlayerMovement : MonoBehaviour
         // Assign sprites; blue is 1, yellow is 2
         if (PlayerID == 1)
         {
-            Sprite sprite = Resources.LoadAll<Sprite>("External/Cute Birds/PNG Files/Blue Bird")[0];
-            transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = sprite;
+        //    Sprite sprite = Resources.LoadAll<Sprite>("External/Cute Birds/PNG Files/Blue Bird")[0];
+        //    transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = sprite;
+            playerIns = Instantiate(player1, transform.position, Quaternion.identity);
+            playerIns.transform.SetParent(transform);
+            playerIns.transform.localPosition = new Vector3(0f, -0.63f, 0f);
+            playerIns.transform.localScale = new Vector3(0.1f, 0.1f, 1f);
         } else
         {
-            Sprite sprite = Resources.LoadAll<Sprite>("External/Cute Birds/PNG Files/Yellow Bird")[0];
-            transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = sprite;
+            // Sprite sprite = Resources.LoadAll<Sprite>("External/Cute Birds/PNG Files/Yellow Bird")[0];
+            // transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = sprite;
+            playerIns = Instantiate(player2, transform.position, Quaternion.identity);
+            playerIns.transform.SetParent(transform);
+            playerIns.transform.localPosition = new Vector3(0f, -0.66f, 0f);
+            playerIns.transform.localScale = new Vector3(0.09f, 0.09f, 1f);
         }
+        
         rb = GetComponent<Rigidbody>();
         selected_branches = new HashSet<BranchController>();
         buffSubscription = EventBus.Subscribe<BuffEvent>(_OnBuffUpdated);
         resSub = EventBus.Subscribe<ResourceChangeEvent>(ResourceChangeHandler);
+        playerAnim = playerIns.GetComponent<Animator>();
     }
 
     void Update() {
@@ -72,6 +86,8 @@ public class PlayerMovement : MonoBehaviour
             MoveSpeed = 4f;
             EventBus.Publish<BuffStatusEvent>(new BuffStatusEvent("", PlayerID));
         }
+        playerAnim.SetFloat("vel_x", rb.velocity.x);
+        playerAnim.SetFloat("vel_y", rb.velocity.y); 
     }
 
     public void OnMove(InputAction.CallbackContext context)
