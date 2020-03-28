@@ -6,11 +6,14 @@ using UnityEngine.UI;
 public class CheckPointHint : MonoBehaviour
 {
     Subscription<PlayerProgressEvent> sub;
+    
+    Subscription<NewRoundEvent> nr;
     Text t;
     int first_buff_cnt = 0, first_cp_cnt = 0;
     void Start()
     {
         sub = EventBus.Subscribe<PlayerProgressEvent>(PlayerProgressEventHandler);
+        nr = EventBus.Subscribe<NewRoundEvent>(NewRound);
         t = GetComponent<Text>();
     }
 
@@ -25,6 +28,11 @@ public class CheckPointHint : MonoBehaviour
             t.enabled = true;
         }
         if (first_cp_cnt == 2) {
+            gameObject.SetActive(false);
+        }
+    }
+    void NewRound(NewRoundEvent e) {
+        if (e.round > 1) {
             gameObject.SetActive(false);
         }
     }

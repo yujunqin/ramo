@@ -22,16 +22,12 @@ public class PlayerJoinBoxController : MonoBehaviour
             var rootObjects = SceneManager.GetActiveScene().GetRootGameObjects();
             foreach (var obj in rootObjects)
             {
-                if (!obj.CompareTag("Player") && obj.name != "Main Camera")
+                if (!obj.CompareTag("Player") && obj.name != "Main Camera" && obj.name != "GameMaster")
                 {
                     Destroy(obj);
                 }
             }
-            for (int i = 1; i <= 2; ++i) {
-                StartCoroutine(LoadSceneAsync(i));
-            }
-            EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(1, 1000));
-            EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(2, 1000));
+            EventBus.Publish<GameStartEvent>(new GameStartEvent());
             //SceneManager.LoadScene(1, LoadSceneMode.Additive);
         }
     }
@@ -52,11 +48,4 @@ public class PlayerJoinBoxController : MonoBehaviour
         }
     }
 
-    IEnumerator LoadSceneAsync(int SceneID) {
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(SceneID, LoadSceneMode.Additive);
-
-        while (!asyncLoad.isDone) {
-            yield return null;
-        }
-    }
 }

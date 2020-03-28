@@ -9,6 +9,7 @@ public class ResourceController : MonoBehaviour
     public int NaturalGrowth = 100;
     Subscription<BuffEvent> buffSubscription;
     Subscription<ResourceChangeEvent> resSub;
+    Subscription<SpeedChangeEvent> spdSub;
 
     // Start is called before the first frame update
     void Start()
@@ -16,6 +17,7 @@ public class ResourceController : MonoBehaviour
         PlayerID = GetComponent<PlayerMovement>().PlayerID;
         buffSubscription = EventBus.Subscribe<BuffEvent>(_OnBuffUpdated);
         resSub = EventBus.Subscribe<ResourceChangeEvent>(ResourceChangeHandler);
+        spdSub = EventBus.Subscribe<SpeedChangeEvent>(SpeedChangeHandler);
         EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, 1000));
         StartCoroutine(AutoGenerate());
     }
@@ -48,6 +50,13 @@ public class ResourceController : MonoBehaviour
         if (rc.PlayerID == PlayerID) {
             resource = rc.resource;
         }
+    }
+
+    void SpeedChangeHandler(SpeedChangeEvent sc) {
+        if (sc.PlayerID == PlayerID) {
+            NaturalGrowth = sc.speed;
+        }
+
     }
 
     IEnumerator AutoGenerate() {
