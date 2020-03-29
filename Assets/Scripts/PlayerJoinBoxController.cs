@@ -7,14 +7,18 @@ public class PlayerJoinBoxController : MonoBehaviour
 {
     static public int playersJoined = 0;
     public int PlayerID;
-    // Start is called before the first frame update
-    void Start()
+
+    private SpriteRenderer sb;
+    public Color joinColor;
+    private Color normalColor;
+
+    private void Start()
     {
-        
+        sb = GetComponent<SpriteRenderer>();
+        normalColor = sb.color;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (playersJoined >= 2)
         {
@@ -32,20 +36,27 @@ public class PlayerJoinBoxController : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && other.GetComponent<PlayerMovement>().PlayerID == PlayerID){
             playersJoined += 1;
             Debug.Log("playersJoined: " + playersJoined.ToString());
+
+            AudioClip clip = Resources.Load<AudioClip>("Sound Effects/Grow");
+            AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position, 0.4f);
+            sb.color = joinColor;
         }
     }
 
-    void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player") && other.GetComponent<PlayerMovement>().PlayerID == PlayerID){
             playersJoined -= 1;
             Debug.Log("playersJoined: " + playersJoined.ToString());
+
+            AudioClip clip = Resources.Load<AudioClip>("Sound Effects/GrowError");
+            AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position, 0.4f);
+            sb.color = normalColor;
         }
     }
-
 }
