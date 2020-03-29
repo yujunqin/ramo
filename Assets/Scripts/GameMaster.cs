@@ -7,7 +7,7 @@ public class GameMaster : MonoBehaviour
 {
     Subscription<HeightChangeEvent> sub;
     Subscription<BuffEvent> buffSub;
-    Subscription<CheckPointEvent> cpSub;
+    Subscription<ShieldEvent> cpSub;
     Subscription<GameStartEvent> st;
     bool finished = false;
     bool[] first_buff, first_check;
@@ -16,7 +16,7 @@ public class GameMaster : MonoBehaviour
     private void Start() {
         sub = EventBus.Subscribe<HeightChangeEvent>(Judge);
         buffSub = EventBus.Subscribe<BuffEvent>(BuffEventHandler);
-        cpSub = EventBus.Subscribe<CheckPointEvent>(CheckPointEventHandler);
+        cpSub = EventBus.Subscribe<ShieldEvent>(CheckPointEventHandler);
         st = EventBus.Subscribe<GameStartEvent>(ResetGame);
         first_buff = new bool[3];
         first_check = new bool[3];
@@ -51,7 +51,7 @@ public class GameMaster : MonoBehaviour
         }
     }
 
-    void CheckPointEventHandler(CheckPointEvent e) {
+    void CheckPointEventHandler(ShieldEvent e) {
         if (round == 1 && first_check[e.playerID]) {
             EventBus.Publish<PlayerProgressEvent>(new PlayerProgressEvent("first checkpoint", e.playerID));
             first_check[e.playerID] = false;

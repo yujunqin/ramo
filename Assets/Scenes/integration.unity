@@ -2600,7 +2600,7 @@ GameObject:
   - component: {fileID: 579436633}
   - component: {fileID: 579436632}
   m_Layer: 0
-  m_Name: CheckpointPool
+  m_Name: ShieldPool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2618,7 +2618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7584a8d0c3595459257a253468c917, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkPointPrefab: {fileID: 5430527204032625361, guid: f3fc3d4092f97a840a9744856b81f0d4,
+  shieldPrefab: {fileID: 5430527204032625361, guid: f3fc3d4092f97a840a9744856b81f0d4,
     type: 3}
 --- !u!4 &579436633
 Transform:

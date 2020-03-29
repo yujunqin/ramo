@@ -26,28 +26,29 @@ public class ShieldController : MonoBehaviour
     {
         if (isChecked)
         {
-            if (Time.time < checkedTime + 2f)
-            {
-                float scale = 0.4f - (Time.time - checkedTime) / 5f;
-                trans.localScale = new Vector3(scale, scale, 1f);
-            }
-            else
-            {
-                m_SpriteRenderer.sprite = flower;
-                if (Time.time < checkedTime + 4f)
-                {
-                    float scale = 0.2f * (Time.time - checkedTime - 2f);
-                    trans.localScale = new Vector3(scale, scale, 1f);
-                }
-                
-            }
+            m_SpriteRenderer.enabled = false;
+            GetComponent<Collider>().enabled = false;
+            // if (Time.time < checkedTime + 2f)
+            // {
+            //     float scale = 0.4f - (Time.time - checkedTime) / 5f;
+            //     trans.localScale = new Vector3(scale, scale, 1f);
+            // }
+            // else
+            // {
+            //     m_SpriteRenderer.sprite = flower;
+            //     if (Time.time < checkedTime + 4f)
+            //     {
+            //         float scale = 0.2f * (Time.time - checkedTime - 2f);
+            //         trans.localScale = new Vector3(scale, scale, 1f);
+            //     }
+            // }
         }
     }
 
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Branch") && !isChecked)
         {
-            EventBus.Publish<CheckPointEvent>(new CheckPointEvent(Time.time, playerID));
+            EventBus.Publish<ShieldEvent>(new ShieldEvent(Time.time, playerID));
             isChecked = true;
             checkedTime = Time.time;
             // gameObject.SetActive(false);
@@ -56,10 +57,10 @@ public class ShieldController : MonoBehaviour
     }
 }
 
-class CheckPointEvent{
+class ShieldEvent{
     public float checkedTime;
     public int playerID;
-    public CheckPointEvent(float _checkedTime, int _playerID)
+    public ShieldEvent(float _checkedTime, int _playerID)
     {
         checkedTime = _checkedTime;
         playerID = _playerID;
