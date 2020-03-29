@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 105140069031293241}
   - component: {fileID: 5901531983307341773}
   - component: {fileID: 2524938396506237987}
-  - component: {fileID: 3942963471792499151}
+  - component: {fileID: 3876126855838093580}
   m_Layer: 0
-  m_Name: CheckPoint
+  m_Name: Shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5430527204032625361}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.53, y: 2.65, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,7 +72,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 07312ddc1d589074facceaf7c48c54b7, type: 3}
+  m_Sprite: {fileID: 4596008470599875083, guid: 23216c36390791641833759679ae5529,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,7 +99,7 @@ MonoBehaviour:
   playerID: 2
   flower: {fileID: -4004698746712685442, guid: d4b59e4b294227c42aa7fa2978b7c5ad, type: 3}
   checkpointClip: {fileID: 8300000, guid: 28d036f7eec02324989a11a46ddd294f, type: 3}
---- !u!135 &3942963471792499151
+--- !u!135 &3876126855838093580
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,5 +110,5 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.49433005
-  m_Center: {x: 0, y: 0.023517907, z: 0}
+  m_Radius: 0.15
+  m_Center: {x: 0, y: 0, z: 0}

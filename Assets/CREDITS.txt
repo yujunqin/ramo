@@ -9,3 +9,4 @@ Birds: https://assetstore.unity.com/packages/2d/characters/cute-birds-89649
 Interface sfx: https://www.kenney.nl/assets/interface-sounds
 Flower: https://ya-webdesign.com/image/flower-sprite-png/633373.html
 Checkpoint sfx: https://www.soundsnap.com/search/audio/checkpoint/score
+Shield sprite: https://opengameart.org/node/109387

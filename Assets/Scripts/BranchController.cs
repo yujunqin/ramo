@@ -31,7 +31,7 @@ public class BranchController : MonoBehaviour
     // checkpoint-related variables
     bool isChecked;
     float createdTime;
-    Subscription<CheckPointEvent> checkpointSub;
+    Subscription<ShieldEvent> checkpointSub;
 
     // Visual highlighting
     bool isSelected;
@@ -93,7 +93,7 @@ public class BranchController : MonoBehaviour
 
         isChecked = false;
         createdTime = Time.time;
-        checkpointSub = EventBus.Subscribe<CheckPointEvent>(CheckPointHandler);
+        checkpointSub = EventBus.Subscribe<ShieldEvent>(CheckPointHandler);
     }
 
     // Update is called once per frame
@@ -301,7 +301,7 @@ public class BranchController : MonoBehaviour
         }
     }
 
-    void CheckPointHandler(CheckPointEvent e)
+    void CheckPointHandler(ShieldEvent e)
     {
         //check playerID if multiple mode
         if (GetPlayerID() != e.playerID)
