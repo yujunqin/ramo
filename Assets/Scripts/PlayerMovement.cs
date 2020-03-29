@@ -30,7 +30,9 @@ public class PlayerMovement : MonoBehaviour
     private Animator playerAnim;
 
     int resource;
+    int free_bomb = 0;
     Subscription<ResourceChangeEvent> resSub;
+    Subscription<FreeBombEvent> fbs;
 
     void Awake()
     {
@@ -63,6 +65,7 @@ public class PlayerMovement : MonoBehaviour
         selected_branches = new HashSet<BranchController>();
         buffSubscription = EventBus.Subscribe<BuffEvent>(_OnBuffUpdated);
         resSub = EventBus.Subscribe<ResourceChangeEvent>(ResourceChangeHandler);
+        fbs = EventBus.Subscribe<FreeBombEvent>(FreeBombEventHandler);
         playerAnim = playerIns.GetComponent<Animator>();
     }
 
@@ -188,13 +191,17 @@ public class PlayerMovement : MonoBehaviour
                     return;
                 }
 
-                if (resource < 1000)
+                if (free_bomb == 0 && resource < 1000)
                 {
                     return;
                 }
-                resource -= 1000;
-                EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
-
+                if (free_bomb > 0) {
+                    --free_bomb;
+                    EventBus.Publish<FreeBombEvent>(new FreeBombEvent(PlayerID, false));
+                } else {
+                    resource -= 1000;
+                    EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
+                }
                 bombIns = Instantiate(bomb, transform.position, Quaternion.identity);
                 bombIns.GetComponent<BombController>().PlayerID = PlayerID;
             }
@@ -311,6 +318,14 @@ public class PlayerMovement : MonoBehaviour
     void ResourceChangeHandler(ResourceChangeEvent rc) {
         if (rc.PlayerID == PlayerID) {
             resource = rc.resource;
+        }
+    }
+
+    void FreeBombEventHandler(FreeBombEvent e) {
+        if (e.PlayerID == PlayerID) {
+            if (e.isGet) {
+                ++free_bomb;
+            }
         }
     }
 

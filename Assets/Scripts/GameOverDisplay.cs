@@ -9,7 +9,7 @@ public class GameOverDisplay : MonoBehaviour
     Subscription<RoundWinnerEvent> rw;
     Subscription<NewRoundEvent> nr;
     Text t;
-    int blue_win = 0, yellow_win = 0;
+    static int blue_win = 0, yellow_win = 0;
     // Start is called before the first frame update
     void Awake()
     {

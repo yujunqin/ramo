@@ -37,6 +37,9 @@ public class BuffController : MonoBehaviour
             // publish current buff type event to player
             touched = true;
             EventBus.Publish<BuffEvent>(new BuffEvent(type, playerIndex, Time.time));
+            if (GetComponent<ChestConverter>().isChest()) {
+                EventBus.Publish<FreeBombEvent>(new FreeBombEvent(playerIndex, true));
+            }
             gameObject.SetActive(false);
         }
     }

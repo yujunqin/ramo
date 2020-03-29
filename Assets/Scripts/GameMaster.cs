@@ -5,30 +5,41 @@ using UnityEngine.SceneManagement;
 
 public class GameMaster : MonoBehaviour
 {
-    Subscription<HeightChangeEvent> sub;
+    Subscription<HeightChangeEvent> sub, chestSub;
     Subscription<BuffEvent> buffSub;
     Subscription<ShieldEvent> cpSub;
     Subscription<GameStartEvent> st;
+    Subscription<ResourceChangeEvent> resSub;
     bool finished = false;
-    bool[] first_buff, first_check;
+    bool[] first_buff, first_check, chest_converted;
     int round = 1, bluewin = 0;
     public static int total_round = 3;
+    float[] height, resources;
     private void Start() {
         sub = EventBus.Subscribe<HeightChangeEvent>(Judge);
+        chestSub = EventBus.Subscribe<HeightChangeEvent>(ConvertChest);
         buffSub = EventBus.Subscribe<BuffEvent>(BuffEventHandler);
         cpSub = EventBus.Subscribe<ShieldEvent>(CheckPointEventHandler);
+        resSub = EventBus.Subscribe<ResourceChangeEvent>(ResChangeHandler);
         st = EventBus.Subscribe<GameStartEvent>(ResetGame);
         first_buff = new bool[3];
         first_check = new bool[3];
+        chest_converted = new bool[3];
+        height = new float[3];
+        resources = new float[3];
         for (int i = 1; i <= 2; ++i) {
             first_check[i] = true;
             first_buff[i] = true;
+            chest_converted[i] = false;
+            height[i] = 0;
+            resources = new float[3];
         }
     }
     void Judge(HeightChangeEvent h) {
         if (!finished && h.height >= 100f) {
             finished = true;
-
+            height[1] = 0;
+            height[2] = 0;
             if (h.PlayerID == 1) { ++bluewin; }
 
             int yellow_win = round - bluewin;
@@ -41,6 +52,21 @@ public class GameMaster : MonoBehaviour
             }
             ++round;
             StartCoroutine(WaitAndReset());
+        }
+    }
+
+    void ConvertChest(HeightChangeEvent h) {
+        if (finished) return;
+        height[h.PlayerID] = h.height;
+        if (height[1] >= 50f || height[2] >= 50f) {
+            if (!chest_converted[2] && resources[2] < 1000 && height[1] - height[2] > 20f) {
+                chest_converted[2] = true;
+                EventBus.Publish<ChestConvertEvent>(new ChestConvertEvent(2));
+            }
+            if (!chest_converted[1] && resources[1] < 1000 && height[2] - height[1] > 20f) {
+                chest_converted[1] = true;
+                EventBus.Publish<ChestConvertEvent>(new ChestConvertEvent(1));
+            }
         }
     }
 
@@ -74,6 +100,7 @@ public class GameMaster : MonoBehaviour
         EventBus.Publish<SpeedChangeEvent>(new SpeedChangeEvent(1, 50));
         EventBus.Publish<SpeedChangeEvent>(new SpeedChangeEvent(2, 50));
         finished = false;
+        chest_converted[1] = chest_converted[2] = false;
     }
 
     public void ResetGame(GameStartEvent e) {
@@ -83,6 +110,11 @@ public class GameMaster : MonoBehaviour
         EventBus.Publish<SpeedChangeEvent>(new SpeedChangeEvent(1, 50));
         EventBus.Publish<SpeedChangeEvent>(new SpeedChangeEvent(2, 50));
         finished = false;
+        chest_converted[1] = chest_converted[2] = false;
+    }
+
+    void ResChangeHandler(ResourceChangeEvent e) {
+        resources[e.PlayerID] = e.resource;
     }
 }
 

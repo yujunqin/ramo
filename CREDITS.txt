@@ -2,3 +2,4 @@ Bomb: https://www.pngitem.com/middle/ixJimJ_dibujo-de-bomba-alerta-de-amenaza-te
 Tree(subject to change due to a license problem): https://forum.unity.com/threads/released-675-handpainted-sprites-pack.154129/ 
 Birds: https://assetstore.unity.com/packages/2d/characters/cute-birds-89649
 finish line: http://clipart-library.com/clipart/piqKRbkrT.htm
+Chest: Bonsaiheldin (http://bonsaiheld.org)
