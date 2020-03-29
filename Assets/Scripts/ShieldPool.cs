@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CheckpointPool : MonoBehaviour
+public class ShieldPool : MonoBehaviour
 {
     public GameObject checkPointPrefab;  
     float Ymax = 5f;
@@ -22,9 +22,9 @@ public class CheckpointPool : MonoBehaviour
         Random.InitState((int)System.DateTime.Now.Ticks);
         currentX = Random.Range(Xmin, Xmax);
         currentCheckpointL = (GameObject)Instantiate(checkPointPrefab, new Vector2(-currentX, currentY) + (Vector2) transform.position, Quaternion.identity);
-        currentCheckpointL.GetComponent<CheckpointController>().playerID = 1;
+        currentCheckpointL.GetComponent<ShieldController>().playerID = 1;
         currentCheckpointR = (GameObject)Instantiate(checkPointPrefab, new Vector2(currentX, currentY) + (Vector2) transform.position, Quaternion.identity);
-        currentCheckpointR.GetComponent<CheckpointController>().playerID = 2;
+        currentCheckpointR.GetComponent<ShieldController>().playerID = 2;
         checkpointSub = EventBus.Subscribe<CheckPointEvent>(CheckPointHandler);
     }
 
@@ -39,8 +39,8 @@ public class CheckpointPool : MonoBehaviour
         currentY += Random.Range(Ymin, Ymax);
         currentX = Random.Range(Xmin, Xmax);
         currentCheckpointL = (GameObject)Instantiate(checkPointPrefab, new Vector2(-currentX, currentY) + (Vector2) transform.position, Quaternion.identity);
-        currentCheckpointL.GetComponent<CheckpointController>().playerID = 1;
+        currentCheckpointL.GetComponent<ShieldController>().playerID = 1;
         currentCheckpointR = (GameObject)Instantiate(checkPointPrefab, new Vector2(currentX, currentY) + (Vector2) transform.position, Quaternion.identity);
-        currentCheckpointR.GetComponent<CheckpointController>().playerID = 2;
+        currentCheckpointR.GetComponent<ShieldController>().playerID = 2;
     }
 }
