@@ -7,8 +7,8 @@ public class ShieldPool : MonoBehaviour
     public GameObject shieldPrefab;  
     float Ymax = 5f;
     float Ymin = 3f;
-    float Xmax = 7f;
-    float Xmin = 3f;
+    float Xmax = 8f;
+    float Xmin = 1f;
 
     float currentY = 3f;
     float currentX;
@@ -20,7 +20,8 @@ public class ShieldPool : MonoBehaviour
     void Start()
     {
         Random.InitState((int)System.DateTime.Now.Ticks);
-        currentX = Random.Range(Xmin, Xmax);
+        // currentX = Random.Range(Xmin, Xmax);
+        currentX = Mathf.Lerp(Xmin, Xmax, NextShieldPosition());
         currentShieldL = (GameObject)Instantiate(shieldPrefab, new Vector2(-currentX, currentY) + (Vector2) transform.position, Quaternion.identity);
         currentShieldL.GetComponent<ShieldController>().playerID = 1;
         currentShieldR = (GameObject)Instantiate(shieldPrefab, new Vector2(currentX, currentY) + (Vector2) transform.position, Quaternion.identity);
@@ -37,10 +38,23 @@ public class ShieldPool : MonoBehaviour
     void ShieldHandler(ShieldEvent e)
     {
         currentY += Random.Range(Ymin, Ymax);
-        currentX = Random.Range(Xmin, Xmax);
+        // currentX = Random.Range(Xmin, Xmax);
+        currentX = Mathf.Lerp(Xmin, Xmax, NextShieldPosition());
         currentShieldL = (GameObject)Instantiate(shieldPrefab, new Vector2(-currentX, currentY) + (Vector2) transform.position, Quaternion.identity);
         currentShieldL.GetComponent<ShieldController>().playerID = 1;
         currentShieldR = (GameObject)Instantiate(shieldPrefab, new Vector2(currentX, currentY) + (Vector2) transform.position, Quaternion.identity);
         currentShieldR.GetComponent<ShieldController>().playerID = 2;
+    }
+
+    float NextShieldPosition()
+    {
+        float limit = 3f;
+        float t = GaussianRNG.NextGaussian(0f, 1f, -1f * limit, limit);
+        if (t > 0f)
+        {
+            return t / limit / 2f;
+        } else {
+            return (t + limit) / limit / 2f + 0.5f;
+        }
     }
 }
