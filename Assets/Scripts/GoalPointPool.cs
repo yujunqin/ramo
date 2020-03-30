@@ -8,8 +8,8 @@ public class GoalPointPool : MonoBehaviour
     public GameObject goalPoint2;
     public GameObject goalPoint3;
 
-    float Ymax = 4f;
-    float Ymin = -3.5f;
+    float Ymax = 3f;
+    float Ymin = -3.6f;
     float Xmax = -0.8f;
     float Xmin = -8f;
 
@@ -40,15 +40,15 @@ public class GoalPointPool : MonoBehaviour
     void generateCheckPoint(Vector2 position, GameObject currentCheckPoint)
     {
         GameObject currentCheckPointL = (GameObject)Instantiate(currentCheckPoint, position, Quaternion.identity);
-        currentCheckPointL.GetComponent<ShieldController>().playerID = 1;
+        currentCheckPointL.GetComponent<GoalPointController>().playerID = 1;
         GameObject currentCheckPointR = (GameObject)Instantiate(currentCheckPoint, new Vector2(-position.x, position.y), Quaternion.identity);
-        currentCheckPointR.GetComponent<ShieldController>().playerID = 2;
+        currentCheckPointR.GetComponent<GoalPointController>().playerID = 2;
     }
 
     Vector2 generateRandomPosition(int x, int y)
     {
         float currentX = Mathf.Lerp(Xmin + (Xmax - Xmin) * x / 3 + 0.2f, Xmin + (Xmax - Xmin) * (x + 1) / 3 - 0.2f, NextPosition());
-        float currentY = Mathf.Lerp(Ymin + (Ymax - Ymin) * y / 3 + 0.3f, Ymin + (Ymax - Ymin) * (y + 1) / 3 - 0.3f, NextPosition());
+        float currentY = Mathf.Lerp(Ymin + (Ymax - Ymin) * y / 3 + 0.2f, Ymin + (Ymax - Ymin) * (y + 1) / 3 - 0.2f, NextPosition());
         return new Vector2(currentX, currentY);
     }
 
