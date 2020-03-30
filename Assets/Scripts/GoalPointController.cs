@@ -15,9 +15,15 @@ public class GoalPointController : MonoBehaviour
     {
         isChecked = false;
         isTouchable = false;
+        foreach (var sr in GetComponentsInChildren<SpriteRenderer>()) {
+            sr.enabled = false;
+        }
         if (index == 1)
         {
             isTouchable = true;
+            foreach (var sr in GetComponentsInChildren<SpriteRenderer>()) {
+            sr.enabled = true;
+        }
         }
 
         goalPointSub = EventBus.Subscribe<GoalPointEvent>(GoalPointHandler);
@@ -35,6 +41,11 @@ public class GoalPointController : MonoBehaviour
         {
             isTouchable = true;
         }
+        if (e.index == index - 1) {
+            foreach (var sr in GetComponentsInChildren<SpriteRenderer>()) {
+                sr.enabled = true;
+            }
+        } 
     }
 
     private void OnTriggerEnter(Collider other) 
@@ -48,12 +59,17 @@ public class GoalPointController : MonoBehaviour
         {
             if (other.gameObject.GetComponent<BranchController>().PlayerID == playerID)
             {
+                isChecked = true;
                 EventBus.Publish<GoalPointEvent>(new GoalPointEvent(index, playerID));
                 // lightup goalpoint
                 GetComponent<SpriteRenderer>().color = Color.white;
                 // AudioSource.PlayClipAtPoint(checkpointClip, Camera.main.transform.position);
             }
         }
+    }
+
+    private void OnTriggerStay(Collider other) {
+        OnTriggerEnter(other);
     }
 }
 

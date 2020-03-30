@@ -412,7 +412,7 @@ public class @PlayerInputActionController : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""f416606d-97ad-412a-8c2e-d6db2bae74bf"",
-                    ""path"": ""<Keyboard>/r"",
+                    ""path"": ""<Keyboard>/p"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard Left"",

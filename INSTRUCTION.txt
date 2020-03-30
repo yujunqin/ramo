@@ -1,0 +1,3 @@
+Please use Parsec to stream the game for multiplayer experience.
+
+Parsec Arcade also works with keyboards if the same account is logged in on both machines (on our setup).

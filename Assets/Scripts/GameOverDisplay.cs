@@ -23,11 +23,11 @@ public class GameOverDisplay : MonoBehaviour
         t.enabled = true;
         if (e.winner == 1) {
             blue_win = e.blue_score;
-            t.text = "\nBlue Bird Wins!\n Press Y button / R key to restart.";
+            t.text = "\nBlue Bird Wins!\n Press Y button / P key to restart.";
             t.color = Color.blue;
         } else {
             yellow_win = e.yellow_score;
-            t.text = "\nYellow Bird Wins!\n Press Y button / R key to restart.";
+            t.text = "\nYellow Bird Wins!\n Press Y button / P key to restart.";
             t.color = Color.yellow;
         }
         t.text = blue_win.ToString() + ":" + yellow_win.ToString() + t.text;

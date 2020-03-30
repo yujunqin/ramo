@@ -77,8 +77,9 @@ public class PlayerMovement : MonoBehaviour
 
         if (bombIns)
         {
+            GetComponent<Rigidbody>().velocity = Vector3.zero;
             var action = GetComponent<PlayerInput>().actions.FindAction("Aim");
-            bombIns.GetComponent<BombController>().direction.x += 0.0025f * action.ReadValue<Vector2>().x;
+            bombIns.GetComponent<BombController>().direction.x += 0.0005f * action.ReadValue<Vector2>().x;
         }
 
         if (isSpeedingUp && curBuffTime + duration > Time.time)

@@ -24,16 +24,19 @@ public class CheckPointHint : MonoBehaviour
         if (e.progress == "first checkpoint") {
             ++first_cp_cnt;
         }
-        if (first_buff_cnt == 2) {
+        if (!t.enabled && first_buff_cnt == 2) {
             t.enabled = true;
-        }
-        if (first_cp_cnt == 2) {
-            gameObject.SetActive(false);
-        }
+            StartCoroutine(WaitAndHide());
+        }  
     }
     void NewRound(NewRoundEvent e) {
         if (e.round > 1) {
             gameObject.SetActive(false);
         }
+    }
+
+    IEnumerator WaitAndHide() {
+        yield return new WaitForSeconds(10f);
+        gameObject.SetActive(false);
     }
 }

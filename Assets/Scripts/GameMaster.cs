@@ -10,11 +10,13 @@ public class GameMaster : MonoBehaviour
     Subscription<ShieldEvent> cpSub;
     Subscription<GameStartEvent> st;
     Subscription<ResourceChangeEvent> resSub;
+    Subscription<GoalPointEvent> goalSub;
     bool finished = false;
     bool[] first_buff, first_check, chest_converted;
     int round = 1, bluewin = 0;
     public static int total_round = 3;
     float[] height, resources;
+    int[] goal_point;
     private void Start() {
         sub = EventBus.Subscribe<HeightChangeEvent>(Judge);
         chestSub = EventBus.Subscribe<HeightChangeEvent>(ConvertChest);
@@ -22,21 +24,24 @@ public class GameMaster : MonoBehaviour
         cpSub = EventBus.Subscribe<ShieldEvent>(CheckPointEventHandler);
         resSub = EventBus.Subscribe<ResourceChangeEvent>(ResChangeHandler);
         st = EventBus.Subscribe<GameStartEvent>(ResetGame);
+        goalSub = EventBus.Subscribe<GoalPointEvent>(GoalPointHandler);
         first_buff = new bool[3];
         first_check = new bool[3];
         chest_converted = new bool[3];
         height = new float[3];
         resources = new float[3];
+        goal_point = new int[3];
         for (int i = 1; i <= 2; ++i) {
             first_check[i] = true;
             first_buff[i] = true;
             chest_converted[i] = false;
             height[i] = 0;
-            resources = new float[3];
+            resources[i] = 0f;
+            goal_point[i] = 0;
         }
     }
     void Judge(HeightChangeEvent h) {
-        if (!finished && h.height >= 100f) {
+        if (!finished && h.height >= 100f && goal_point[h.PlayerID] >= 3) {
             finished = true;
             height[1] = 0;
             height[2] = 0;
@@ -101,6 +106,7 @@ public class GameMaster : MonoBehaviour
         EventBus.Publish<SpeedChangeEvent>(new SpeedChangeEvent(2, 50));
         finished = false;
         chest_converted[1] = chest_converted[2] = false;
+        goal_point[1] = goal_point[2] = 0;
     }
 
     public void ResetGame(GameStartEvent e) {
@@ -111,10 +117,15 @@ public class GameMaster : MonoBehaviour
         EventBus.Publish<SpeedChangeEvent>(new SpeedChangeEvent(2, 50));
         finished = false;
         chest_converted[1] = chest_converted[2] = false;
+        goal_point[1] = goal_point[2] = 0;
     }
 
     void ResChangeHandler(ResourceChangeEvent e) {
         resources[e.PlayerID] = e.resource;
+    }
+
+    void GoalPointHandler(GoalPointEvent e) {
+        ++goal_point[e.playerID];
     }
 }
 
