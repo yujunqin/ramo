@@ -232,31 +232,9 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "up",
-                    "id": "cfaa605e-bac3-4bda-8dac-d894bd2c3bf9",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard Right",
-                    "action": "Aim",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "7d9435d8-472d-4793-b09c-b06a05ab5055",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard Right",
-                    "action": "Aim",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
                     "name": "left",
                     "id": "6cfe074f-bad7-4703-80ab-84e1f1790bb3",
-                    "path": "<Keyboard>/4",
+                    "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard Right",
@@ -267,7 +245,7 @@
                 {
                     "name": "right",
                     "id": "6117d916-6e13-4596-ae48-3a9679f427d6",
-                    "path": "<Keyboard>/6",
+                    "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard Right",
@@ -277,7 +255,7 @@
                 },
                 {
                     "name": "2D Vector",
-                    "id": "8c0749ce-c0bb-4b79-88ed-53e0b0fee185",
+                    "id": "c5d5561c-d2ad-4eb5-82b4-9960efc985cd",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -287,31 +265,9 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "up",
-                    "id": "b1730f29-fd05-4eaf-b772-37cf2becd3e0",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard Right",
-                    "action": "Aim",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "e23edb6a-d920-4761-9b80-f52578db216d",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard Right",
-                    "action": "Aim",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
                     "name": "left",
-                    "id": "06d25f56-5ea7-4e4b-89b6-3187836923a8",
-                    "path": "<Keyboard>/v",
+                    "id": "918bda16-56ff-446a-9992-4ffc72529cc4",
+                    "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard Left",
@@ -321,8 +277,8 @@
                 },
                 {
                     "name": "right",
-                    "id": "8d511cee-4189-4a7b-89ae-3dde92452aca",
-                    "path": "<Keyboard>/b",
+                    "id": "40c0f670-fe2d-47ae-bbff-3742f8719f68",
+                    "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard Left",
@@ -420,6 +376,17 @@
                 },
                 {
                     "name": "",
+                    "id": "a236f0ac-6507-4fff-b8a2-06bdb111aff5",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard Left",
+                    "action": "Prune",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "99edacd5-e5d9-417c-a367-36b1541411a8",
                     "path": "<Gamepad>/buttonNorth",
                     "interactions": "",
@@ -465,7 +432,7 @@
                 {
                     "name": "",
                     "id": "4fe92997-dd7a-4f12-bf7c-9a92b8517a1d",
-                    "path": "<Keyboard>/z",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard Left",
@@ -476,7 +443,7 @@
                 {
                     "name": "",
                     "id": "f0bc7f94-f879-445d-b600-793d39969043",
-                    "path": "<Keyboard>/5",
+                    "path": "<Keyboard>/rightShift",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard Right",

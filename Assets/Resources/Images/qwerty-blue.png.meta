@@ -1,0 +1,3644 @@
+fileFormatVersion: 2
+guid: e23ea2a07e2287642b5dca1775a494c2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4401552548166371909
+    second: qwerty-blue_0
+  - first:
+      213: 6004982877124173215
+    second: qwerty-blue_1
+  - first:
+      213: -8611350370309853149
+    second: qwerty-blue_2
+  - first:
+      213: -4246639971495981801
+    second: qwerty-blue_3
+  - first:
+      213: 6968351784011391846
+    second: qwerty-blue_4
+  - first:
+      213: 9207009928674433960
+    second: qwerty-blue_5
+  - first:
+      213: 9064626142887981524
+    second: qwerty-blue_6
+  - first:
+      213: -4089361162299084635
+    second: qwerty-blue_7
+  - first:
+      213: 6824822083239567618
+    second: qwerty-blue_8
+  - first:
+      213: 5499657154948629293
+    second: qwerty-blue_9
+  - first:
+      213: 5549277501898153338
+    second: qwerty-blue_10
+  - first:
+      213: 4880965668311536458
+    second: qwerty-blue_11
+  - first:
+      213: 4124749671132419851
+    second: qwerty-blue_12
+  - first:
+      213: 8803430738627468356
+    second: qwerty-blue_13
+  - first:
+      213: 8361975693066209746
+    second: qwerty-blue_14
+  - first:
+      213: -1226165790030970223
+    second: qwerty-blue_15
+  - first:
+      213: -7444319277322890171
+    second: qwerty-blue_16
+  - first:
+      213: -8296969142668719695
+    second: qwerty-blue_17
+  - first:
+      213: -4994130269477253401
+    second: qwerty-blue_18
+  - first:
+      213: 37982285501580940
+    second: qwerty-blue_19
+  - first:
+      213: -7276185311936531280
+    second: qwerty-blue_20
+  - first:
+      213: 8280588017880056851
+    second: qwerty-blue_21
+  - first:
+      213: 1475043171979469395
+    second: qwerty-blue_22
+  - first:
+      213: -7721131504940833280
+    second: qwerty-blue_23
+  - first:
+      213: 929470585365735581
+    second: qwerty-blue_24
+  - first:
+      213: -268745817761817094
+    second: qwerty-blue_25
+  - first:
+      213: 3115824318986061682
+    second: qwerty-blue_26
+  - first:
+      213: 887432952794647027
+    second: qwerty-blue_27
+  - first:
+      213: 3416395018973782563
+    second: qwerty-blue_28
+  - first:
+      213: -5889227017238341280
+    second: qwerty-blue_29
+  - first:
+      213: 974855270379080705
+    second: qwerty-blue_30
+  - first:
+      213: -4542006001109754928
+    second: qwerty-blue_31
+  - first:
+      213: 7724948746277783152
+    second: qwerty-blue_32
+  - first:
+      213: 3692924511209602113
+    second: qwerty-blue_33
+  - first:
+      213: -2029569611420188539
+    second: qwerty-blue_34
+  - first:
+      213: 6168280995855708014
+    second: qwerty-blue_35
+  - first:
+      213: 6666332562644153752
+    second: qwerty-blue_36
+  - first:
+      213: 804636496243137656
+    second: qwerty-blue_37
+  - first:
+      213: -2056241776096746595
+    second: qwerty-blue_38
+  - first:
+      213: 4885726736272212773
+    second: qwerty-blue_39
+  - first:
+      213: 6305938175289134494
+    second: qwerty-blue_40
+  - first:
+      213: 642368091544710931
+    second: qwerty-blue_41
+  - first:
+      213: -3197042623749329020
+    second: qwerty-blue_42
+  - first:
+      213: 2335405686296628421
+    second: qwerty-blue_43
+  - first:
+      213: 1390298157916995481
+    second: qwerty-blue_44
+  - first:
+      213: 376416889828898748
+    second: qwerty-blue_45
+  - first:
+      213: 6274221454873774691
+    second: qwerty-blue_46
+  - first:
+      213: -7588310979020770273
+    second: qwerty-blue_47
+  - first:
+      213: 8503688010554527788
+    second: qwerty-blue_48
+  - first:
+      213: -9186891699518899658
+    second: qwerty-blue_49
+  - first:
+      213: 2848061658927972136
+    second: qwerty-blue_50
+  - first:
+      213: 6111331103972420556
+    second: qwerty-blue_51
+  - first:
+      213: -6904886157181271949
+    second: qwerty-blue_52
+  - first:
+      213: 2503346653715336814
+    second: qwerty-blue_53
+  - first:
+      213: -2538970750595226222
+    second: qwerty-blue_54
+  - first:
+      213: 9041249888006973695
+    second: qwerty-blue_55
+  - first:
+      213: 7188429735608912904
+    second: qwerty-blue_56
+  - first:
+      213: -1498170490528841364
+    second: qwerty-blue_57
+  - first:
+      213: -5946063252348065521
+    second: qwerty-blue_58
+  - first:
+      213: 9193638308058894620
+    second: qwerty-blue_59
+  - first:
+      213: -4541115755539826189
+    second: qwerty-blue_60
+  - first:
+      213: -3943701715584590405
+    second: qwerty-blue_61
+  - first:
+      213: -6220884597126289694
+    second: qwerty-blue_62
+  - first:
+      213: 4738157679011370815
+    second: qwerty-blue_63
+  - first:
+      213: 187090028267287254
+    second: qwerty-blue_64
+  - first:
+      213: 3316681297706713861
+    second: qwerty-blue_65
+  - first:
+      213: 260412467261619622
+    second: qwerty-blue_66
+  - first:
+      213: 1238170835563225971
+    second: qwerty-blue_67
+  - first:
+      213: -4195408154551919284
+    second: qwerty-blue_68
+  - first:
+      213: -101247650990477025
+    second: qwerty-blue_69
+  - first:
+      213: -984724793557979003
+    second: qwerty-blue_70
+  - first:
+      213: 9034289926646801359
+    second: qwerty-blue_71
+  - first:
+      213: 2873422416047161061
+    second: qwerty-blue_72
+  - first:
+      213: 2960292971679540894
+    second: qwerty-blue_73
+  - first:
+      213: -4688470549546369542
+    second: qwerty-blue_74
+  - first:
+      213: 6645889393246388530
+    second: qwerty-blue_75
+  - first:
+      213: 9055768662771088303
+    second: qwerty-blue_76
+  - first:
+      213: -7531973581193650791
+    second: qwerty-blue_77
+  - first:
+      213: 3000557581556583781
+    second: qwerty-blue_78
+  - first:
+      213: -3107705036963727351
+    second: qwerty-blue_79
+  - first:
+      213: -6537139191027345677
+    second: qwerty-blue_80
+  - first:
+      213: 1816508816735750441
+    second: qwerty-blue_81
+  - first:
+      213: -466754524076753783
+    second: qwerty-blue_82
+  - first:
+      213: 6002567343744035230
+    second: qwerty-blue_83
+  - first:
+      213: -6455118578870160829
+    second: qwerty-blue_84
+  - first:
+      213: 918730755526902651
+    second: qwerty-blue_85
+  - first:
+      213: 6085531610957728861
+    second: qwerty-blue_86
+  - first:
+      213: 5813563560209343320
+    second: qwerty-blue_87
+  - first:
+      213: -6762051669327773938
+    second: qwerty-blue_88
+  - first:
+      213: 161710614613704286
+    second: qwerty-blue_89
+  - first:
+      213: 7428493302015772960
+    second: qwerty-blue_90
+  - first:
+      213: 3907057771160771223
+    second: qwerty-blue_91
+  - first:
+      213: 8787322120020666066
+    second: qwerty-blue_92
+  - first:
+      213: -1562981986834508017
+    second: qwerty-blue_93
+  - first:
+      213: -7503854418778691117
+    second: qwerty-blue_94
+  - first:
+      213: -4937334011718595405
+    second: qwerty-blue_95
+  - first:
+      213: -5314535844772535630
+    second: qwerty-blue_96
+  - first:
+      213: -6108248271358406520
+    second: qwerty-blue_97
+  - first:
+      213: -6945829122500066756
+    second: qwerty-blue_98
+  - first:
+      213: 1163989107075573072
+    second: qwerty-blue_99
+  - first:
+      213: -1084710858997697281
+    second: qwerty-blue_100
+  - first:
+      213: 3265092488310576697
+    second: qwerty-blue_101
+  - first:
+      213: 1027038177674900976
+    second: qwerty-blue_102
+  - first:
+      213: 6344921438249234476
+    second: qwerty-blue_103
+  - first:
+      213: -946281387703455979
+    second: qwerty-blue_104
+  - first:
+      213: 8532688238707554449
+    second: qwerty-blue_105
+  - first:
+      213: -1222587123393838719
+    second: qwerty-blue_106
+  - first:
+      213: 8043245200262790395
+    second: qwerty-blue_107
+  - first:
+      213: 2602934753952680330
+    second: qwerty-blue_108
+  - first:
+      213: -4171057055277962994
+    second: qwerty-blue_109
+  - first:
+      213: 2639063648395556076
+    second: qwerty-blue_110
+  - first:
+      213: -8222164361202924806
+    second: qwerty-blue_111
+  - first:
+      213: -7070983416545445650
+    second: qwerty-blue_112
+  - first:
+      213: -1261426410179787618
+    second: qwerty-blue_113
+  - first:
+      213: -4327631954122899783
+    second: qwerty-blue_114
+  - first:
+      213: 2392155978039362263
+    second: qwerty-blue_115
+  - first:
+      213: -8106253570347633937
+    second: qwerty-blue_116
+  - first:
+      213: 768257846482087847
+    second: qwerty-blue_117
+  - first:
+      213: 5214799937313857811
+    second: qwerty-blue_118
+  - first:
+      213: -4878640949585009553
+    second: qwerty-blue_119
+  - first:
+      213: 8972797508470155392
+    second: qwerty-blue_120
+  - first:
+      213: -8956859542545239413
+    second: qwerty-blue_121
+  - first:
+      213: 1960730263771140453
+    second: qwerty-blue_122
+  - first:
+      213: 712263073801217973
+    second: qwerty-blue_123
+  - first:
+      213: 2600909375080641718
+    second: qwerty-blue_124
+  - first:
+      213: -5912460851689344477
+    second: qwerty-blue_125
+  - first:
+      213: 8812440667571261685
+    second: qwerty-blue_126
+  - first:
+      213: 2021736109738681899
+    second: qwerty-blue_127
+  - first:
+      213: 2658280343862378199
+    second: qwerty-blue_128
+  - first:
+      213: -4077519489706656460
+    second: qwerty-blue_129
+  - first:
+      213: -5860380348571046140
+    second: qwerty-blue_130
+  - first:
+      213: 5654884782855246772
+    second: qwerty-blue_131
+  - first:
+      213: -497166179754183738
+    second: qwerty-blue_132
+  - first:
+      213: 6154787456150860832
+    second: qwerty-blue_133
+  - first:
+      213: 421074885080643030
+    second: qwerty-blue_134
+  - first:
+      213: -5031527853941484731
+    second: qwerty-blue_135
+  - first:
+      213: 8268226782160821315
+    second: qwerty-blue_136
+  - first:
+      213: 4883788416984566353
+    second: qwerty-blue_137
+  - first:
+      213: -7218118730918609213
+    second: qwerty-blue_138
+  - first:
+      213: 7511665457698492601
+    second: qwerty-blue_139
+  - first:
+      213: -260504019575425797
+    second: qwerty-blue_140
+  - first:
+      213: 4814271145568700720
+    second: qwerty-blue_141
+  - first:
+      213: -1808390908668217430
+    second: qwerty-blue_142
+  - first:
+      213: -6544299870767251461
+    second: qwerty-blue_143
+  - first:
+      213: -4291415700790400984
+    second: qwerty-blue_144
+  - first:
+      213: 8809601677104565468
+    second: qwerty-blue_145
+  - first:
+      213: -256998423844778811
+    second: qwerty-blue_146
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: qwerty-blue_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5f352274b8ae2c0800000000000000
+      internalID: -4401552548166371909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_1
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d1a496c1cf55350800000000000000
+      internalID: 6004982877124173215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_2
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320b04d86765e7880800000000000000
+      internalID: -8611350370309853149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_3
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71dc1021277e015c0800000000000000
+      internalID: -4246639971495981801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_4
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66365f3170f84b060800000000000000
+      internalID: 6968351784011391846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_5
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab5222dfbed5cf70800000000000000
+      internalID: 9207009928674433960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_6
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d1be8453750ccd70800000000000000
+      internalID: 9064626142887981524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_7
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a072e270bbaf37c0800000000000000
+      internalID: -4089361162299084635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_8
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2016cb67683a6be50800000000000000
+      internalID: 6824822083239567618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_9
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2306234b05b25c40800000000000000
+      internalID: 5499657154948629293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_10
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7dd4b49c7ef20d40800000000000000
+      internalID: 5549277501898153338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_11
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4316943a6cacb340800000000000000
+      internalID: 4880965668311536458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_12
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07d147d8fd0e3930800000000000000
+      internalID: 4124749671132419851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_13
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c15ac3d911c2a70800000000000000
+      internalID: 8803430738627468356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_14
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d989a5d694bb0470800000000000000
+      internalID: 8361975693066209746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_15
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 192c771e5b8cbfee0800000000000000
+      internalID: -1226165790030970223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_16
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54493981f0770b890800000000000000
+      internalID: -7444319277322890171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_17
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b98ad2268e3bdc80800000000000000
+      internalID: -8296969142668719695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_18
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee48cddaf841bab0800000000000000
+      internalID: -4994130269477253401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_19
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86441bffa0f68000800000000000000
+      internalID: 37982285501580940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_20
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b4bb1a720cc50b90800000000000000
+      internalID: -7276185311936531280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_21
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 314c8190eee8ae270800000000000000
+      internalID: 8280588017880056851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_22
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 352a33623f7687410800000000000000
+      internalID: 1475043171979469395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_23
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 006ace7fdc709d490800000000000000
+      internalID: -7721131504940833280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_24
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9826e5a29426ec00800000000000000
+      internalID: 929470585365735581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_25
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd5f654a19354cf0800000000000000
+      internalID: -268745817761817094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1632
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27700b3b5b1ad3b20800000000000000
+      internalID: 3115824318986061682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_27
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1632
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f90d49919bc05c00800000000000000
+      internalID: 887432952794647027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_28
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1632
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 322a85e3b29796f20800000000000000
+      internalID: 3416395018973782563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_29
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1632
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06910e3fa33454ea0800000000000000
+      internalID: -5889227017238341280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_30
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1632
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10ccc5214b1678d00800000000000000
+      internalID: 974855270379080705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_31
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1632
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db19284b9d87f0c0800000000000000
+      internalID: -4542006001109754928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_32
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 1632
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0768cf9c4f7843b60800000000000000
+      internalID: 7724948746277783152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_33
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 1632
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14c3bf8e647ef3330800000000000000
+      internalID: 3692924511209602113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_34
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 1632
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5804f58013585d3e0800000000000000
+      internalID: -2029569611420188539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_35
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 1632
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6fa5c082e22a9550800000000000000
+      internalID: 6168280995855708014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_36
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 1632
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 895360f5522938c50800000000000000
+      internalID: 6666332562644153752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_37
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 1632
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87c13e351a4aa2b00800000000000000
+      internalID: 804636496243137656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_38
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 1632
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d936f63cff2c673e0800000000000000
+      internalID: -2056241776096746595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_39
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5234229b4969dc340800000000000000
+      internalID: 4885726736272212773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_40
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9d0fa13c51338750800000000000000
+      internalID: 6305938175289134494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_41
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f619730662ae800800000000000000
+      internalID: 642368091544710931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_42
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f63af1ca2d1a3d0800000000000000
+      internalID: -3197042623749329020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_43
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc43222917096020800000000000000
+      internalID: 2335405686296628421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_44
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99fb58afec45b4310800000000000000
+      internalID: 1390298157916995481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_45
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb775bdba2d493500800000000000000
+      internalID: 376416889828898748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_46
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36ac2e3cb23821750800000000000000
+      internalID: 6274221454873774691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_47
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1435428e57e0b690800000000000000
+      internalID: -7588310979020770273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_48
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c20d9dde03b230670800000000000000
+      internalID: 8503688010554527788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_49
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63af03c6caa918080800000000000000
+      internalID: -9186891699518899658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_50
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82fbfc63df8568720800000000000000
+      internalID: 2848061658927972136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_51
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb6215824fcfc450800000000000000
+      internalID: 6111331103972420556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1370
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370c2baaf9aec20a0800000000000000
+      internalID: -6904886157181271949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_53
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1370
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6e8d5ca48cadb220800000000000000
+      internalID: 2503346653715336814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_54
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1370
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2952aabed83c3ccd0800000000000000
+      internalID: -2538970750595226222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_55
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1370
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff8223cded8f87d70800000000000000
+      internalID: 9041249888006973695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_56
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1370
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80c03d332ce62c360800000000000000
+      internalID: 7188429735608912904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_57
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1370
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c614e0360ed653be0800000000000000
+      internalID: -1498170490528841364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_58
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 1370
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f092acfb9f65b7da0800000000000000
+      internalID: -5946063252348065521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_59
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 1370
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c111649c45d569f70800000000000000
+      internalID: 9193638308058894620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_60
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 1370
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f97e1bb747baf0c0800000000000000
+      internalID: -4541115755539826189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_61
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 1370
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd5b7e2f282549c0800000000000000
+      internalID: -3943701715584590405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_62
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 1370
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6a6972b6afaa9a0800000000000000
+      internalID: -6220884597126289694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_63
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 1370
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3713432e4151c140800000000000000
+      internalID: 4738157679011370815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_64
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 1370
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d2b3e3b36da89200800000000000000
+      internalID: 187090028267287254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_65
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5038df65118370e20800000000000000
+      internalID: 3316681297706713861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_66
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ad363e52cb2d9300800000000000000
+      internalID: 260412467261619622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_67
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373aef890ddde2110800000000000000
+      internalID: 1238170835563225971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_68
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4dd72cf28ae6c5c0800000000000000
+      internalID: -4195408154551919284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_69
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11be504ccb489ef0800000000000000
+      internalID: -101247650990477025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_70
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580f47e740e8552f0800000000000000
+      internalID: -984724793557979003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_71
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc32ca392de306d70800000000000000
+      internalID: 9034289926646801359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_72
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eeb22e967270e720800000000000000
+      internalID: 2873422416047161061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_73
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e966b0006c2151920800000000000000
+      internalID: 2960292971679540894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_74
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd786230e43feeb0800000000000000
+      internalID: -4688470549546369542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_75
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 231ccf41131fa3c50800000000000000
+      internalID: 6645889393246388530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_76
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fabb5988e9d8cad70800000000000000
+      internalID: 9055768662771088303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_77
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d535b1fed097790800000000000000
+      internalID: -7531973581193650791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1108
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d09c8093f14a920800000000000000
+      internalID: 3000557581556583781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_79
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1108
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 908b515fbb63fd4d0800000000000000
+      internalID: -3107705036963727351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_80
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1108
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f6d78f7a8a6745a0800000000000000
+      internalID: -6537139191027345677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_81
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1108
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92946e00529853910800000000000000
+      internalID: 1816508816735750441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_82
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1108
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c391bbb31c589f0800000000000000
+      internalID: -466754524076753783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_83
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1108
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99293832376d4350800000000000000
+      internalID: 6002567343744035230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_84
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 1108
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3427b6b6adfca66a0800000000000000
+      internalID: -6455118578870160829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_85
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 1108
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73486721ccffbc00800000000000000
+      internalID: 918730755526902651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_86
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 1108
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ccb84f1c6247450800000000000000
+      internalID: 6085531610957728861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_87
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 1108
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853ee65a14deda050800000000000000
+      internalID: 5813563560209343320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_88
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 1108
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f71e865dd5822a0800000000000000
+      internalID: -6762051669327773938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_89
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 1108
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5eb57c72f28e3200800000000000000
+      internalID: 161710614613704286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_90
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 1108
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 029c403ec4f471760800000000000000
+      internalID: 7428493302015772960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_91
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a97f6a758a83630800000000000000
+      internalID: 3907057771160771223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_92
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6a3c239e6d2f970800000000000000
+      internalID: 8787322120020666066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_93
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f07156cf92c2f4ae0800000000000000
+      internalID: -1562981986834508017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_94
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d9637ac924fcd790800000000000000
+      internalID: -7503854418778691117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_95
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc0f0e10e01b7bb0800000000000000
+      internalID: -4937334011718595405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_96
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b2a04a8ec9fe36b0800000000000000
+      internalID: -5314535844772535630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_97
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 880d9c16f842b3ba0800000000000000
+      internalID: -6108248271358406520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_98
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3202d2b6357b9f90800000000000000
+      internalID: -6945829122500066756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_99
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 055e9a10de1572010800000000000000
+      internalID: 1163989107075573072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_100
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff4fe65883552f0f0800000000000000
+      internalID: -1084710858997697281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_101
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9365c84a150ff4d20800000000000000
+      internalID: 3265092488310576697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_102
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5b317f7c5c04e00800000000000000
+      internalID: 1027038177674900976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_103
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c203b966e60bd0850800000000000000
+      internalID: 6344921438249234476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_104
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 846
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f2f5c67122ed2f0800000000000000
+      internalID: -946281387703455979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_105
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 846
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1983157beb23a6670800000000000000
+      internalID: 8532688238707554449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_106
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 846
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 181c4232d7f780fe0800000000000000
+      internalID: -1222587123393838719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_107
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 846
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc770b05e85f9f60800000000000000
+      internalID: 8043245200262790395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_108
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 846
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a894ed62e5b7f1420800000000000000
+      internalID: 2602934753952680330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_109
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 846
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09254a15bd6d16c0800000000000000
+      internalID: -4171057055277962994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_110
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 846
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce47346e766df9420800000000000000
+      internalID: 2639063648395556076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_111
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 846
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af28f9d831105ed80800000000000000
+      internalID: -8222164361202924806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_112
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 846
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8712cdb02dedd90800000000000000
+      internalID: -7070983416545445650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_113
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 846
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9400fefc538e7ee0800000000000000
+      internalID: -1261426410179787618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_114
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 846
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9beffdf9aa921f3c0800000000000000
+      internalID: -4327631954122899783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_115
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 846
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d20d561035a23120800000000000000
+      internalID: 2392155978039362263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_116
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 846
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2ff28935dc08f80800000000000000
+      internalID: -8106253570347633937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_117
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7afa873e07669aa00800000000000000
+      internalID: 768257846482087847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_118
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 311625ee9e0be5840800000000000000
+      internalID: 5214799937313857811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_119
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64af4d87e59b4cb0800000000000000
+      internalID: -4878640949585009553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_120
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088afd54bc7c58c70800000000000000
+      internalID: 8972797508470155392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_121
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82f58793b7d2b380800000000000000
+      internalID: -8956859542545239413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_122
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 561df6859c9e53b10800000000000000
+      internalID: 1960730263771140453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_123
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b7ac8ced7772e900800000000000000
+      internalID: 712263073801217973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_124
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b43aa2eb49481420800000000000000
+      internalID: 2600909375080641718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_125
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32237a25e28b2fda0800000000000000
+      internalID: -5912460851689344477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_126
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f09acac8141c4a70800000000000000
+      internalID: 8812440667571261685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_127
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b26ed8ab746ae0c10800000000000000
+      internalID: 2021736109738681899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_128
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7def15973eb14e420800000000000000
+      internalID: 2658280343862378199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_129
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d7d43b0adb967c0800000000000000
+      internalID: -4077519489706656460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_130
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 584
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40f2eb26f1fbbaea0800000000000000
+      internalID: -5860380348571046140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_131
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 584
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b359d7cfbf2a7e40800000000000000
+      internalID: 5654884782855246772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_132
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 584
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c3f96d5ef5b919f0800000000000000
+      internalID: -497166179754183738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_133
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 584
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 024f6e7f4923a6550800000000000000
+      internalID: 6154787456150860832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_134
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 584
+        width: 1025
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5f1158065f7d500800000000000000
+      internalID: 421074885080643030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_135
+      rect:
+        serializedVersion: 2
+        x: 1572
+        y: 584
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5439554331c6c2ab0800000000000000
+      internalID: -5031527853941484731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_136
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 454
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c11119374aeb270800000000000000
+      internalID: 8268226782160821315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_137
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 454
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a488890b3b6c340800000000000000
+      internalID: 4883788416984566353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_138
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 454
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ceb009e14714db90800000000000000
+      internalID: -7218118730918609213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_139
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 454
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b0d0bd6febce3860800000000000000
+      internalID: 7511665457698492601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_140
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 454
+        width: 1023
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf435a279f0826cf0800000000000000
+      internalID: -260504019575425797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_141
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 454
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 039090c891abfc240800000000000000
+      internalID: 4814271145568700720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_142
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 322
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa7f8c1cc0e47e6e0800000000000000
+      internalID: -1808390908668217430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_143
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 322
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff7843d0f9fd25a0800000000000000
+      internalID: -6544299870767251461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_144
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 192
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828aad23824d174c0800000000000000
+      internalID: -4291415700790400984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_145
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 192
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdcc080dc0ef14a70800000000000000
+      internalID: 8809601677104565468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-blue_146
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 192
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc85ee8b45fe6cf0800000000000000
+      internalID: -256998423844778811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

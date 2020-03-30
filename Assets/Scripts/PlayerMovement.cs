@@ -74,6 +74,13 @@ public class PlayerMovement : MonoBehaviour
         // Prune();
         // Grow();
         // Bomb();
+
+        if (bombIns)
+        {
+            var action = GetComponent<PlayerInput>().actions.FindAction("Aim");
+            bombIns.GetComponent<BombController>().direction.x += 0.0025f * action.ReadValue<Vector2>().x;
+        }
+
         if (isSpeedingUp && curBuffTime + duration > Time.time)
         {
             MoveSpeed = 6f;
@@ -95,6 +102,10 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnMove(InputAction.CallbackContext context)
     {
+        if (bombIns)
+        {
+            return;
+        }
         Vector2 velocity = context.ReadValue<Vector2>();
         // rb.velocity = MoveSpeed * velocity.normalized;
         // rb.velocity = MoveSpeed * velocity;
@@ -217,10 +228,10 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnAim(InputAction.CallbackContext context)
     {
-        if (bombIns)
-        {
-            bombIns.GetComponent<BombController>().direction.x += 0.02f * context.ReadValue<Vector2>().x;
-        }
+        // if (bombIns)
+        // {
+        //     bombIns.GetComponent<BombController>().direction.x += 0.02f * context.ReadValue<Vector2>().x;
+        // }
     }
 
     void Move() {

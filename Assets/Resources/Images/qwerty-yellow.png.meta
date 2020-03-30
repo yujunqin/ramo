@@ -1,0 +1,4256 @@
+fileFormatVersion: 2
+guid: bba81011d1d3a7d4c9629880e2a760eb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8632044093701978
+    second: qwerty-yellow_0
+  - first:
+      213: -7814752550852152488
+    second: qwerty-yellow_1
+  - first:
+      213: -2105884891300134573
+    second: qwerty-yellow_2
+  - first:
+      213: 8907874765170348444
+    second: qwerty-yellow_3
+  - first:
+      213: -5329652553899820012
+    second: qwerty-yellow_4
+  - first:
+      213: 4940575535160478970
+    second: qwerty-yellow_5
+  - first:
+      213: 2069104667104400574
+    second: qwerty-yellow_6
+  - first:
+      213: 5765153633462296484
+    second: qwerty-yellow_7
+  - first:
+      213: -6795100568101018262
+    second: qwerty-yellow_8
+  - first:
+      213: 5624966867573688312
+    second: qwerty-yellow_9
+  - first:
+      213: -7821439569359943578
+    second: qwerty-yellow_10
+  - first:
+      213: 8356716400214753209
+    second: qwerty-yellow_11
+  - first:
+      213: -8177385594256402699
+    second: qwerty-yellow_12
+  - first:
+      213: 5099336244320529705
+    second: qwerty-yellow_13
+  - first:
+      213: 4150893493099177936
+    second: qwerty-yellow_14
+  - first:
+      213: -3368757202981805584
+    second: qwerty-yellow_15
+  - first:
+      213: -1561376158594305925
+    second: qwerty-yellow_16
+  - first:
+      213: -2610769032908254456
+    second: qwerty-yellow_17
+  - first:
+      213: 1164029324010235502
+    second: qwerty-yellow_18
+  - first:
+      213: 8058694759217077829
+    second: qwerty-yellow_19
+  - first:
+      213: 8717910402470612619
+    second: qwerty-yellow_20
+  - first:
+      213: 762933474571129032
+    second: qwerty-yellow_21
+  - first:
+      213: 3504687240107720135
+    second: qwerty-yellow_22
+  - first:
+      213: 1786685764504381030
+    second: qwerty-yellow_23
+  - first:
+      213: -9024847790594145025
+    second: qwerty-yellow_24
+  - first:
+      213: 4841008694557716363
+    second: qwerty-yellow_25
+  - first:
+      213: -6510506281261914901
+    second: qwerty-yellow_26
+  - first:
+      213: 4133111491947802899
+    second: qwerty-yellow_27
+  - first:
+      213: 8581031958585914210
+    second: qwerty-yellow_28
+  - first:
+      213: 3898060660703695979
+    second: qwerty-yellow_29
+  - first:
+      213: -8191473223119783838
+    second: qwerty-yellow_30
+  - first:
+      213: 6342204426485224079
+    second: qwerty-yellow_31
+  - first:
+      213: -7864324687782597266
+    second: qwerty-yellow_32
+  - first:
+      213: 7935402676116919908
+    second: qwerty-yellow_33
+  - first:
+      213: 7692500078959658990
+    second: qwerty-yellow_34
+  - first:
+      213: 2300054405396564030
+    second: qwerty-yellow_35
+  - first:
+      213: -2029854453457753066
+    second: qwerty-yellow_36
+  - first:
+      213: 4789511165457664921
+    second: qwerty-yellow_37
+  - first:
+      213: -1281468843691803693
+    second: qwerty-yellow_38
+  - first:
+      213: -987134953434637832
+    second: qwerty-yellow_39
+  - first:
+      213: 2499126851912654302
+    second: qwerty-yellow_40
+  - first:
+      213: 4742505201908569409
+    second: qwerty-yellow_41
+  - first:
+      213: 6845919679883923596
+    second: qwerty-yellow_42
+  - first:
+      213: -6697692030084619818
+    second: qwerty-yellow_43
+  - first:
+      213: 7006151657704774253
+    second: qwerty-yellow_44
+  - first:
+      213: -6660590238216488290
+    second: qwerty-yellow_45
+  - first:
+      213: -3014354794094592457
+    second: qwerty-yellow_46
+  - first:
+      213: -3165307392973562111
+    second: qwerty-yellow_47
+  - first:
+      213: 4890711217968615595
+    second: qwerty-yellow_48
+  - first:
+      213: -3558847349629709432
+    second: qwerty-yellow_49
+  - first:
+      213: -1179809910773002636
+    second: qwerty-yellow_50
+  - first:
+      213: -3992192855009355244
+    second: qwerty-yellow_51
+  - first:
+      213: 3404502455955107014
+    second: qwerty-yellow_52
+  - first:
+      213: -7056533306992289962
+    second: qwerty-yellow_53
+  - first:
+      213: -6866975820487756570
+    second: qwerty-yellow_54
+  - first:
+      213: -2491879316097975953
+    second: qwerty-yellow_55
+  - first:
+      213: 6111380981676346781
+    second: qwerty-yellow_56
+  - first:
+      213: -7852090239027348302
+    second: qwerty-yellow_57
+  - first:
+      213: -2539196301410503567
+    second: qwerty-yellow_58
+  - first:
+      213: 5418831616796975709
+    second: qwerty-yellow_59
+  - first:
+      213: 2626892609696776667
+    second: qwerty-yellow_60
+  - first:
+      213: -8905345871263045260
+    second: qwerty-yellow_61
+  - first:
+      213: 6866579258907373447
+    second: qwerty-yellow_62
+  - first:
+      213: -949878193709416613
+    second: qwerty-yellow_63
+  - first:
+      213: 8297370896661832990
+    second: qwerty-yellow_64
+  - first:
+      213: 681859796586402224
+    second: qwerty-yellow_65
+  - first:
+      213: 8390740577798770786
+    second: qwerty-yellow_66
+  - first:
+      213: 7588708941275555278
+    second: qwerty-yellow_67
+  - first:
+      213: -4924270870800461800
+    second: qwerty-yellow_68
+  - first:
+      213: 2188516360753239457
+    second: qwerty-yellow_69
+  - first:
+      213: -4613432005056502439
+    second: qwerty-yellow_70
+  - first:
+      213: 692240454319885114
+    second: qwerty-yellow_71
+  - first:
+      213: 8426531772594158685
+    second: qwerty-yellow_72
+  - first:
+      213: 2551575213629022406
+    second: qwerty-yellow_73
+  - first:
+      213: 7750151672257100284
+    second: qwerty-yellow_74
+  - first:
+      213: 7404836679248308284
+    second: qwerty-yellow_75
+  - first:
+      213: -4021605142947317131
+    second: qwerty-yellow_76
+  - first:
+      213: -5038911984898603937
+    second: qwerty-yellow_77
+  - first:
+      213: 3713907717874523641
+    second: qwerty-yellow_78
+  - first:
+      213: -1379470389216102525
+    second: qwerty-yellow_79
+  - first:
+      213: 8066542918817096565
+    second: qwerty-yellow_80
+  - first:
+      213: -2592357952925581311
+    second: qwerty-yellow_81
+  - first:
+      213: 8247882759694059940
+    second: qwerty-yellow_82
+  - first:
+      213: 2840831597793624229
+    second: qwerty-yellow_83
+  - first:
+      213: 7100914861837413601
+    second: qwerty-yellow_84
+  - first:
+      213: 6064837163732088619
+    second: qwerty-yellow_85
+  - first:
+      213: 8708762905287487619
+    second: qwerty-yellow_86
+  - first:
+      213: 1294448351817728707
+    second: qwerty-yellow_87
+  - first:
+      213: -322775698423029807
+    second: qwerty-yellow_88
+  - first:
+      213: 1073943488431191650
+    second: qwerty-yellow_89
+  - first:
+      213: -3605372671507475828
+    second: qwerty-yellow_90
+  - first:
+      213: -1789391243595873089
+    second: qwerty-yellow_91
+  - first:
+      213: -8522542281388691545
+    second: qwerty-yellow_92
+  - first:
+      213: -1831032358580692959
+    second: qwerty-yellow_93
+  - first:
+      213: 2853580312676113588
+    second: qwerty-yellow_94
+  - first:
+      213: -6406687863076462961
+    second: qwerty-yellow_95
+  - first:
+      213: -5337361868903672605
+    second: qwerty-yellow_96
+  - first:
+      213: 3127841400473100024
+    second: qwerty-yellow_97
+  - first:
+      213: -3209240616294369857
+    second: qwerty-yellow_98
+  - first:
+      213: -759249587659219522
+    second: qwerty-yellow_99
+  - first:
+      213: -8334500947476070124
+    second: qwerty-yellow_100
+  - first:
+      213: 1300850360993163749
+    second: qwerty-yellow_101
+  - first:
+      213: 529218679480633297
+    second: qwerty-yellow_102
+  - first:
+      213: -6635604217771956114
+    second: qwerty-yellow_103
+  - first:
+      213: 1700569166923934694
+    second: qwerty-yellow_104
+  - first:
+      213: -6921365915380895645
+    second: qwerty-yellow_105
+  - first:
+      213: 1762821831999123384
+    second: qwerty-yellow_106
+  - first:
+      213: 4880388874458400434
+    second: qwerty-yellow_107
+  - first:
+      213: 3343101059856265425
+    second: qwerty-yellow_108
+  - first:
+      213: 2562469667603520228
+    second: qwerty-yellow_109
+  - first:
+      213: -7973335015101468590
+    second: qwerty-yellow_110
+  - first:
+      213: 7124055116296170763
+    second: qwerty-yellow_111
+  - first:
+      213: 8237600479405790046
+    second: qwerty-yellow_112
+  - first:
+      213: -6715957877320253825
+    second: qwerty-yellow_113
+  - first:
+      213: -8597059068544895140
+    second: qwerty-yellow_114
+  - first:
+      213: 5505110191577352287
+    second: qwerty-yellow_115
+  - first:
+      213: -6625530806799390060
+    second: qwerty-yellow_116
+  - first:
+      213: -7650228426431387987
+    second: qwerty-yellow_117
+  - first:
+      213: 1854431648270339466
+    second: qwerty-yellow_118
+  - first:
+      213: 4732809197102466700
+    second: qwerty-yellow_119
+  - first:
+      213: -47392738087999440
+    second: qwerty-yellow_120
+  - first:
+      213: -5670777070441647372
+    second: qwerty-yellow_121
+  - first:
+      213: 5662871000686411138
+    second: qwerty-yellow_122
+  - first:
+      213: 3724363769552378295
+    second: qwerty-yellow_123
+  - first:
+      213: -9181347459638416219
+    second: qwerty-yellow_124
+  - first:
+      213: -4827692664900136025
+    second: qwerty-yellow_125
+  - first:
+      213: 7145178589377873055
+    second: qwerty-yellow_126
+  - first:
+      213: 618419526860558899
+    second: qwerty-yellow_127
+  - first:
+      213: 7419552330122330868
+    second: qwerty-yellow_128
+  - first:
+      213: 5988525911067408534
+    second: qwerty-yellow_129
+  - first:
+      213: 5409637759241044097
+    second: qwerty-yellow_130
+  - first:
+      213: 6865291209805412836
+    second: qwerty-yellow_131
+  - first:
+      213: -8044208842169976830
+    second: qwerty-yellow_132
+  - first:
+      213: 6873639508762838005
+    second: qwerty-yellow_133
+  - first:
+      213: 1620552359760972188
+    second: qwerty-yellow_134
+  - first:
+      213: 5304093668983395452
+    second: qwerty-yellow_135
+  - first:
+      213: -1950582576310132091
+    second: qwerty-yellow_136
+  - first:
+      213: 1297453090225396684
+    second: qwerty-yellow_137
+  - first:
+      213: -4913849078045671703
+    second: qwerty-yellow_138
+  - first:
+      213: -6444389722795246955
+    second: qwerty-yellow_139
+  - first:
+      213: -4680570141037960086
+    second: qwerty-yellow_140
+  - first:
+      213: 6884330271438639112
+    second: qwerty-yellow_141
+  - first:
+      213: 5748091123899412848
+    second: qwerty-yellow_142
+  - first:
+      213: -5907754642768625657
+    second: qwerty-yellow_143
+  - first:
+      213: 7969394563774640816
+    second: qwerty-yellow_144
+  - first:
+      213: 382857582472425601
+    second: qwerty-yellow_145
+  - first:
+      213: 3998251519047234998
+    second: qwerty-yellow_146
+  - first:
+      213: 136742073265125309
+    second: qwerty-yellow_147
+  - first:
+      213: -2146870372251425651
+    second: qwerty-yellow_0
+  - first:
+      213: -8849378274928244912
+    second: qwerty-yellow_1
+  - first:
+      213: 307226268077448074
+    second: qwerty-yellow_2
+  - first:
+      213: -6438461755132465564
+    second: qwerty-yellow_3
+  - first:
+      213: 7058805933524432300
+    second: qwerty-yellow_4
+  - first:
+      213: 9048562627180977790
+    second: qwerty-yellow_5
+  - first:
+      213: -1894399838365179033
+    second: qwerty-yellow_6
+  - first:
+      213: -195790283215545729
+    second: qwerty-yellow_7
+  - first:
+      213: -71389863046472987
+    second: qwerty-yellow_8
+  - first:
+      213: 5012728085175190461
+    second: qwerty-yellow_9
+  - first:
+      213: -999252688785698458
+    second: qwerty-yellow_10
+  - first:
+      213: 7654607091437900306
+    second: qwerty-yellow_11
+  - first:
+      213: -7902812943581845831
+    second: qwerty-yellow_12
+  - first:
+      213: 1040159812582457933
+    second: qwerty-yellow_13
+  - first:
+      213: 671307017224400975
+    second: qwerty-yellow_14
+  - first:
+      213: -1692290819267578392
+    second: qwerty-yellow_15
+  - first:
+      213: 7942322461928724077
+    second: qwerty-yellow_16
+  - first:
+      213: -922552315333487758
+    second: qwerty-yellow_17
+  - first:
+      213: -4229066747109653576
+    second: qwerty-yellow_18
+  - first:
+      213: 3971872416674939660
+    second: qwerty-yellow_19
+  - first:
+      213: 5383772279050312276
+    second: qwerty-yellow_20
+  - first:
+      213: -1697616228373526455
+    second: qwerty-yellow_21
+  - first:
+      213: -7254420511289059589
+    second: qwerty-yellow_22
+  - first:
+      213: -1647105773432539701
+    second: qwerty-yellow_23
+  - first:
+      213: -1894190885853588675
+    second: qwerty-yellow_24
+  - first:
+      213: 3135688195076166938
+    second: qwerty-yellow_25
+  - first:
+      213: -6980070384916146498
+    second: qwerty-yellow_26
+  - first:
+      213: 4446238622561329390
+    second: qwerty-yellow_27
+  - first:
+      213: 7458705526243171788
+    second: qwerty-yellow_28
+  - first:
+      213: 6915144533098056848
+    second: qwerty-yellow_29
+  - first:
+      213: 149297214904880718
+    second: qwerty-yellow_30
+  - first:
+      213: 4096660955694385148
+    second: qwerty-yellow_31
+  - first:
+      213: -8684793247073513650
+    second: qwerty-yellow_32
+  - first:
+      213: -5959739539459974362
+    second: qwerty-yellow_33
+  - first:
+      213: 2140752823814363731
+    second: qwerty-yellow_34
+  - first:
+      213: 1567872619136753778
+    second: qwerty-yellow_35
+  - first:
+      213: 8044897618598954089
+    second: qwerty-yellow_36
+  - first:
+      213: -7812429467183039423
+    second: qwerty-yellow_37
+  - first:
+      213: -8784452237554606475
+    second: qwerty-yellow_38
+  - first:
+      213: 5580826784902546794
+    second: qwerty-yellow_39
+  - first:
+      213: -702467978024138937
+    second: qwerty-yellow_40
+  - first:
+      213: -1622216793739219451
+    second: qwerty-yellow_41
+  - first:
+      213: 8732267468685778062
+    second: qwerty-yellow_42
+  - first:
+      213: -1492204077336396359
+    second: qwerty-yellow_43
+  - first:
+      213: -8578225522056509673
+    second: qwerty-yellow_44
+  - first:
+      213: 8707720751427085153
+    second: qwerty-yellow_45
+  - first:
+      213: -7256092115307576043
+    second: qwerty-yellow_46
+  - first:
+      213: -322150794892671861
+    second: qwerty-yellow_47
+  - first:
+      213: 2217331771062636600
+    second: qwerty-yellow_48
+  - first:
+      213: 4611236490555816400
+    second: qwerty-yellow_49
+  - first:
+      213: -6635993738995234173
+    second: qwerty-yellow_50
+  - first:
+      213: -1940776612197260462
+    second: qwerty-yellow_51
+  - first:
+      213: -7635638302583804839
+    second: qwerty-yellow_52
+  - first:
+      213: -1616147228628353766
+    second: qwerty-yellow_53
+  - first:
+      213: 8573084200029077935
+    second: qwerty-yellow_54
+  - first:
+      213: 8401778244808806821
+    second: qwerty-yellow_55
+  - first:
+      213: -8930841614067946487
+    second: qwerty-yellow_56
+  - first:
+      213: -8238526791507363123
+    second: qwerty-yellow_57
+  - first:
+      213: -2118455752771439769
+    second: qwerty-yellow_58
+  - first:
+      213: 8771376144718327683
+    second: qwerty-yellow_59
+  - first:
+      213: -9194994737228604961
+    second: qwerty-yellow_60
+  - first:
+      213: -2738005273340125463
+    second: qwerty-yellow_61
+  - first:
+      213: -2528638304217831585
+    second: qwerty-yellow_62
+  - first:
+      213: -1888070459637437968
+    second: qwerty-yellow_63
+  - first:
+      213: 214410525727290238
+    second: qwerty-yellow_64
+  - first:
+      213: -7997901749614638700
+    second: qwerty-yellow_65
+  - first:
+      213: -7131330780609466241
+    second: qwerty-yellow_66
+  - first:
+      213: -3763190449683251935
+    second: qwerty-yellow_67
+  - first:
+      213: -3815350202109765627
+    second: qwerty-yellow_68
+  - first:
+      213: -8627914236263695518
+    second: qwerty-yellow_69
+  - first:
+      213: 3563637819628968287
+    second: qwerty-yellow_70
+  - first:
+      213: 7165048589916353117
+    second: qwerty-yellow_71
+  - first:
+      213: 2588415608907606152
+    second: qwerty-yellow_72
+  - first:
+      213: -420720274164552166
+    second: qwerty-yellow_73
+  - first:
+      213: -7726777545457737522
+    second: qwerty-yellow_74
+  - first:
+      213: 5622943162552971053
+    second: qwerty-yellow_75
+  - first:
+      213: 3898073545031410691
+    second: qwerty-yellow_76
+  - first:
+      213: -1953820225212343436
+    second: qwerty-yellow_77
+  - first:
+      213: -1173535434736466144
+    second: qwerty-yellow_78
+  - first:
+      213: -743448019728049935
+    second: qwerty-yellow_79
+  - first:
+      213: 4933577263298512016
+    second: qwerty-yellow_80
+  - first:
+      213: -9040291349818887719
+    second: qwerty-yellow_81
+  - first:
+      213: -2146209720828814756
+    second: qwerty-yellow_82
+  - first:
+      213: -5993773846910044052
+    second: qwerty-yellow_83
+  - first:
+      213: -4542134543860790974
+    second: qwerty-yellow_84
+  - first:
+      213: -3778355858129045002
+    second: qwerty-yellow_85
+  - first:
+      213: -848594393055864535
+    second: qwerty-yellow_86
+  - first:
+      213: -8575527679834703998
+    second: qwerty-yellow_87
+  - first:
+      213: 4565064424488112969
+    second: qwerty-yellow_88
+  - first:
+      213: 4471304641566260206
+    second: qwerty-yellow_89
+  - first:
+      213: -6442549968797005584
+    second: qwerty-yellow_90
+  - first:
+      213: -1937306205784640984
+    second: qwerty-yellow_91
+  - first:
+      213: -6234742898432075970
+    second: qwerty-yellow_92
+  - first:
+      213: 4475066680218418280
+    second: qwerty-yellow_93
+  - first:
+      213: -7103732284742643336
+    second: qwerty-yellow_94
+  - first:
+      213: 7554115479204759094
+    second: qwerty-yellow_95
+  - first:
+      213: 6552898940175706150
+    second: qwerty-yellow_96
+  - first:
+      213: 8235463032876263261
+    second: qwerty-yellow_97
+  - first:
+      213: -4729687593869819467
+    second: qwerty-yellow_98
+  - first:
+      213: 3161733396733011987
+    second: qwerty-yellow_99
+  - first:
+      213: -1385171783493211278
+    second: qwerty-yellow_100
+  - first:
+      213: 804492921732101795
+    second: qwerty-yellow_101
+  - first:
+      213: 5280104916522063136
+    second: qwerty-yellow_102
+  - first:
+      213: 375549998348905064
+    second: qwerty-yellow_103
+  - first:
+      213: 3775802792230617822
+    second: qwerty-yellow_104
+  - first:
+      213: 5496439866079576313
+    second: qwerty-yellow_105
+  - first:
+      213: -8638957294144371758
+    second: qwerty-yellow_106
+  - first:
+      213: 5000786596433056163
+    second: qwerty-yellow_107
+  - first:
+      213: -1078669081149172080
+    second: qwerty-yellow_108
+  - first:
+      213: -330554881787746629
+    second: qwerty-yellow_109
+  - first:
+      213: -7622619899635337825
+    second: qwerty-yellow_110
+  - first:
+      213: 8630372745564619560
+    second: qwerty-yellow_111
+  - first:
+      213: -8979955896774223124
+    second: qwerty-yellow_112
+  - first:
+      213: -3251298219967675559
+    second: qwerty-yellow_113
+  - first:
+      213: 3207441474824683806
+    second: qwerty-yellow_114
+  - first:
+      213: 1886933962564631470
+    second: qwerty-yellow_115
+  - first:
+      213: -7076786162623464299
+    second: qwerty-yellow_116
+  - first:
+      213: -8891352204970723198
+    second: qwerty-yellow_117
+  - first:
+      213: 1492271539208277764
+    second: qwerty-yellow_118
+  - first:
+      213: 1040256605899303415
+    second: qwerty-yellow_119
+  - first:
+      213: 6488342524495097967
+    second: qwerty-yellow_120
+  - first:
+      213: 6915072998781683075
+    second: qwerty-yellow_121
+  - first:
+      213: -4810874364753698466
+    second: qwerty-yellow_122
+  - first:
+      213: -8395822997517894485
+    second: qwerty-yellow_123
+  - first:
+      213: 1283899393676300184
+    second: qwerty-yellow_124
+  - first:
+      213: -3735790154644081799
+    second: qwerty-yellow_125
+  - first:
+      213: 4775856146441376254
+    second: qwerty-yellow_126
+  - first:
+      213: 3799767468115945422
+    second: qwerty-yellow_127
+  - first:
+      213: -7012759231122070652
+    second: qwerty-yellow_128
+  - first:
+      213: 3892213518342238738
+    second: qwerty-yellow_129
+  - first:
+      213: 1177316173756459460
+    second: qwerty-yellow_130
+  - first:
+      213: 6847785331436041762
+    second: qwerty-yellow_131
+  - first:
+      213: 9099544829921183945
+    second: qwerty-yellow_132
+  - first:
+      213: -7005739052879299749
+    second: qwerty-yellow_133
+  - first:
+      213: -2025607434795021953
+    second: qwerty-yellow_134
+  - first:
+      213: 3859144684149933764
+    second: qwerty-yellow_135
+  - first:
+      213: -5069009774504598225
+    second: qwerty-yellow_136
+  - first:
+      213: -90982637328354249
+    second: qwerty-yellow_137
+  - first:
+      213: 7257311458716573626
+    second: qwerty-yellow_138
+  - first:
+      213: 4701519762961463211
+    second: qwerty-yellow_139
+  - first:
+      213: -6916658211293482498
+    second: qwerty-yellow_140
+  - first:
+      213: 7075636611284847935
+    second: qwerty-yellow_141
+  - first:
+      213: 2389058541621673932
+    second: qwerty-yellow_142
+  - first:
+      213: 4598371195785745282
+    second: qwerty-yellow_143
+  - first:
+      213: 4200961723677947273
+    second: qwerty-yellow_144
+  - first:
+      213: -670508490983060985
+    second: qwerty-yellow_145
+  - first:
+      213: -7481933922406670276
+    second: qwerty-yellow_146
+  - first:
+      213: -1095542419975400114
+    second: qwerty-yellow_147
+  - first:
+      213: -4150507689171316516
+    second: qwerty-yellow_148
+  - first:
+      213: -3263653210174272910
+    second: qwerty-yellow_149
+  - first:
+      213: 1141339594116975289
+    second: qwerty-yellow_150
+  - first:
+      213: 5826156388514456804
+    second: qwerty-yellow_151
+  - first:
+      213: 8693307295301764014
+    second: qwerty-yellow_152
+  - first:
+      213: -5967851300788783342
+    second: qwerty-yellow_153
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: qwerty-yellow_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d84a42365c8c432e0800000000000000
+      internalID: -2146870372251425651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_1
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057c7df4851b03580800000000000000
+      internalID: -8849378274928244912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_2
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8bdc6eb9ac734400800000000000000
+      internalID: 307226268077448074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_3
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e2469652df5a6a0800000000000000
+      internalID: -6438461755132465564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_4
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca5b42ee89ae5f160800000000000000
+      internalID: 7058805933524432300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_5
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e5ff0a4c3f29d70800000000000000
+      internalID: 9048562627180977790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_6
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 763afab426db5b5e0800000000000000
+      internalID: -1894399838365179033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_7
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ad67656c9684df0800000000000000
+      internalID: -195790283215545729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_8
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea1d8c3c4f520ff0800000000000000
+      internalID: -71389863046472987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_9
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3cd7882a9c09540800000000000000
+      internalID: 5012728085175190461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_10
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 661131c49f0f122f0800000000000000
+      internalID: -999252688785698458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_11
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21297540890aa3a60800000000000000
+      internalID: 7654607091437900306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_12
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 1895
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b6e17baf71935290800000000000000
+      internalID: -7902812943581845831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_13
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d424d9aa6d36f6e00800000000000000
+      internalID: 1040159812582457933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_14
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4033e8ec26f05900800000000000000
+      internalID: 671307017224400975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_15
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5b6ec4776c388e0800000000000000
+      internalID: -1692290819267578392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_16
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d661edae23cc83e60800000000000000
+      internalID: 7942322461928724077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_17
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27355dd9e8f6233f0800000000000000
+      internalID: -922552315333487758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_18
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b3cc1733365f45c0800000000000000
+      internalID: -4229066747109653576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_19
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0305194becee1730800000000000000
+      internalID: 3971872416674939660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_20
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45a93640d5007ba40800000000000000
+      internalID: 5383772279050312276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_21
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9488bded80bd078e0800000000000000
+      internalID: -1697616228373526455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_22
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf6de450bfe135b90800000000000000
+      internalID: -7254420511289059589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_23
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc5fe0b960e4429e0800000000000000
+      internalID: -1647105773432539701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_24
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d331ae7dc6b76b5e0800000000000000
+      internalID: -1894190885853588675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_25
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 1764
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1596e1ccc3348b20800000000000000
+      internalID: 3135688195076166938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_26
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1633
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb659d787fec12f90800000000000000
+      internalID: -6980070384916146498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_27
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1633
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0e364587634bd30800000000000000
+      internalID: 4446238622561329390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_28
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1633
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd97ff7825a28760800000000000000
+      internalID: 7458705526243171788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_29
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1633
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09c4bc9905787ff50800000000000000
+      internalID: 6915144533098056848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_30
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1633
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4e4c54a609621200800000000000000
+      internalID: 149297214904880718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_31
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1633
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf740652f634ad830800000000000000
+      internalID: 4096660955694385148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_32
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1633
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4fc8784e8a697780800000000000000
+      internalID: -8684793247073513650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_33
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 1633
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b53a40770ca4da0800000000000000
+      internalID: -5959739539459974362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_34
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 1633
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a9e5fd95b75bd10800000000000000
+      internalID: 2140752823814363731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_35
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1633
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27025b417d332c510800000000000000
+      internalID: 1567872619136753778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_36
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1633
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9640afaa2c735af60800000000000000
+      internalID: 8044897618598954089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_37
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 1633
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14cb2c7aacca49390800000000000000
+      internalID: -7812429467183039423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_38
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 1633
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e1c226b3b571680800000000000000
+      internalID: -8784452237554606475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_39
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a650a137464137d40800000000000000
+      internalID: 5580826784902546794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_40
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 747c8c788155046f0800000000000000
+      internalID: -702467978024138937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_41
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e2084cb6abc79e0800000000000000
+      internalID: -1622216793739219451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_42
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8c17ba4ffe3f2970800000000000000
+      internalID: 8732267468685778062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_43
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bd79f53c40aa4be0800000000000000
+      internalID: -1492204077336396359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_44
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 717c1aa465504f880800000000000000
+      internalID: -8578225522056509673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_45
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 163eb1053e908d870800000000000000
+      internalID: 8707720751427085153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_46
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51544916aae2d4b90800000000000000
+      internalID: -7256092115307576043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_47
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8400521f8d778bf0800000000000000
+      internalID: -322150794892671861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_48
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83050637f7b85ce10800000000000000
+      internalID: 2217331771062636600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_49
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d9f5e228276eff30800000000000000
+      internalID: 4611236490555816400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_50
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a09777ad638e3a0800000000000000
+      internalID: -6635993738995234173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_51
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 1502
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 253a89134f9f015e0800000000000000
+      internalID: -1940776612197260462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_52
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1371
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c202d4b63c80690800000000000000
+      internalID: -7635638302583804839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_53
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1371
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1dffd488aa4299e0800000000000000
+      internalID: -1616147228628353766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_54
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1371
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa14f3468a6b9f670800000000000000
+      internalID: 8573084200029077935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_55
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1371
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a11f639ccc199470800000000000000
+      internalID: 8401778244808806821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_56
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1371
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c2430aed64f0480800000000000000
+      internalID: -8930841614067946487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_57
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1371
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca3aaf588fdaad80800000000000000
+      internalID: -8238526791507363123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_58
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1371
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 763fca787bbb992e0800000000000000
+      internalID: -2118455752771439769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_59
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 1371
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f654181203ab970800000000000000
+      internalID: 8771376144718327683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_60
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 1371
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd917efe001d46080800000000000000
+      internalID: -9194994737228604961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_61
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1371
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee5a61e5b6a00ad0800000000000000
+      internalID: -2738005273340125463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_62
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1371
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5766af0cd878ecd0800000000000000
+      internalID: -2528638304217831585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_63
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 1371
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9e66e9be93cc5e0800000000000000
+      internalID: -1888070459637437968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_64
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 1371
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e737416bc3db9f200800000000000000
+      internalID: 214410525727290238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_65
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4998eb1cbbeb10190800000000000000
+      internalID: -7997901749614638700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_66
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f70b6fd307c680d90800000000000000
+      internalID: -7131330780609466241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_67
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12dbc78693676cbc0800000000000000
+      internalID: -3763190449683251935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_68
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 508588da4372d0bc0800000000000000
+      internalID: -3815350202109765627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_69
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26b77faf6bd734880800000000000000
+      internalID: -8627914236263695518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_70
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f59d12b47b5947130800000000000000
+      internalID: 3563637819628968287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_71
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d52b0600bbd5f6360800000000000000
+      internalID: 7165048589916353117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_72
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888a3044846ebe320800000000000000
+      internalID: 2588415608907606152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_73
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1eed94c32d492af0800000000000000
+      internalID: -420720274164552166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_74
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0e688b2c8f4c490800000000000000
+      internalID: -7726777545457737522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_75
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f6e24c305b80e40800000000000000
+      internalID: 5622943162552971053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_76
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 304e1ff7c3db81630800000000000000
+      internalID: 3898073545031410691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_77
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 1240
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b9e316bd2a2e4e0800000000000000
+      internalID: -1953820225212343436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_78
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1109
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02703316db3c6bfe0800000000000000
+      internalID: -1173535434736466144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_79
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1109
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8542b07fdbea5f0800000000000000
+      internalID: -743448019728049935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_80
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1109
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0940adab166977440800000000000000
+      internalID: 4933577263298512016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_81
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 1109
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d132043aee6a8280800000000000000
+      internalID: -9040291349818887719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_82
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1109
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a128841a12732e0800000000000000
+      internalID: -2146209720828814756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_83
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1109
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6876ee4176d1dca0800000000000000
+      internalID: -5993773846910044052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_84
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1109
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 249852792b817f0c0800000000000000
+      internalID: -4542134543860790974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_85
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 1109
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f9b3399d55909bc0800000000000000
+      internalID: -3778355858129045002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_86
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 1109
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929548345ef2934f0800000000000000
+      internalID: -848594393055864535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_87
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1109
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2873ce1a20b9df880800000000000000
+      internalID: -8575527679834703998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_88
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 1109
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 943136648ed5a5f30800000000000000
+      internalID: 4565064424488112969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_89
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 1109
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eebbc1ba1e34d0e30800000000000000
+      internalID: 4471304641566260206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_90
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 1109
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8862effe67796a0800000000000000
+      internalID: -6442549968797005584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_91
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822fb07254e4d15e0800000000000000
+      internalID: -1937306205784640984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_92
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e371111fd5eb979a0800000000000000
+      internalID: -6234742898432075970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_93
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86cfa9c8f61aa1e30800000000000000
+      internalID: 4475066680218418280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_94
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 871d07ccf197a6d90800000000000000
+      internalID: -7103732284742643336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_95
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6368742410c95d860800000000000000
+      internalID: 7554115479204759094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_96
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628e43a0ed290fa50800000000000000
+      internalID: 6552898940175706150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_97
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d57637bbefd3a4270800000000000000
+      internalID: 8235463032876263261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_98
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b141dc3136cc5eb0800000000000000
+      internalID: -4729687593869819467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_99
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 318a2c2d5cbb0eb20800000000000000
+      internalID: 3161733396733011987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_100
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b2ef31a91e6cce0800000000000000
+      internalID: -1385171783493211278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_101
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a67828cc022a2b00800000000000000
+      internalID: 804492921732101795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_102
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02557164273b64940800000000000000
+      internalID: 5280104916522063136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_103
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 978
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a2cf6dbb8363500800000000000000
+      internalID: 375549998348905064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_104
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 847
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed285dc62a8566430800000000000000
+      internalID: 3775802792230617822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_105
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 847
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f008f2dfe6474c40800000000000000
+      internalID: 5496439866079576313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_106
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 847
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d341c4bc124c1880800000000000000
+      internalID: -8638957294144371758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_107
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 847
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a15de50aec566540800000000000000
+      internalID: 5000786596433056163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_108
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 847
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09618eb8f2cc701f0800000000000000
+      internalID: -1078669081149172080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_109
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 847
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6254c1612a96bf0800000000000000
+      internalID: -330554881787746629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_110
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 847
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9579607693073690800000000000000
+      internalID: -7622619899635337825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_111
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 847
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8238792594e35c770800000000000000
+      internalID: 8630372745564619560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_112
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 847
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea191290b9c06380800000000000000
+      internalID: -8979955896774223124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_113
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 847
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95387fbbe7111e2d0800000000000000
+      internalID: -3251298219967675559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_114
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 847
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e11c7c0170f138c20800000000000000
+      internalID: 3207441474824683806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_115
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 847
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eabf849017cbf2a10800000000000000
+      internalID: 1886933962564631470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_116
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 847
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59cbd61ca743acd90800000000000000
+      internalID: -7076786162623464299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_117
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28875d927429b9480800000000000000
+      internalID: -8891352204970723198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_118
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40f4feafe0d95b410800000000000000
+      internalID: 1492271539208277764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_119
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f9a1ed1fdbbf6e00800000000000000
+      internalID: 1040256605899303415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_120
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60779936293b0a50800000000000000
+      internalID: 6488342524495097967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_121
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3850748314647ff50800000000000000
+      internalID: 6915072998781683075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_122
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e51a2dd11475c3db0800000000000000
+      internalID: -4810874364753698466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_123
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bacf3eb777b0c7b80800000000000000
+      internalID: -8395822997517894485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_124
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f4a6732b351d110800000000000000
+      internalID: 1283899393676300184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_125
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 973b90db5aec72cc0800000000000000
+      internalID: -3735790154644081799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_126
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef111039cdf374240800000000000000
+      internalID: 4775856146441376254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_127
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7e226516c7bb430800000000000000
+      internalID: 3799767468115945422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_128
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483a0ad62acadae90800000000000000
+      internalID: -7012759231122070652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_129
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 716
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21233c6b29be30630800000000000000
+      internalID: 3892213518342238738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_130
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 585
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c9631582daa65010800000000000000
+      internalID: 1177316173756459460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_131
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 585
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22630625a78380f50800000000000000
+      internalID: 6847785331436041762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_132
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 585
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c8c135bfc3184e70800000000000000
+      internalID: 9099544829921183945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_133
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 585
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b3c0c037d96ce90800000000000000
+      internalID: -7005739052879299749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_134
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 585
+        width: 1023
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7907aa25c893e3e0800000000000000
+      internalID: -2025607434795021953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_135
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 585
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c60893c4af6e8530800000000000000
+      internalID: 3859144684149933764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_136
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 454
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25aba3877247a9b0800000000000000
+      internalID: -5069009774504598225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_137
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 454
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734b05df5c3ccbef0800000000000000
+      internalID: -90982637328354249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_138
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 454
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abf5c21225627b460800000000000000
+      internalID: 7257311458716573626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_139
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 454
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7fbcf80572f3140800000000000000
+      internalID: 4701519762961463211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_140
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 454
+        width: 1023
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef1301bb0081300a0800000000000000
+      internalID: -6916658211293482498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_141
+      rect:
+        serializedVersion: 2
+        x: 1573
+        y: 454
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3dc1677206b13260800000000000000
+      internalID: 7075636611284847935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_142
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 323
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccff8f8f514a72120800000000000000
+      internalID: 2389058541621673932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_143
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 323
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28392364d32b0df30800000000000000
+      internalID: 4598371195785745282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_144
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 323
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98536d61e60dc4a30800000000000000
+      internalID: 4200961723677947273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_145
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 323
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a42187410e1b6f0800000000000000
+      internalID: -670508490983060985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_146
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 323
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3061021db4da2890800000000000000
+      internalID: -7481933922406670276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_147
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 323
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e459ef439f9dbc0f0800000000000000
+      internalID: -1095542419975400114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_148
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 192
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd09a6d3f3f6666c0800000000000000
+      internalID: -4150507689171316516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_149
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 192
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27acf7962bc25b2d0800000000000000
+      internalID: -3263653210174272910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_150
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 192
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba4e63505ad6df00800000000000000
+      internalID: 1141339594116975289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_151
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 192
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e4e647fd5aaad050800000000000000
+      internalID: 5826156388514456804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_152
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 192
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea306cb0de4d4a870800000000000000
+      internalID: 8693307295301764014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: qwerty-yellow_153
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 192
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 217b1286cdeed2da0800000000000000
+      internalID: -5967851300788783342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
