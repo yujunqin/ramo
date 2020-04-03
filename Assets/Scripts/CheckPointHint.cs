@@ -26,17 +26,19 @@ public class CheckPointHint : MonoBehaviour
         }
         if (!t.enabled && first_buff_cnt == 2) {
             t.enabled = true;
+            GetComponentInParent<PanelLerp>().Move(new Vector3(0f, -300f, 0f));
             StartCoroutine(WaitAndHide());
         }  
     }
     void NewRound(NewRoundEvent e) {
         if (e.round > 1) {
             gameObject.SetActive(false);
+            transform.parent.gameObject.SetActive(false);
         }
     }
 
     IEnumerator WaitAndHide() {
         yield return new WaitForSeconds(10f);
-        gameObject.SetActive(false);
+        GetComponentInParent<PanelLerp>().BackToInit();
     }
 }

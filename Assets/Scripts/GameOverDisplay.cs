@@ -20,6 +20,7 @@ public class GameOverDisplay : MonoBehaviour
     }
 
     void GameOver(GameOverEvent e) {
+        GetComponentInParent<PanelLerp>().BackToInit();
         t.enabled = true;
         if (e.winner == 1) {
             blue_win = e.blue_score;
@@ -34,6 +35,7 @@ public class GameOverDisplay : MonoBehaviour
     }
 
     void RoundEnd(RoundWinnerEvent e) {
+        GetComponentInParent<PanelLerp>().BackToInit();
         t.enabled = true;
         string winner_name;
         if (e.winner == 1) {
@@ -62,6 +64,7 @@ public class GameOverDisplay : MonoBehaviour
     IEnumerator WaitAndTurnOff(float time) {
         yield return new WaitForSeconds(time);
         t.enabled = false;
+        GetComponentInParent<PanelLerp>().Move(new Vector3(0, -500f, 0));
     }
 
 }

@@ -26,6 +26,7 @@ public class StartHint : MonoBehaviour
                 }
             }
             if (e.progress == "first grow") {
+                GetComponentInParent<PanelLerp>().Move(new Vector3(0f, -100f, 0f));
                 gameObject.SetActive(false);
             }
         }
@@ -34,6 +35,7 @@ public class StartHint : MonoBehaviour
     void NewRound(NewRoundEvent e) {
         if (e.round > 1) {
             gameObject.SetActive(false);
+            transform.parent.gameObject.SetActive(false);
         }
     }
 }
