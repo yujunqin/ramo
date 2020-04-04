@@ -25,7 +25,7 @@ public class SceneUtility : MonoBehaviour
         var rootObjects = SceneManager.GetActiveScene().GetRootGameObjects();
         foreach (var obj in rootObjects)
         {
-            if (!obj.CompareTag("Player") && obj.name != "Main Camera" && obj.name != "GameMaster")
+            if (!obj.CompareTag("Player") && !obj.name.Contains("Main Camera") && obj.name != "GameMaster")
             {
                 Destroy(obj);
             }
