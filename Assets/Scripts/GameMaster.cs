@@ -17,6 +17,7 @@ public class GameMaster : MonoBehaviour
     public static int total_round = 3;
     float[] height, resources;
     int[] goal_point;
+    public Camera cam1, cam2;
     private void Start() {
         sub = EventBus.Subscribe<HeightChangeEvent>(Judge);
         chestSub = EventBus.Subscribe<HeightChangeEvent>(ConvertChest);
@@ -110,6 +111,7 @@ public class GameMaster : MonoBehaviour
     }
 
     public void ResetGame(GameStartEvent e) {
+        SplitScreen();
         StartCoroutine(SceneUtility.LoadAll(round));
         EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(1, 1000));
         EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(2, 1000));
@@ -126,6 +128,25 @@ public class GameMaster : MonoBehaviour
 
     void GoalPointHandler(GoalPointEvent e) {
         ++goal_point[e.playerID];
+    }
+
+    void SplitScreen()
+    {
+        cam1.transform.position = new Vector3(-4.45f, 0f, -10f);
+        cam2.transform.position = new Vector3(4.45f, 0f, -10f);
+        cam1.rect = new Rect(0f,0f,0.5f,1f);
+        cam2.rect = new Rect(0.5f,0f,0.5f,1f);
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        foreach (GameObject player in players){
+            Debug.Log(player.name);
+            if (player.name == "Player(Clone)") {
+                if (cam1.GetComponent<CameraFollowPlayer>().player == null)
+                    cam1.GetComponent<CameraFollowPlayer>().player = player;
+                else if (cam2.GetComponent<CameraFollowPlayer>().player == null)
+                    cam2.GetComponent<CameraFollowPlayer>().player = player;
+            }
+            
+        }
     }
 }
 
