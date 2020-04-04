@@ -6,14 +6,16 @@ public class PanelLerp : MonoBehaviour
 {
     public Vector3 dest;
     Vector3 init_position;
+    RectTransform rt;
 
     private void Start() {
-        init_position = transform.position;
+        rt = GetComponent<RectTransform>();
+        init_position = rt.localPosition;
         dest = init_position;    
     }
 
     private void Update() {
-        transform.position = Vector3.Lerp(transform.position, dest, 0.05f);
+        rt.localPosition = Vector3.Lerp(rt.localPosition, dest, 0.05f);
     }
 
     public void BackToInit() {

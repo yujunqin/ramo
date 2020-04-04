@@ -64,7 +64,7 @@ public class GameOverDisplay : MonoBehaviour
     IEnumerator WaitAndTurnOff(float time) {
         yield return new WaitForSeconds(time);
         t.enabled = false;
-        GetComponentInParent<PanelLerp>().Move(new Vector3(0, -500f, 0));
+        GetComponentInParent<PanelLerp>().Move(new Vector3(0, -1000f, 0));
     }
 
 }
