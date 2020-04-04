@@ -19,7 +19,7 @@ public class CheerTextDisplay : MonoBehaviour
     }
 
     IEnumerator DisplayAndDisappear() {
-        GetComponentInParent<PanelLerp>().Move(new Vector3(0, -210f, 0));
+        GetComponentInParent<PanelLerp>().Move(new Vector3(0, -400f, 0));
         yield return new WaitForSeconds(3f);
         GetComponentInParent<PanelLerp>().BackToInit();
     }
