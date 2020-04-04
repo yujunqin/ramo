@@ -26,10 +26,10 @@ public class GrowProgressManager : MonoBehaviour
     void GrowProgressUpdate(GrowProgressEvent e)
     {
         bool exist = ProgressBars.Exists(x => 
-            x.GetComponent<ProgressBarCircle>().branchID == e.id);
+            x.GetComponent<ProgressBarCircle>().branchID == e.branchid);
         if (exist) {
             GameObject bar = ProgressBars.Find(x => 
-                x.GetComponent<ProgressBarCircle>().branchID == e.id);
+                x.GetComponent<ProgressBarCircle>().branchID == e.branchid);
             if (e.appear) { // update
                 ProgressBarCircle barCircle = bar.GetComponent<ProgressBarCircle>();
                 barCircle.Total = e.totalRes;
@@ -43,9 +43,9 @@ public class GrowProgressManager : MonoBehaviour
         else if (e.appear) { // create new bar
             GameObject newBar = Instantiate(progressBar, e.position, Quaternion.identity);
             newBar.transform.SetParent(transform);
-            newBar.transform.localPosition = ConvertPosition(e.position, e.direction);
+            newBar.transform.localPosition = ConvertPosition(e.position, e.direction, e.playerid);
             ProgressBarCircle newBarCircle = newBar.GetComponent<ProgressBarCircle>();
-            newBarCircle.branchID = e.id;
+            newBarCircle.branchID = e.branchid;
             newBarCircle.Total = e.totalRes;
             newBarCircle.Remain = e.needRes;
             newBar.GetComponent<RectTransform>().localScale = new Vector3(0.012f, 0.012f, 0.012f);
@@ -54,12 +54,12 @@ public class GrowProgressManager : MonoBehaviour
 
     }
 
-    Vector3 ConvertPosition(Vector3 pos, Vector3 dir)
+    Vector3 ConvertPosition(Vector3 pos, Vector3 dir, int playerID)
     {
         Vector3 baseVec = new Vector3(0.0f, 100.0f, 0.0f);
         Vector3 offset = Quaternion.FromToRotation(baseVec, dir) * baseVec;
         Vector2 canvasPos;
-        Vector2 screenPoint = Camera.main.WorldToScreenPoint(pos);
+        Vector2 screenPoint = Camera.allCameras[playerID-1].WorldToScreenPoint(pos);
         
         // Convert screen position to Canvas / RectTransform space <- leave camera null if Screen Space Overlay
         RectTransformUtility.ScreenPointToLocalPointInRectangle(canvasRect, screenPoint, null, out canvasPos);
@@ -74,15 +74,17 @@ class GrowProgressEvent {
     public int totalRes;
     public int needRes;
     public bool appear;
-    public int id;
+    public int branchid;
+    public int playerid;
     public Vector3 direction;
-    public GrowProgressEvent(Transform trans, int need, int total, bool app, int ID) {
+    public GrowProgressEvent(Transform trans, int need, int total, bool app, int branchID, int playerID) {
         position = trans.position;
         direction = trans.right;
         totalRes = total;
         needRes = need;
         appear = app;
-        id = ID;
+        branchid = branchID;
+        playerid = playerID;
     }
 
 }
