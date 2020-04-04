@@ -22,8 +22,8 @@ public class GoalPointController : MonoBehaviour
         {
             isTouchable = true;
             foreach (var sr in GetComponentsInChildren<SpriteRenderer>()) {
-            sr.enabled = true;
-        }
+                sr.enabled = true;
+            }
         }
 
         goalPointSub = EventBus.Subscribe<GoalPointEvent>(GoalPointHandler);
@@ -40,12 +40,12 @@ public class GoalPointController : MonoBehaviour
         if (e.playerID == playerID && e.index == index - 1 && !isTouchable)
         {
             isTouchable = true;
+            GetComponent<ShakeEffect>().Shake();
         }
         if (e.index == index - 1) {
             foreach (var sr in GetComponentsInChildren<SpriteRenderer>()) {
                 sr.enabled = true;
             }
-            GetComponent<ShakeEffect>().Shake();
         } 
     }
 

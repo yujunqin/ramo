@@ -19,7 +19,7 @@ public class ShakeEffect : MonoBehaviour
     }
 
     public void Shake() {
-        transform.localScale = 2f * transform.localScale;
+        transform.localScale = 2f * init_scale;
     }
 
 
