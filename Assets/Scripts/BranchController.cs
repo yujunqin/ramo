@@ -181,11 +181,11 @@ public class BranchController : MonoBehaviour
                 type.Mature();
 
                 EventBus.Publish<GrowProgressEvent>(new GrowProgressEvent(transform,
-                    10, 10, false, GetInstanceID()));
+                    10, 10, false, GetInstanceID(), PlayerID));
             }
             else {
                 EventBus.Publish<GrowProgressEvent>(new GrowProgressEvent(transform,
-                    ResourcesNeeded() - resourcesDeposit, ResourcesNeeded(), true, GetInstanceID()));
+                    ResourcesNeeded() - resourcesDeposit, ResourcesNeeded(), true, GetInstanceID(), PlayerID));
             }
             return consumed;
         }
@@ -228,7 +228,7 @@ public class BranchController : MonoBehaviour
         }
 
         EventBus.Publish<GrowProgressEvent>(new GrowProgressEvent(transform,
-                    10, 10, false, GetInstanceID()));
+                    10, 10, false, GetInstanceID(), PlayerID));
 
         Destroy(gameObject);
         return resources + Mathf.FloorToInt(cost * 0.5f);
@@ -256,7 +256,7 @@ public class BranchController : MonoBehaviour
             isSelected = true;
             if (type.GetBType() != BranchType.BType.Old) {
                 EventBus.Publish<GrowProgressEvent>(new GrowProgressEvent(transform,
-                    ResourcesNeeded()-resourcesDeposit, ResourcesNeeded(), true, GetInstanceID()));
+                    ResourcesNeeded()-resourcesDeposit, ResourcesNeeded(), true, GetInstanceID(), PlayerID));
             }
         } 
     }
@@ -277,7 +277,7 @@ public class BranchController : MonoBehaviour
             player.selected_branches.Remove(this);
             isSelected = false;
             EventBus.Publish<GrowProgressEvent>(new GrowProgressEvent(transform,
-                10, 10, false, GetInstanceID()));
+                10, 10, false, GetInstanceID(), PlayerID));
         }
     }
 
