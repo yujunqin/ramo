@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 1579715399819642415}
   - component: {fileID: 1579715399819642416}
   - component: {fileID: 1579715399819642417}
+  - component: {fileID: 1720672196536292814}
   m_Layer: 0
   m_Name: GoalPoint3
   m_TagString: Untagged
@@ -192,3 +193,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 3
   playerID: 0
+--- !u!114 &1720672196536292814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579715399819642418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873412e8cfe60d54e8b09e05dee1c3de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  k: 0.1
+  damp: 0.95

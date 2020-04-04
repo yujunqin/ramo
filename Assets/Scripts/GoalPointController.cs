@@ -45,6 +45,7 @@ public class GoalPointController : MonoBehaviour
             foreach (var sr in GetComponentsInChildren<SpriteRenderer>()) {
                 sr.enabled = true;
             }
+            GetComponent<ShakeEffect>().Shake();
         } 
     }
 
@@ -64,6 +65,7 @@ public class GoalPointController : MonoBehaviour
                 // lightup goalpoint
                 GetComponent<SpriteRenderer>().color = Color.white;
                 // AudioSource.PlayClipAtPoint(checkpointClip, Camera.main.transform.position);
+                GetComponent<ShakeEffect>().Shake();
             }
         }
     }
