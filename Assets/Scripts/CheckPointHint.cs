@@ -18,6 +18,9 @@ public class CheckPointHint : MonoBehaviour
     }
 
     void PlayerProgressEventHandler(PlayerProgressEvent e){
+        if (!isActiveAndEnabled) {
+            return;
+        }
         if (e.progress == "first buff") {
             ++first_buff_cnt;
         }

@@ -35,6 +35,7 @@ public class BranchController : MonoBehaviour
 
     // Visual highlighting
     bool isSelected;
+    bool isDead = false;
 
     void Start()
     {
@@ -230,10 +231,19 @@ public class BranchController : MonoBehaviour
         EventBus.Publish<GrowProgressEvent>(new GrowProgressEvent(transform,
                     10, 10, false, GetInstanceID()));
 
-        Destroy(gameObject);
+        GetComponent<Rigidbody>().isKinematic = false;
+        GetComponent<Rigidbody>().useGravity = true;
+        GetComponent<Rigidbody>().velocity = new Vector3(UnityEngine.Random.Range(-0.5f, 0.5f), UnityEngine.Random.Range(-0.5f, 0f));
+        tag = "Untagged";
+        isDead = true;
+        StartCoroutine(WaitAndDestroy(gameObject));
         return resources + Mathf.FloorToInt(cost * 0.5f);
     }
 
+    IEnumerator WaitAndDestroy(GameObject obj) {
+        yield return new WaitForSeconds(1.5f);
+        Destroy(obj);
+    }
      IEnumerator AutoGrow() {
         while (true){
             yield return new WaitForSeconds(1f);
@@ -247,7 +257,7 @@ public class BranchController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         PlayerMovement player = other.GetComponent<PlayerMovement>();
-        if (player)
+        if (player && !isDead)
         {
             if (root) {
                 EventBus.Publish<PlayerProgressEvent>(new PlayerProgressEvent("reach root", GetPlayerID()));
@@ -272,7 +282,7 @@ public class BranchController : MonoBehaviour
 
     private void OnTriggerExit(Collider other) {
         PlayerMovement player = other.GetComponent<PlayerMovement>();
-        if (player)
+        if (player && !isDead)
         {
             player.selected_branches.Remove(this);
             isSelected = false;

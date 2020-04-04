@@ -17,6 +17,9 @@ public class ResourcecHint : MonoBehaviour
     }
 
     void PlayerProgressEventHandler(PlayerProgressEvent e){
+        if (!isActiveAndEnabled) {
+            return;
+        }
         if (e.PlayerID == PlayerID) {
             if (e.progress == "first grow") {
                 t.text = "Grow to a log for extra resources!";
