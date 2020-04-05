@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3145063767699502252}
   - component: {fileID: 3145063767699502253}
   - component: {fileID: 3145063767699502254}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bomb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,8 +129,8 @@ MonoBehaviour:
   TrajactoryPoint: {fileID: 4348749455747037443, guid: ce500d50e48534af8a7342de1c2f3e2c,
     type: 3}
   ExplosionPrefab: {fileID: 139366, guid: b185c1a9cf067374586d095111b15bd1, type: 3}
-  TrajectoryPointNum: 70
-  timeIntvl: 0.05
+  TrajectoryPointNum: 500
+  timeIntvl: 0.01
   direction: {x: 0, y: 1, z: 0}
   offset: {x: 0.05, y: 0, z: 0}
   swellFactor: 5

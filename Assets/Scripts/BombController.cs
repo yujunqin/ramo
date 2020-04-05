@@ -34,6 +34,7 @@ public class BombController : MonoBehaviour
             TrajactoryPoints[i] = Instantiate(TrajactoryPoint, transform.position, Quaternion.identity);
             TrajactoryPoints[i].transform.SetParent(transform);
         }
+        EventBus.Publish<BombEvent>(new BombEvent(false));
     }
 
     // Update is called once per frame
@@ -93,6 +94,7 @@ public class BombController : MonoBehaviour
         explosion.transform.SetParent(transform);
         explosion.transform.localScale = new Vector3(7.0f, 7.0f, 1.0f);
         yield return new WaitForSeconds(1.0f);
+        EventBus.Publish<BombEvent>(new BombEvent(true));
         Destroy(gameObject);
     }
 
@@ -110,5 +112,12 @@ public class BombController : MonoBehaviour
     bool ShootPressed() 
     {
         return (PlayerID == 1 && Input.GetKeyDown(KeyCode.V)) || (PlayerID == 2 && Input.GetKeyDown(KeyCode.I));
+    }
+}
+
+class BombEvent {
+    public bool isExplode;
+    public BombEvent(bool explode) {
+        isExplode = explode;
     }
 }

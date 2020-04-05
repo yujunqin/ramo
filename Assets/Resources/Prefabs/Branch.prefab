@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7497549193213220776}
   - component: {fileID: 7892245438705857749}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: JointSprite
   m_TagString: Branch
   m_Icon: {fileID: 0}
@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 139233891072719924}
   - component: {fileID: 8426111790576042315}
   - component: {fileID: 1570921237499480236}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BranchSprite
   m_TagString: Branch
   m_Icon: {fileID: 0}

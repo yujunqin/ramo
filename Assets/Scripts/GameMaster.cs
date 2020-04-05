@@ -42,7 +42,7 @@ public class GameMaster : MonoBehaviour
         }
     }
     void Judge(HeightChangeEvent h) {
-        if (!finished && h.height >= 100f && goal_point[h.PlayerID] >= 3) {
+        if (!finished && h.height >= 500f && goal_point[h.PlayerID] >= 3) {
             finished = true;
             height[1] = 0;
             height[2] = 0;
