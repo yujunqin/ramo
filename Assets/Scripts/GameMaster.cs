@@ -15,6 +15,7 @@ public class GameMaster : MonoBehaviour
     bool[] first_buff, first_check, chest_converted;
     int round = 1, bluewin = 0;
     public static int total_round = 3;
+    public bool analytics = true;
     float[] height, resources;
     int[] goal_point;
     public Camera cam1, cam2;
@@ -147,6 +148,11 @@ public class GameMaster : MonoBehaviour
             }
             
         }
+    }
+
+    public void OnToggleChanged()
+    {
+        analytics = !analytics;
     }
 }
 
