@@ -17,6 +17,9 @@ public class StartHint : MonoBehaviour
     }
 
     void PlayerProgressEventHandler(PlayerProgressEvent e){
+        if (!isActiveAndEnabled) {
+            return;
+        }
         if (e.PlayerID == PlayerID) {
             if (e.progress == "reach root") {
                 if (PlayerID == 1) {
