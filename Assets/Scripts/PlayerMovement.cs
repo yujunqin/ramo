@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -161,6 +162,7 @@ public class PlayerMovement : MonoBehaviour
         List<BranchController> deletion_list = new List<BranchController>();
         if (selected_branches != null)
         {
+            int total_farmed = 0;
             foreach (var branch in selected_branches) {
                 if (!branch) {
                     deletion_list.Add(branch);
@@ -169,10 +171,18 @@ public class PlayerMovement : MonoBehaviour
 
                 AudioClip clip = Resources.Load<AudioClip>("Sound Effects/Prune");
                 AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position, 1f);
-                resource += branch.Damage(1000);
-                EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
+                total_farmed += branch.Damage(1000);
             }
+
+            resource += total_farmed;
+            EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
+
+            GameObject tooltipPrefab = Resources.Load<GameObject>("Prefabs/Floating Text");
+            tooltipPrefab.GetComponent<TextMeshPro>().text = "+" + total_farmed.ToString() + " wood!";
+            GameObject tooltip = Instantiate(tooltipPrefab, transform.position, Quaternion.identity);
+            Destroy(tooltip, 1f);
         }
+
         foreach (var branch in deletion_list) {
             selected_branches.Remove(branch);
         }
