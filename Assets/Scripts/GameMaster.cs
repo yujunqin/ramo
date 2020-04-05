@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;
 
 public class GameMaster : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class GameMaster : MonoBehaviour
     int round = 1, bluewin = 0;
     public static int total_round = 3;
     public bool analytics = true;
+    float last_analyzed_time = 0f;
     float[] height, resources;
     int[] goal_point;
     public Camera cam1, cam2;
@@ -41,8 +43,24 @@ public class GameMaster : MonoBehaviour
             resources[i] = 0f;
             goal_point[i] = 0;
         }
+
+        if (analytics)
+        {
+            AnalyticsEvent.LevelStart(SceneManager.GetActiveScene().buildIndex, 
+                new Dictionary<string, object>(){{"Date", System.DateTime.Now.ToString("MM/dd")}}
+            );
+        }
     }
     void Judge(HeightChangeEvent h) {
+        if (analytics && Time.time >= last_analyzed_time + 3f)
+        {
+            AnalyticsEvent.Custom("HeightUpdate", 
+                new Dictionary<string, object>{ {"Time", Time.time}, {"PlayerIndex", h.PlayerID}, {"Height", h.height} }
+            );
+            last_analyzed_time = Time.time;
+        }
+       
+
         if (!finished && h.height >= 300f && goal_point[h.PlayerID] >= 3) {
             finished = true;
             height[1] = 0;
@@ -128,6 +146,12 @@ public class GameMaster : MonoBehaviour
     }
 
     void GoalPointHandler(GoalPointEvent e) {
+        if (analytics)
+        {
+            AnalyticsEvent.Custom("GoalPoint", 
+                new Dictionary<string, object>{ {"Time", Time.time}, {"PlayerIndex", e.playerID}, {"GoalPointIndex", e.index} }
+            );
+        }
         ++goal_point[e.playerID];
     }
 

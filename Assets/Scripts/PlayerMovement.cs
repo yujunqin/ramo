@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;
 using TMPro;
 
 public class PlayerMovement : MonoBehaviour
@@ -34,6 +35,8 @@ public class PlayerMovement : MonoBehaviour
     int free_bomb = 0;
     Subscription<ResourceChangeEvent> resSub;
     Subscription<FreeBombEvent> fbs;
+
+    bool analytics;
 
     void Awake()
     {
@@ -68,6 +71,8 @@ public class PlayerMovement : MonoBehaviour
         resSub = EventBus.Subscribe<ResourceChangeEvent>(ResourceChangeHandler);
         fbs = EventBus.Subscribe<FreeBombEvent>(FreeBombEventHandler);
         playerAnim = playerIns.GetComponent<Animator>();
+
+        analytics = GameObject.FindWithTag("GameController").GetComponent<GameMaster>().analytics;
     }
 
     void Update() {
@@ -189,6 +194,13 @@ public class PlayerMovement : MonoBehaviour
         foreach (var branch in deletion_list) {
             selected_branches.Remove(branch);
         }
+
+        if (analytics)
+        {
+            AnalyticsEvent.Custom("Prune!", 
+                new Dictionary<string, object>(){{"Time", Time.time}, {"PlayerIndex", PlayerID}, {"Resource", resource}}
+            );
+        }
     }
 
     public void OnRestart(InputAction.CallbackContext context)
@@ -237,6 +249,12 @@ public class PlayerMovement : MonoBehaviour
                 bombIns.GetComponent<BombController>().ThrowBomb();
                 bombIns = null;
             }
+        }
+        if (analytics)
+        {
+            AnalyticsEvent.Custom("Bombard!", 
+                new Dictionary<string, object>(){{"Time", Time.time}, {"PlayerIndex", PlayerID}, {"Resource", resource}}
+            );
         }
     }
 
