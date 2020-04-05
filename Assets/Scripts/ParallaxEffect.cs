@@ -6,7 +6,7 @@ public class ParallaxEffect : MonoBehaviour
 {
     public float ParallaxRate = 0;
     public int CameraID = 0;
-    public Camera cam = null;
+    Camera cam = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +21,7 @@ public class ParallaxEffect : MonoBehaviour
                 cam = Camera.allCameras[CameraID];
         }
         else {
-            transform.localPosition = new Vector3(0f, -ParallaxRate*cam.transform.position.y, 0f);
+            transform.localPosition = new Vector3(0f, ParallaxRate*cam.transform.position.y, 0f);
         }
     }
 }
