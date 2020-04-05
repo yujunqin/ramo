@@ -177,10 +177,13 @@ public class PlayerMovement : MonoBehaviour
             resource += total_farmed;
             EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
 
-            GameObject tooltipPrefab = Resources.Load<GameObject>("Prefabs/Floating Text");
-            tooltipPrefab.GetComponent<TextMeshPro>().text = "+" + total_farmed.ToString() + " wood!";
-            GameObject tooltip = Instantiate(tooltipPrefab, transform.position, Quaternion.identity);
-            Destroy(tooltip, 1f);
+            if (total_farmed != 0)
+            {
+                GameObject tooltipPrefab = Resources.Load<GameObject>("Prefabs/Floating Text");
+                tooltipPrefab.GetComponent<TextMeshPro>().text = "+" + total_farmed.ToString() + " wood!";
+                GameObject tooltip = Instantiate(tooltipPrefab, transform.position, Quaternion.identity);
+                Destroy(tooltip, 1f);
+            }
         }
 
         foreach (var branch in deletion_list) {
