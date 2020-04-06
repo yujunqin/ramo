@@ -26,6 +26,9 @@ public class BuffPool : MonoBehaviour
         for (int i = 0; i < buffCount; i++)
         {
             currentY += Random.Range(Ymin, Ymax);
+            if (currentY > 22f) {
+                break;
+            }
             currentX = Random.Range(Xmin, Xmax);
             currentCheckpointL = (GameObject)Instantiate(buffPrefab, new Vector2(-currentX, currentY) + (Vector2) transform.position, Quaternion.identity);
             currentCheckpointL.GetComponent<BuffController>().playerIndex = 1;

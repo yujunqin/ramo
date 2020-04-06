@@ -21,11 +21,6 @@ public class StartHint : MonoBehaviour
 
     private void Update()
     {
-        if (pruneShown && firstGrowDone)
-        {
-            GetComponentInParent<PanelLerp>().Move(new Vector3(0f, -100f, 0f));
-            gameObject.SetActive(false);
-        }
     }
 
     void PlayerProgressEventHandler(PlayerProgressEvent e){
@@ -39,10 +34,9 @@ public class StartHint : MonoBehaviour
                 } else {
                     t.text = "Press /!";
                 }
-                StartCoroutine(ShowPruneTip());
             }
             if (e.progress == "first grow") {
-                firstGrowDone = true;
+                StartCoroutine(ShowPruneTip());
             }
         }
     }
@@ -56,14 +50,13 @@ public class StartHint : MonoBehaviour
 
     IEnumerator ShowPruneTip()
     {
-        yield return new WaitForSeconds(1);
         if (PlayerID == 1) {
             t.text = "Prune = Q";
         }
         else {
             t.text = "Prune = .>";
         }
-        yield return new WaitForSeconds(1);
-        pruneShown = true;
+        yield return new WaitForSeconds(3f);
+        GetComponentInParent<PanelLerp>().Move(new Vector3(0, -100f, 0));
     }
 }

@@ -38,6 +38,9 @@ public class ShieldPool : MonoBehaviour
     void ShieldHandler(ShieldEvent e)
     {
         currentY += Random.Range(Ymin, Ymax);
+        if (currentY > 16f) {
+            return;
+        }
         // currentX = Random.Range(Xmin, Xmax);
         currentX = Mathf.Lerp(Xmin, Xmax, NextShieldPosition());
         currentShieldL = (GameObject)Instantiate(shieldPrefab, new Vector2(-currentX, currentY) + (Vector2) transform.position, Quaternion.identity);
