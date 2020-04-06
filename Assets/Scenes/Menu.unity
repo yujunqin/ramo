@@ -346,83 +346,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 28983940}
   m_CullTransparentMesh: 0
---- !u!1 &42278993
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 42278994}
-  - component: {fileID: 42278996}
-  - component: {fileID: 42278995}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &42278994
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 42278993}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 775438134}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 50, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0, y: 0.5}
---- !u!114 &42278995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 42278993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 1
-    m_LineSpacing: 1
-  m_Text: Enter the corresponding box to ready up!
---- !u!222 &42278996
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 42278993}
-  m_CullTransparentMesh: 0
 --- !u!1 &77515520
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,7 +827,7 @@ GameObject:
   - component: {fileID: 305151270}
   - component: {fileID: 305151269}
   m_Layer: 0
-  m_Name: Wall (1)
+  m_Name: Left Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1547,7 +1470,7 @@ GameObject:
   - component: {fileID: 679815301}
   - component: {fileID: 679815300}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1788,7 +1711,6 @@ RectTransform:
   - {fileID: 466500014}
   - {fileID: 1201106670}
   - {fileID: 1870315429}
-  - {fileID: 42278994}
   - {fileID: 1181118091}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -2319,12 +2241,12 @@ RectTransform:
   - {fileID: 2062966690}
   - {fileID: 416051177}
   m_Father: {fileID: 775438134}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -261.7, y: 128.1}
-  m_SizeDelta: {x: 160, y: 36.8}
+  m_AnchoredPosition: {x: -250.85, y: 127.72}
+  m_SizeDelta: {x: 181.7, y: 37.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1181118092
 MonoBehaviour:
@@ -2822,7 +2744,7 @@ GameObject:
   - component: {fileID: 1354480248}
   - component: {fileID: 1354480247}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: Controller Join Prompt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2974,7 +2896,7 @@ GameObject:
   - component: {fileID: 1389201954}
   - component: {fileID: 1389201953}
   m_Layer: 0
-  m_Name: Wall (2)
+  m_Name: Right Wall
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3140,7 +3062,7 @@ GameObject:
   - component: {fileID: 1445399864}
   - component: {fileID: 1445399863}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: Controller Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3759,7 +3681,7 @@ GameObject:
   - component: {fileID: 1870315431}
   - component: {fileID: 1870315430}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Keyboard Join Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4070,7 +3992,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1926205328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.5, y: -4.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4141,7 +4063,7 @@ PrefabInstance:
     - target: {fileID: 4521003967556911876, guid: ed2fdfe71c27d744baa9a4d19bf21f21,
         type: 3}
       propertyPath: m_Name
-      value: PlayerJoinBox (1)
+      value: Yellow Join Box
       objectReference: {fileID: 0}
     - target: {fileID: 6662547290448524127, guid: ed2fdfe71c27d744baa9a4d19bf21f21,
         type: 3}
@@ -4440,7 +4362,7 @@ PrefabInstance:
     - target: {fileID: 4521003967556911876, guid: ed2fdfe71c27d744baa9a4d19bf21f21,
         type: 3}
       propertyPath: m_Name
-      value: PlayerJoinBox
+      value: Blue Join Box
       objectReference: {fileID: 0}
     - target: {fileID: 6662547290448524127, guid: ed2fdfe71c27d744baa9a4d19bf21f21,
         type: 3}
