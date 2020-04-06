@@ -20,11 +20,12 @@ public class GoalPointPool : MonoBehaviour
         Random.InitState((int)System.DateTime.Now.Ticks);
         int[] order = new int[]{0, 1, 2};
         int[] orderX = GetRandomNum(order);
-        int[] orderY = GetRandomNum(order);
+        // int[] orderY = GetRandomNum(order);
+        // monotonically increase y
 
-        Vector2 position1 = generateRandomPosition(orderX[0], orderY[0]);
-        Vector2 position2 = generateRandomPosition(orderX[1], orderY[1]);
-        Vector2 position3 = generateRandomPosition(orderX[2], orderY[2]);
+        Vector2 position1 = generateRandomPosition(orderX[0], 0);
+        Vector2 position2 = generateRandomPosition(orderX[1], 1);
+        Vector2 position3 = generateRandomPosition(orderX[2], 2);
         
         generateCheckPoint(position1, goalPoint1);
         generateCheckPoint(position2, goalPoint2);
@@ -48,7 +49,8 @@ public class GoalPointPool : MonoBehaviour
     Vector2 generateRandomPosition(int x, int y)
     {
         float currentX = Mathf.Lerp(Xmin + (Xmax - Xmin) * x / 3 + 0.2f, Xmin + (Xmax - Xmin) * (x + 1) / 3 - 0.2f, NextPosition());
-        float currentY = Mathf.Lerp(Ymin + (Ymax - Ymin) * y / 3 + 0.2f, Ymin + (Ymax - Ymin) * (y + 1) / 3 - 0.2f, NextPosition());
+        // float currentY = Mathf.Lerp(Ymin + (Ymax - Ymin) * y / 3 + 0.2f, Ymin + (Ymax - Ymin) * (y + 1) / 3 - 0.2f, NextPosition());
+        float currentY = Mathf.Lerp(Ymin + (Ymax - Ymin) * y + 0.2f, Ymin + (Ymax - Ymin) * (y + 1) - 0.2f, NextPosition());
         return new Vector2(currentX, currentY);
     }
 

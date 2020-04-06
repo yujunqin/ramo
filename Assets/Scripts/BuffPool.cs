@@ -7,8 +7,8 @@ public class BuffPool : MonoBehaviour
     // TODO: merge CheckpointPool with this file
 
     public GameObject buffPrefab;  
-    public int buffCount;
-    float Ymax = 2f;
+    static int buffCount = 20;
+    float Ymax = 2.5f;
     float Ymin = 0.5f;
     float Xmax = 7f;
     float Xmin = 1f;
