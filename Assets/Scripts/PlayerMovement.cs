@@ -36,6 +36,8 @@ public class PlayerMovement : MonoBehaviour
     Subscription<ResourceChangeEvent> resSub;
     Subscription<FreeBombEvent> fbs;
 
+    float movementTime = 0f;
+
     bool analytics;
 
     void Awake()
@@ -83,9 +85,24 @@ public class PlayerMovement : MonoBehaviour
 
         if (bombIns)
         {
+            // Aim the bomb
             GetComponent<Rigidbody>().velocity = Vector3.zero;
             var action = GetComponent<PlayerInput>().actions.FindAction("Aim");
             bombIns.GetComponent<BombController>().direction.x += 0.2f * Time.deltaTime * action.ReadValue<Vector2>().x;
+        } else {
+            // Move the player
+            var action = GetComponent<PlayerInput>().actions.FindAction("Move");
+            var velocity = action.ReadValue<Vector2>();
+            if (velocity != new Vector2(0f, 0f))
+            {
+                movementTime += Time.deltaTime;
+                GetComponent<Rigidbody>().velocity = MoveSpeed * velocity * (movementTime * 1f + 0.4f);
+            }
+            else
+            {
+                movementTime = 0f;
+                GetComponent<Rigidbody>().velocity = MoveSpeed * velocity;
+            }
         }
 
         if (isSpeedingUp && curBuffTime + duration > Time.time)
@@ -109,14 +126,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        if (bombIns)
-        {
-            return;
-        }
-        Vector2 velocity = context.ReadValue<Vector2>();
-        // rb.velocity = MoveSpeed * velocity.normalized;
-        // rb.velocity = MoveSpeed * velocity;
-        GetComponent<Rigidbody>().velocity = MoveSpeed * velocity;
     }
 
     public void OnGrow(InputAction.CallbackContext context)
