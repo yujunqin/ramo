@@ -5,8 +5,8 @@ using UnityEngine;
 public class ShieldPool : MonoBehaviour
 {
     public GameObject shieldPrefab;  
-    float Ymax = 5f;
-    float Ymin = 3f;
+    float Ymax = 4f;
+    float Ymin = 2f;
     float Xmax = 8f;
     float Xmin = 1f;
 
