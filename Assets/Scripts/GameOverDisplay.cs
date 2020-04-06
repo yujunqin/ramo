@@ -25,11 +25,11 @@ public class GameOverDisplay : MonoBehaviour
         if (e.winner == 1) {
             blue_win = e.blue_score;
             t.text = "\nBlue Bird Wins!\n Press Y button / P key to restart.";
-            t.color = Color.blue;
+            // t.color = Color.blue;
         } else {
             yellow_win = e.yellow_score;
             t.text = "\nYellow Bird Wins!\n Press Y button / P key to restart.";
-            t.color = Color.yellow;
+            // t.color = Color.yellow;
         }
         t.text = blue_win.ToString() + ":" + yellow_win.ToString() + t.text;
     }
@@ -40,11 +40,11 @@ public class GameOverDisplay : MonoBehaviour
         string winner_name;
         if (e.winner == 1) {
             winner_name = "Blue Bird";
-            t.color = Color.blue;
+            // t.color = Color.blue;
             blue_win = e.blue_score;
         } else {
             winner_name = "Yellow Bird";
-            t.color = Color.yellow;
+            // t.color = Color.yellow;
             yellow_win = e.yellow_score;
         }
         t.text = "Round " + e.round + " Winner: " + winner_name;
@@ -57,7 +57,7 @@ public class GameOverDisplay : MonoBehaviour
         if (nr.round == GameMaster.total_round) {
             t.text += "\nFinal Round!!";
         }
-        t.color = Color.black;
+        // t.color = Color.black;
         StartCoroutine(WaitAndTurnOff(3f));
     }
 
