@@ -96,7 +96,7 @@ public class PlayerMovement : MonoBehaviour
             if (velocity != new Vector2(0f, 0f))
             {
                 movementTime += Time.deltaTime;
-                GetComponent<Rigidbody>().velocity = MoveSpeed * velocity * Mathf.Min((movementTime * 1f + 0.4f), 5f);
+                GetComponent<Rigidbody>().velocity = MoveSpeed * velocity * Mathf.Min((movementTime * 1f + 0.3f), 5f);
             }
             else
             {

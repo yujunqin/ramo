@@ -116,11 +116,11 @@ public class BranchController : MonoBehaviour
     {
         byte hp = (byte) (((float) hits / maxHits) * 255);
         Color32[] palette = {
-            new Color32(0x60, 0x5B, 0x56, hp),
-            new Color32(0x83, 0x7A, 0x75, hp),
-            new Color32(0xAC, 0xC1, 0x8A, hp),
-            new Color32(0xDA, 0xFE, 0xB7, hp),
-            new Color32(0xF2, 0xFB, 0xE0, hp),
+            new Color32(0x60, 0x5D, 0x60, hp),
+            new Color32(0x82, 0x7B, 0x72, hp),
+            new Color32(0x9F, 0xC1, 0x8B, hp),
+            new Color32(0xC9, 0xFF, 0xB7, hp),
+            new Color32(0xED, 0xF9, 0xDE, hp),
         };
         if (isSelected)
         {
