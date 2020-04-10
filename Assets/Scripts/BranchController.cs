@@ -147,7 +147,7 @@ public class BranchController : MonoBehaviour
             resourcesNeeded += Context.countCost(genome);
         }
         // TODO: figure out the growth rate of the cost
-        return (int) (resourcesNeeded * Mathf.Pow(1.04f, depth));
+        return (int) (resourcesNeeded * Mathf.Pow(1.03f, depth));
     }
 
     [ContextMenu("Grow")]
@@ -231,16 +231,27 @@ public class BranchController : MonoBehaviour
             resources += subBranch.GetComponent<BranchController>().DestroyBranch();
         }
 
-        EventBus.Publish<GrowProgressEvent>(new GrowProgressEvent(transform,
-                    10, 10, false, GetInstanceID(), PlayerID));
+        if (!isDead)
+        {
+            isDead = true;
+            EventBus.Publish<GrowProgressEvent>(new GrowProgressEvent(transform,
+                        10, 10, false, GetInstanceID(), PlayerID));
 
-        GetComponent<Rigidbody>().isKinematic = false;
-        GetComponent<Rigidbody>().useGravity = true;
-        GetComponent<Rigidbody>().velocity = new Vector3(UnityEngine.Random.Range(-0.5f, 0.5f), UnityEngine.Random.Range(-0.5f, 0f));
-        tag = "Untagged";
-        isDead = true;
-        StartCoroutine(WaitAndDestroy(gameObject));
-        return resources + Mathf.FloorToInt(cost * 0.5f);
+            GetComponent<Rigidbody>().isKinematic = false;
+            GetComponent<Rigidbody>().useGravity = true;
+            GetComponent<Rigidbody>().velocity = new Vector3(UnityEngine.Random.Range(-0.5f, 0.5f), UnityEngine.Random.Range(-0.5f, 0f));
+            tag = "Untagged";
+            StartCoroutine(WaitAndDestroy(gameObject));
+            if (type.GetBType() == BranchType.BType.Old)
+            {
+                resources += ResourcesNeeded();
+            }
+            else
+            {
+                resources += resourcesDeposit;
+            }
+        }
+        return resources;
     }
 
     IEnumerator WaitAndDestroy(GameObject obj) {
@@ -329,6 +340,11 @@ public class BranchController : MonoBehaviour
         }
     }
 
+    public bool IsDead()
+    {
+        return isDead;
+    }
+
 }
 
 public class BranchType {
@@ -367,4 +383,5 @@ public class BranchType {
     {
         type = BType.Old;
     }
+
 }

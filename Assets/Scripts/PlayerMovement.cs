@@ -178,17 +178,23 @@ public class PlayerMovement : MonoBehaviour
         {
             int total_farmed = 0;
             foreach (var branch in selected_branches) {
-                if (!branch) {
+                if (!branch || branch.IsDead()) {
                     deletion_list.Add(branch);
-                    continue;
                 }
-
-                AudioClip clip = Resources.Load<AudioClip>("Sound Effects/Prune");
-                AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position, 1f);
-                total_farmed += branch.Damage(1000);
+            }
+            foreach (var branch in deletion_list) {
+                selected_branches.Remove(branch);
+            }
+            foreach (var branch in selected_branches) {
+                if (branch && !branch.IsDead()) {
+                    AudioClip clip = Resources.Load<AudioClip>("Sound Effects/Prune");
+                    AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position, 1f);
+                    total_farmed += branch.Damage(1000);
+                    break;
+                }
             }
 
-            resource += total_farmed;
+            resource += total_farmed / 2;
             EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
 
             if (total_farmed != 0)
@@ -200,9 +206,6 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        foreach (var branch in deletion_list) {
-            selected_branches.Remove(branch);
-        }
 
         if (analytics)
         {
@@ -275,54 +278,54 @@ public class PlayerMovement : MonoBehaviour
         // }
     }
 
-    void Move() {
-        //Temporary, will move to controllers
-        Vector2 velocity = Vector2.zero;
-        velocity.x = Input.GetAxis("Horizontal" + PlayerID.ToString());
-        velocity.y = Input.GetAxis("Vertical" + PlayerID.ToString());
-        rb.velocity = MoveSpeed * velocity.normalized;
-    }
+    // void Move() {
+    //     //Temporary, will move to controllers
+    //     Vector2 velocity = Vector2.zero;
+    //     velocity.x = Input.GetAxis("Horizontal" + PlayerID.ToString());
+    //     velocity.y = Input.GetAxis("Vertical" + PlayerID.ToString());
+    //     rb.velocity = MoveSpeed * velocity.normalized;
+    // }
     
-    void Prune() {
-        if (InputController.PrunePressed(PlayerID)){
-            List<BranchController> deletion_list = new List<BranchController>();
-            foreach (var branch in selected_branches) {
-                if (!branch) {
-                    deletion_list.Add(branch);
-                    continue;
-                }
-                resource += branch.Damage(1000);
-                EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
-            }
-            foreach (var branch in deletion_list) {
-                selected_branches.Remove(branch);
-            }
-        }
-    }
+    // void Prune() {
+    //     if (InputController.PrunePressed(PlayerID)){
+    //         List<BranchController> deletion_list = new List<BranchController>();
+    //         foreach (var branch in selected_branches) {
+    //             if (!branch) {
+    //                 deletion_list.Add(branch);
+    //                 continue;
+    //             }
+    //             resource += branch.Damage(1000);
+    //             EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
+    //         }
+    //         foreach (var branch in deletion_list) {
+    //             selected_branches.Remove(branch);
+    //         }
+    //     }
+    // }
 
-    void Grow() {
-        if (InputController.GrowPressed(PlayerID)){
-            List<BranchController> deletion_list = new List<BranchController>();
-            foreach (var branch in selected_branches) {
-                if (!branch) {
-                    deletion_list.Add(branch);
-                    continue;
-                }
-                resource -= branch.Grow(resource);
-                EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
-            }
-            foreach (var branch in deletion_list) {
-                selected_branches.Remove(branch);
-            }
-        }
-    }
+    // void Grow() {
+    //     if (InputController.GrowPressed(PlayerID)){
+    //         List<BranchController> deletion_list = new List<BranchController>();
+    //         foreach (var branch in selected_branches) {
+    //             if (!branch) {
+    //                 deletion_list.Add(branch);
+    //                 continue;
+    //             }
+    //             resource -= branch.Grow(resource);
+    //             EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
+    //         }
+    //         foreach (var branch in deletion_list) {
+    //             selected_branches.Remove(branch);
+    //         }
+    //     }
+    // }
 
-    void Bomb() {
-        if (InputController.BombPressed(PlayerID)) {
-            GameObject bombIns = Instantiate(bomb, transform.position, Quaternion.identity);
-            bombIns.GetComponent<BombController>().PlayerID = PlayerID;
-        }
-    }
+    // void Bomb() {
+    //     if (InputController.BombPressed(PlayerID)) {
+    //         GameObject bombIns = Instantiate(bomb, transform.position, Quaternion.identity);
+    //         bombIns.GetComponent<BombController>().PlayerID = PlayerID;
+    //     }
+    // }
 
     void _OnBuffUpdated(BuffEvent e)
     {
