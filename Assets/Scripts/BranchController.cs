@@ -10,7 +10,9 @@ public class BranchController : MonoBehaviour
 
     public int cost;
 
-    public bool root = false;
+    public int depth;
+
+    // public bool root = false;
     // Start is called before the first frame update
 
     public List<GameObject> subBranches;
@@ -144,7 +146,8 @@ public class BranchController : MonoBehaviour
         {
             resourcesNeeded += Context.countCost(genome);
         }
-        return resourcesNeeded;
+        // TODO: figure out the growth rate of the cost
+        return (int) (resourcesNeeded * Mathf.Pow(1.04f, depth));
     }
 
     [ContextMenu("Grow")]
@@ -200,7 +203,7 @@ public class BranchController : MonoBehaviour
     
     public int Damage(int damage)
     {
-        if (root || isChecked)
+        if (depth == 0 || isChecked)
         {
             // root branch cannot be damaged
             return 0;
@@ -259,7 +262,7 @@ public class BranchController : MonoBehaviour
         PlayerMovement player = other.GetComponent<PlayerMovement>();
         if (player && !isDead)
         {
-            if (root) {
+            if (depth == 0) {
                 EventBus.Publish<PlayerProgressEvent>(new PlayerProgressEvent("reach root", GetPlayerID()));
             }
             player.selected_branches.Add(this);
