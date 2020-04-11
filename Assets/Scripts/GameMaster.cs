@@ -10,6 +10,7 @@ public class GameMaster : MonoBehaviour
     Subscription<BuffEvent> buffSub;
     Subscription<ShieldEvent> cpSub;
     Subscription<GameStartEvent> st;
+    Subscription<TutorialEvent> tutorialSub;
     Subscription<ResourceChangeEvent> resSub;
     Subscription<GoalPointEvent> goalSub;
     bool finished = false;
@@ -20,6 +21,7 @@ public class GameMaster : MonoBehaviour
     float last_analyzed_time = 0f;
     float[] height, resources;
     int[] goal_point;
+    bool isTutorial;
     public Camera cam1, cam2;
     private void Start() {
         sub = EventBus.Subscribe<HeightChangeEvent>(Judge);
@@ -27,7 +29,8 @@ public class GameMaster : MonoBehaviour
         buffSub = EventBus.Subscribe<BuffEvent>(BuffEventHandler);
         cpSub = EventBus.Subscribe<ShieldEvent>(CheckPointEventHandler);
         resSub = EventBus.Subscribe<ResourceChangeEvent>(ResChangeHandler);
-        st = EventBus.Subscribe<GameStartEvent>(ResetGame);
+        st = EventBus.Subscribe<GameStartEvent>(StartGame);
+        tutorialSub = EventBus.Subscribe<TutorialEvent>(StartTutorial);
         goalSub = EventBus.Subscribe<GoalPointEvent>(GoalPointHandler);
         first_buff = new bool[3];
         first_check = new bool[3];
@@ -78,6 +81,12 @@ public class GameMaster : MonoBehaviour
             ++round;
             StartCoroutine(WaitAndReset());
         }
+
+        if (isTutorial && h.height >= 10f && !finished) {
+            finished = true;
+            StartCoroutine(WaitAndReset());
+            //EventBus.Publish<GameStartEvent>(new GameStartEvent());
+        }
     }
 
     void ConvertChest(HeightChangeEvent h) {
@@ -118,8 +127,8 @@ public class GameMaster : MonoBehaviour
 
     IEnumerator WaitAndReset() {
         yield return new WaitForSeconds(5f);
-        yield return SceneUtility.UnloadAll();
-        yield return SceneUtility.LoadAll(round);
+        yield return SceneUtility.UnloadAll(isTutorial);
+        yield return SceneUtility.LoadGame(round);
         EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(1, 1000));
         EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(2, 1000));
         EventBus.Publish<SpeedChangeEvent>(new SpeedChangeEvent(1, 50));
@@ -127,11 +136,12 @@ public class GameMaster : MonoBehaviour
         finished = false;
         chest_converted[1] = chest_converted[2] = false;
         goal_point[1] = goal_point[2] = 0;
+        isTutorial = false;
     }
 
-    public void ResetGame(GameStartEvent e) {
+    public void StartGame(GameStartEvent e) {
         SplitScreen();
-        StartCoroutine(SceneUtility.LoadAll(round));
+        StartCoroutine(SceneUtility.LoadGame(round));
         EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(1, 1000));
         EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(2, 1000));
         EventBus.Publish<SpeedChangeEvent>(new SpeedChangeEvent(1, 50));
@@ -139,6 +149,20 @@ public class GameMaster : MonoBehaviour
         finished = false;
         chest_converted[1] = chest_converted[2] = false;
         goal_point[1] = goal_point[2] = 0;
+        isTutorial = false;
+    }
+
+    public void StartTutorial(TutorialEvent e) {
+        SplitScreen();
+        StartCoroutine(SceneUtility.LoadTutorial());
+        EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(1, 1000));
+        EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(2, 1000));
+        EventBus.Publish<SpeedChangeEvent>(new SpeedChangeEvent(1, 50));
+        EventBus.Publish<SpeedChangeEvent>(new SpeedChangeEvent(2, 50));
+        finished = false;
+        chest_converted[1] = chest_converted[2] = false;
+        goal_point[1] = goal_point[2] = 0;
+        isTutorial = true;
     }
 
     void ResChangeHandler(ResourceChangeEvent e) {
@@ -220,3 +244,5 @@ class RoundWinnerEvent{
 }
 
 public class GameStartEvent{}
+
+public class TutorialEvent{}

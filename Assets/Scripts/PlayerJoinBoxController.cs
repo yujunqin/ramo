@@ -31,7 +31,8 @@ public class PlayerJoinBoxController : MonoBehaviour
                     Destroy(obj);
                 }
             }
-            EventBus.Publish<GameStartEvent>(new GameStartEvent());
+            //EventBus.Publish<GameStartEvent>(new GameStartEvent());
+            EventBus.Publish<TutorialEvent>(new TutorialEvent());
             //SceneManager.LoadScene(1, LoadSceneMode.Additive);
         }
     }
