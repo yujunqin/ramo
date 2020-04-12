@@ -4,10 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 public class GrowthBar : MonoBehaviour
 {
+    float targetHeight = 300f;
     public float fillSpeed = 0.5f;
     public int playerID;
+    public int percentageValue;
     Subscription<HeightChangeEvent> height_sub;
     Slider slider;
+    Text valueText;
     ParticleSystem particleSys;
     float targetProgress = 0;
     // Start is called before the first frame update
@@ -16,6 +19,7 @@ public class GrowthBar : MonoBehaviour
         height_sub = EventBus.Subscribe<HeightChangeEvent>(heightUpdate);
         slider = gameObject.GetComponent<Slider>();
         particleSys = gameObject.transform.GetChild(1).transform.GetChild(0).transform.GetChild(0).GetComponent<ParticleSystem>();
+        valueText = gameObject.transform.GetChild(2).GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -33,6 +37,8 @@ public class GrowthBar : MonoBehaviour
         {
             particleSys.Stop();
         }
+        percentageValue = Mathf.RoundToInt(slider.value * 100);
+        valueText.text = percentageValue.ToString() + "%";
     }
 
     void heightUpdate(HeightChangeEvent h)
@@ -43,7 +49,7 @@ public class GrowthBar : MonoBehaviour
         }
         else
         {
-            targetProgress = h.height / 300f;
+            targetProgress = h.height / targetHeight;
         }
     }
 }
