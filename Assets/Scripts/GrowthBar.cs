@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class GrowthBar : MonoBehaviour
 {
     float targetHeight = 300f;
-    public float fillSpeed = 0.5f;
+    public float fillRate = 0.05f;
     public int playerID;
     public int percentageValue;
     Subscription<HeightChangeEvent> height_sub;
@@ -25,7 +25,7 @@ public class GrowthBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (slider.value < targetProgress)
+        /* if (slider.value < targetProgress)
         {
             slider.value += fillSpeed * Time.deltaTime;
             if (!particleSys.isPlaying)
@@ -44,6 +44,12 @@ public class GrowthBar : MonoBehaviour
         else
         {
             particleSys.Stop();
+        } */
+        slider.value = slider.value + (targetProgress - slider.value) * fillRate;
+        if (Mathf.Abs(targetProgress - slider.value) < 0.001f) {
+            particleSys.Stop();
+        } else {
+            particleSys.Play();
         }
         percentageValue = Mathf.RoundToInt(slider.value * 100);
         valueText.text = percentageValue.ToString() + "%";
