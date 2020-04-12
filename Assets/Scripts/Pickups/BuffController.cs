@@ -13,11 +13,19 @@ public class BuffController : MonoBehaviour
 
     public buffType type;
     public int playerIndex;
+    Vector2 uiResourcePos, uiBombPos; // the ui position where the buff goes
     bool touched = false;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (playerIndex == 1) {
+            uiResourcePos = GameObject.Find("Canvas/Panel1/Wood").transform.position;
+            uiBombPos = GameObject.Find("Canvas/Panel1/BombPanel").transform.position;
+        }
+        else {
+            uiResourcePos = GameObject.Find("Canvas/Panel2/Wood").transform.position;
+            uiBombPos = GameObject.Find("Canvas/Panel2/BombPanel").transform.position;
+        }
     }
 
     // Update is called once per frame
@@ -39,9 +47,36 @@ public class BuffController : MonoBehaviour
             EventBus.Publish<BuffEvent>(new BuffEvent(type, playerIndex, Time.time));
             if (GetComponent<ChestConverter>().isChest()) {
                 EventBus.Publish<FreeBombEvent>(new FreeBombEvent(playerIndex, true));
+                GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Images/wood");
+                transform.localScale = new Vector3(0.01f, 0.02f, 1.0f);
+                GameObject bomb = Instantiate(gameObject, transform.position, Quaternion.identity);
+                bomb.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Images/bomb");
+                bomb.transform.localScale = new Vector3(0.05f, 0.05f, 1.0f);
+                StartCoroutine(BuffJuicyDisappear(bomb.transform, uiBombPos, 0.5f));
             }
-            gameObject.SetActive(false);
+            StartCoroutine(BuffJuicyDisappear(transform, uiResourcePos, 0.5f));
         }
+    }
+
+    IEnumerator BuffJuicyDisappear(Transform trans, Vector2 final_uipos, float duration_sec)
+    {
+        float initial_time = Time.time;
+
+        float progress = (Time.time - initial_time) / duration_sec;
+        Vector3 dest_scale = Vector3.zero;
+        Vector3 dest_pos = Vector3.zero;
+        while(progress < 1.0f)
+        {
+            progress = (Time.time - initial_time) / duration_sec;
+            dest_pos = Camera.allCameras[playerIndex-1].ScreenToWorldPoint(new Vector3(final_uipos.x, final_uipos.y, 10.0f));
+            Vector3 new_position = Vector3.Lerp(trans.position, dest_pos, 0.05f);
+            Vector3 new_scale = Vector3.Lerp(trans.localScale, dest_scale, 0.05f);
+            trans.position = new_position;
+            trans.localScale = new_scale;
+
+            yield return null;
+        }
+        trans.gameObject.SetActive(false);
     }
 }
 
