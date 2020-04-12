@@ -6,6 +6,7 @@ public class ShieldController : MonoBehaviour
 {
     bool isChecked;
     public int playerID;
+    public int shieldID;
     public Sprite flower;
     float checkedTime;
     public AudioClip checkpointClip;
@@ -26,7 +27,6 @@ public class ShieldController : MonoBehaviour
     {
         if (isChecked)
         {
-            m_SpriteRenderer.enabled = false;
             GetComponent<Collider>().enabled = false;
             // if (Time.time < checkedTime + 2f)
             // {
@@ -48,21 +48,42 @@ public class ShieldController : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag("Branch") && !isChecked)
         {
-            EventBus.Publish<ShieldEvent>(new ShieldEvent(Time.time, playerID));
+            EventBus.Publish<ShieldEvent>(new ShieldEvent(Time.time, playerID, shieldID));
+            GetComponent<ShakeEffect>().enabled = false;
             isChecked = true;
             checkedTime = Time.time;
             // gameObject.SetActive(false);
             AudioSource.PlayClipAtPoint(checkpointClip, Camera.main.transform.position);
+            StartCoroutine(ShieldDisappear(0.5f));
         }
+    }
+
+    IEnumerator ShieldDisappear(float duration_sec)
+    {
+        transform.GetChild(0).gameObject.SetActive(true);
+        float initial_time = Time.time;
+
+        float progress = (Time.time - initial_time) / duration_sec;
+        Vector3 dest_scale = Vector3.zero;
+        while(progress < 1.0f)
+        {
+            progress = (Time.time - initial_time) / duration_sec;
+            Vector3 new_scale = Vector3.Lerp(transform.localScale, dest_scale, 0.05f);
+            transform.localScale = new_scale;
+            yield return null;
+        }
+        m_SpriteRenderer.enabled = false;
     }
 }
 
 class ShieldEvent{
     public float checkedTime;
     public int playerID;
-    public ShieldEvent(float _checkedTime, int _playerID)
+    public int shieldID;
+    public ShieldEvent(float _checkedTime, int _playerID, int _shieldID)
     {
         checkedTime = _checkedTime;
         playerID = _playerID;
+        shieldID = _shieldID;
     }
 }

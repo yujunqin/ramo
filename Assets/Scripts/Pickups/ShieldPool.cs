@@ -12,6 +12,7 @@ public class ShieldPool : MonoBehaviour
 
     float currentY = 3f;
     float currentX;
+    int shieldCounter = 1;
     GameObject currentShieldL;
     GameObject currentShieldR;
     Subscription<ShieldEvent> shieldSub;
@@ -24,8 +25,12 @@ public class ShieldPool : MonoBehaviour
         currentX = Mathf.Lerp(Xmin, Xmax, NextShieldPosition());
         currentShieldL = (GameObject)Instantiate(shieldPrefab, new Vector2(-currentX, currentY) + (Vector2) transform.position, Quaternion.identity);
         currentShieldL.GetComponent<ShieldController>().playerID = 1;
+        currentShieldL.GetComponent<ShieldController>().shieldID = shieldCounter;
+        currentShieldL.GetComponent<ShakeEffect>().enabled = false;
         currentShieldR = (GameObject)Instantiate(shieldPrefab, new Vector2(currentX, currentY) + (Vector2) transform.position, Quaternion.identity);
         currentShieldR.GetComponent<ShieldController>().playerID = 2;
+        currentShieldL.GetComponent<ShieldController>().shieldID = shieldCounter;
+        currentShieldR.GetComponent<ShakeEffect>().enabled = false;
         shieldSub = EventBus.Subscribe<ShieldEvent>(ShieldHandler);
     }
 
@@ -37,16 +42,21 @@ public class ShieldPool : MonoBehaviour
 
     void ShieldHandler(ShieldEvent e)
     {
-        currentY += Random.Range(Ymin, Ymax);
-        // if (currentY > 16f) {
-        //     return;
-        // }
-        // currentX = Random.Range(Xmin, Xmax);
-        currentX = Mathf.Lerp(Xmin, Xmax, NextShieldPosition());
-        currentShieldL = (GameObject)Instantiate(shieldPrefab, new Vector2(-currentX, currentY) + (Vector2) transform.position, Quaternion.identity);
-        currentShieldL.GetComponent<ShieldController>().playerID = 1;
-        currentShieldR = (GameObject)Instantiate(shieldPrefab, new Vector2(currentX, currentY) + (Vector2) transform.position, Quaternion.identity);
-        currentShieldR.GetComponent<ShieldController>().playerID = 2;
+        if (e.shieldID == shieldCounter) {
+            shieldCounter++;
+            currentY += Random.Range(Ymin, Ymax);
+            // if (currentY > 16f) {
+            //     return;
+            // }
+            // currentX = Random.Range(Xmin, Xmax);
+            currentX = Mathf.Lerp(Xmin, Xmax, NextShieldPosition());
+            currentShieldL = (GameObject)Instantiate(shieldPrefab, new Vector2(-currentX, currentY) + (Vector2) transform.position, Quaternion.identity);
+            currentShieldL.GetComponent<ShieldController>().playerID = 1;
+            currentShieldL.GetComponent<ShieldController>().shieldID = shieldCounter;
+            currentShieldR = (GameObject)Instantiate(shieldPrefab, new Vector2(currentX, currentY) + (Vector2) transform.position, Quaternion.identity);
+            currentShieldR.GetComponent<ShieldController>().playerID = 2;
+            currentShieldR.GetComponent<ShieldController>().shieldID = shieldCounter;
+        }
     }
 
     float NextShieldPosition()
