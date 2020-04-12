@@ -33,6 +33,14 @@ public class GrowthBar : MonoBehaviour
                 particleSys.Play();
             }
         }
+        else if (slider.value > targetProgress)
+        {
+            slider.value -= fillSpeed * Time.deltaTime;
+            if (!particleSys.isPlaying)
+            {
+                particleSys.Play();
+            }
+        }
         else
         {
             particleSys.Stop();
