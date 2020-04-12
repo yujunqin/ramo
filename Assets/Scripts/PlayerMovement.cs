@@ -12,7 +12,9 @@ public class PlayerMovement : MonoBehaviour
     public float MoveSpeed = 4f;
     public bool pruning = false;
     public bool growing = false;
-    bool first = true;
+    bool firstGrow = true;
+    bool firstPrune = false;
+    bool firstBomb = false;
     public HashSet<BranchController> selected_branches;
     public GameObject bomb;
 
@@ -137,12 +139,13 @@ public class PlayerMovement : MonoBehaviour
         List<BranchController> deletion_list = new List<BranchController>();
         if (selected_branches != null)
         {
-            if (selected_branches.Count > 0 && first) {
+            if (selected_branches.Count > 0 && firstGrow) {
                 EventBus.Publish<PlayerProgressEvent>(new PlayerProgressEvent("first grow", PlayerID));
-                first = false;
+                firstGrow = false;
+                firstPrune = true;
             }
             foreach (var branch in selected_branches) {
-                if (!branch) {
+                if (!branch || branch.IsDead()) {
                     deletion_list.Add(branch);
                     continue;
                 }
@@ -176,6 +179,11 @@ public class PlayerMovement : MonoBehaviour
         List<BranchController> deletion_list = new List<BranchController>();
         if (selected_branches != null)
         {
+            if (selected_branches.Count > 0 && firstPrune) {
+                EventBus.Publish<PlayerProgressEvent>(new PlayerProgressEvent("first prune", PlayerID));
+                firstPrune = false;
+                firstBomb = true;
+            }
             int total_farmed = 0;
             foreach (var branch in selected_branches) {
                 if (!branch || branch.IsDead()) {
@@ -260,6 +268,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 bombIns.GetComponent<BombController>().ThrowBomb();
                 bombIns = null;
+                EventBus.Publish<PlayerProgressEvent>(new PlayerProgressEvent("first bomb", PlayerID));
             }
         }
         if (analytics)

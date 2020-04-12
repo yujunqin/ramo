@@ -23,7 +23,7 @@ public class ResourcecHint : MonoBehaviour
         if (e.PlayerID == PlayerID) {
             if (e.progress == "first grow") {
                 t.text = "Grow to a log for extra resources!";
-                GetComponentInParent<PanelLerp>().Move(new Vector3(0f, 80f, 0f));
+                GetComponentInParent<PanelLerp>().Move(new Vector3(0f, 500f, 0f));
             }
             if (e.progress == "first buff") {
                 GetComponentInParent<PanelLerp>().BackToInit();

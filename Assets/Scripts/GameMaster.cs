@@ -13,8 +13,10 @@ public class GameMaster : MonoBehaviour
     Subscription<TutorialEvent> tutorialSub;
     Subscription<ResourceChangeEvent> resSub;
     Subscription<GoalPointEvent> goalSub;
+    Subscription<TutorialEndEvent> tutorialEndSub;
+    Subscription<FreeBombEvent> fbs;
     bool finished = false;
-    bool[] first_buff, first_check, chest_converted;
+    bool[] first_buff, first_check, chest_converted, first_chest;
     int round = 1, bluewin = 0;
     public static int total_round = 3;
     public bool analytics = true;
@@ -32,8 +34,11 @@ public class GameMaster : MonoBehaviour
         st = EventBus.Subscribe<GameStartEvent>(StartGame);
         tutorialSub = EventBus.Subscribe<TutorialEvent>(StartTutorial);
         goalSub = EventBus.Subscribe<GoalPointEvent>(GoalPointHandler);
+        tutorialEndSub = EventBus.Subscribe<TutorialEndEvent>(EndTutorial);
+        fbs = EventBus.Subscribe<FreeBombEvent>(FreeBombEventHandler);
         first_buff = new bool[3];
         first_check = new bool[3];
+        first_chest = new bool[3];
         chest_converted = new bool[3];
         height = new float[3];
         resources = new float[3];
@@ -41,6 +46,7 @@ public class GameMaster : MonoBehaviour
         for (int i = 1; i <= 2; ++i) {
             first_check[i] = true;
             first_buff[i] = true;
+            first_chest[i] = true;
             chest_converted[i] = false;
             height[i] = 0;
             resources[i] = 0f;
@@ -55,6 +61,9 @@ public class GameMaster : MonoBehaviour
         }
     }
     void Judge(HeightChangeEvent h) {
+        if (isTutorial) {
+            return;
+        }
         if (analytics && Time.time >= last_analyzed_time + 3f)
         {
             AnalyticsEvent.Custom("HeightUpdate", 
@@ -80,12 +89,6 @@ public class GameMaster : MonoBehaviour
             }
             ++round;
             StartCoroutine(WaitAndReset());
-        }
-
-        if (isTutorial && h.height >= 10f && !finished) {
-            finished = true;
-            StartCoroutine(WaitAndReset());
-            //EventBus.Publish<GameStartEvent>(new GameStartEvent());
         }
     }
 
@@ -113,7 +116,7 @@ public class GameMaster : MonoBehaviour
 
     void CheckPointEventHandler(ShieldEvent e) {
         if (round == 1 && first_check[e.playerID]) {
-            EventBus.Publish<PlayerProgressEvent>(new PlayerProgressEvent("first checkpoint", e.playerID));
+            EventBus.Publish<PlayerProgressEvent>(new PlayerProgressEvent("first shield", e.playerID));
             first_check[e.playerID] = false;
         }
     }
@@ -177,6 +180,9 @@ public class GameMaster : MonoBehaviour
             );
         }
         ++goal_point[e.playerID];
+        if (goal_point[e.playerID] == 1) {
+            EventBus.Publish<PlayerProgressEvent>(new PlayerProgressEvent("first checkpoint", e.playerID));
+        }
     }
 
     void SplitScreen()
@@ -202,6 +208,18 @@ public class GameMaster : MonoBehaviour
     {
         analytics = !analytics;
     }
+
+    void EndTutorial(TutorialEndEvent e) {
+        StartCoroutine(WaitAndReset());
+    }
+
+    void FreeBombEventHandler(FreeBombEvent e) {
+        if (first_chest[e.PlayerID]) {
+            first_chest[e.PlayerID] = false;
+            EventBus.Publish<PlayerProgressEvent>(new PlayerProgressEvent("first chest", e.PlayerID));
+        }
+    }
+    
 }
 
 class GameOverEvent{
@@ -219,6 +237,10 @@ class PlayerProgressEvent{
     //reach root
     //first grow
     //first buff
+    //first prune
+    //first bomb
+    //first chest
+    //first shield
     //first checkpoint
     public PlayerProgressEvent(string progressText, int id) {
         progress = progressText;
@@ -246,3 +268,5 @@ class RoundWinnerEvent{
 public class GameStartEvent{}
 
 public class TutorialEvent{}
+
+public class TutorialEndEvent{}

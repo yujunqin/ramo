@@ -36,7 +36,7 @@ public class StartHint : MonoBehaviour
                 }
             }
             if (e.progress == "first grow") {
-                StartCoroutine(ShowPruneTip());
+                 GetComponentInParent<PanelLerp>().Move(new Vector3(0, -200f, 0));
             }
         }
     }
