@@ -204,7 +204,7 @@ public class GameMaster : MonoBehaviour
         }
     }
 
-    public void OnToggleChanged()
+    public void OnAnalyticsChanged()
     {
         analytics = !analytics;
     }
@@ -270,3 +270,10 @@ public class GameStartEvent{}
 public class TutorialEvent{}
 
 public class TutorialEndEvent{}
+
+public class SkipTutorialEvent {
+    public bool skip;
+    public SkipTutorialEvent(bool skipTutorial) {
+        skip = skipTutorial;
+    }
+}

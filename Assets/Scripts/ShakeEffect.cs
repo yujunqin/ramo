@@ -17,9 +17,9 @@ public class ShakeEffect : MonoBehaviour
 
     private void Update() {
         Vector3 acc = -k * (transform.localScale - init_scale);
-        vel += acc * Time.deltaTime * 144;
+        vel += acc;
         vel *= damp;
-        transform.localScale += vel * Time.deltaTime * 144;
+        transform.localScale += vel;
     }
 
     public void Shake() {

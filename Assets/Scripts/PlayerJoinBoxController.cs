@@ -12,6 +12,8 @@ public class PlayerJoinBoxController : MonoBehaviour
     public Color joinColor;
     private Color normalColor;
 
+    bool skipTutorial = false;
+
     private void Start()
     {
         sb = GetComponent<SpriteRenderer>();
@@ -31,8 +33,11 @@ public class PlayerJoinBoxController : MonoBehaviour
                     Destroy(obj);
                 }
             }
-            //EventBus.Publish<GameStartEvent>(new GameStartEvent());
-            EventBus.Publish<TutorialEvent>(new TutorialEvent());
+            if (skipTutorial) {
+                EventBus.Publish<GameStartEvent>(new GameStartEvent());
+            } else {
+                EventBus.Publish<TutorialEvent>(new TutorialEvent());
+            }
             //SceneManager.LoadScene(1, LoadSceneMode.Additive);
         }
     }
@@ -59,5 +64,9 @@ public class PlayerJoinBoxController : MonoBehaviour
             AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position, 0.4f);
             sb.color = normalColor;
         }
+    }
+
+    public void OnSkipTutorial(bool skip) {
+        skipTutorial = skip;
     }
 }
