@@ -21,9 +21,9 @@ public class PositionResetter : MonoBehaviour
         } else {
             transform.position = new Vector2(4.5f, -2.5f);
         }
-        go.SetActive(false);
+        //go.SetActive(false);
         yield return new WaitForSeconds(3.5f);
-        go.SetActive(true);
+        //go.SetActive(true);
     }
 
 }
