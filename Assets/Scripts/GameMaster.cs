@@ -26,6 +26,11 @@ public class GameMaster : MonoBehaviour
     bool isTutorial;
     public Camera cam1, cam2;
     static public GameMaster inst;
+
+    private void Awake() {
+        Application.targetFrameRate = 144;
+    }
+
     private void Start() {
         if (!inst) {
             inst = this;
@@ -164,8 +169,8 @@ public class GameMaster : MonoBehaviour
     public void StartTutorial(TutorialEvent e) {
         SplitScreen();
         StartCoroutine(SceneUtility.LoadTutorial());
-        EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(1, 1000));
-        EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(2, 1000));
+        EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(1, 5000));
+        EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(2, 5000));
         EventBus.Publish<SpeedChangeEvent>(new SpeedChangeEvent(1, 50));
         EventBus.Publish<SpeedChangeEvent>(new SpeedChangeEvent(2, 50));
         finished = false;
