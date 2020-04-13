@@ -5623,6 +5623,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1430160749}
   - component: {fileID: 1430160750}
+  - component: {fileID: 1430160751}
   m_Layer: 0
   m_Name: Space Background
   m_TagString: Untagged
@@ -5683,8 +5684,8 @@ SpriteRenderer:
   m_SortingLayerID: 1497286539
   m_SortingLayer: -1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: e8acd04fe765e564282fb77137f7db93, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 0e6852ab239df6c4d86cdd81872e8e56, type: 3}
+  m_Color: {r: 0.69803923, g: 1, b: 0.92156863, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5694,6 +5695,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1430160751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430160748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c99e60e9a390d4ba26a9462befd058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  palette:
+  - {r: 0.7, g: 1, b: 0.92268044, a: 1}
+  - {r: 0.7, g: 1, b: 1, a: 1}
+  - {r: 1, g: 0.9258824, b: 0.7, a: 1}
 --- !u!1 &1431178662
 GameObject:
   m_ObjectHideFlags: 0
@@ -8054,9 +8071,9 @@ SpriteRenderer:
   m_SortingLayerID: 1497286539
   m_SortingLayer: -1
   m_SortingOrder: 2
-  m_Sprite: {fileID: -3783391689805931529, guid: 771fe7e27fe174daeb3d2a9375c3606d,
+  m_Sprite: {fileID: -4050340880138666956, guid: 63de3d273381f9443a471339b60c966b,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.69803923, g: 1, b: 0.92156863, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8076,6 +8093,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8020212104937791665}
   - component: {fileID: 5798040727022442213}
+  - component: {fileID: 66619379366553488}
   m_Layer: 0
   m_Name: Mountain_4
   m_TagString: Untagged
@@ -8083,6 +8101,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &66619379366553488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66619379366553487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c99e60e9a390d4ba26a9462befd058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  palette:
+  - {r: 0.89571404, g: 1, b: 0.69803923, a: 1}
+  - {r: 0.69803923, g: 1, b: 0.71961373, a: 1}
+  - {r: 1, g: 0.9254902, b: 0.69803923, a: 1}
 --- !u!4 &92820649602568749
 Transform:
   m_ObjectHideFlags: 0
@@ -8294,9 +8328,9 @@ SpriteRenderer:
   m_SortingLayerID: 1497286539
   m_SortingLayer: -1
   m_SortingOrder: 2
-  m_Sprite: {fileID: -7160621441396638095, guid: b5649f99b08984535887b7396602b642,
+  m_Sprite: {fileID: -3035780882506648926, guid: 376870a096490be4c9ff54e38db87147,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.69803923, g: 1, b: 0.92156863, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8413,9 +8447,9 @@ SpriteRenderer:
   m_SortingLayerID: 1497286539
   m_SortingLayer: -1
   m_SortingOrder: 13
-  m_Sprite: {fileID: -4431505356902686968, guid: 771fe7e27fe174daeb3d2a9375c3606d,
+  m_Sprite: {fileID: -6060672300623250775, guid: 63de3d273381f9443a471339b60c966b,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8980392, g: 1, b: 0.69803923, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8464,9 +8498,9 @@ SpriteRenderer:
   m_SortingLayerID: 1497286539
   m_SortingLayer: -1
   m_SortingOrder: 18
-  m_Sprite: {fileID: -2697952533678736402, guid: 771fe7e27fe174daeb3d2a9375c3606d,
+  m_Sprite: {fileID: 3772364703253801342, guid: 63de3d273381f9443a471339b60c966b,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.89411765, g: 1, b: 0.69803923, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8515,9 +8549,9 @@ SpriteRenderer:
   m_SortingLayerID: 1497286539
   m_SortingLayer: -1
   m_SortingOrder: 14
-  m_Sprite: {fileID: 5682974804136198676, guid: b5649f99b08984535887b7396602b642,
+  m_Sprite: {fileID: 8313825478733761407, guid: 376870a096490be4c9ff54e38db87147,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.89411765, g: 1, b: 0.69803923, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8588,6 +8622,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3685821886364483419}
   - component: {fileID: 1005080726078041326}
+  - component: {fileID: 1931924790379598099}
   m_Layer: 0
   m_Name: background 3
   m_TagString: Untagged
@@ -8595,6 +8630,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1931924790379598099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931924790379598098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c99e60e9a390d4ba26a9462befd058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  palette:
+  - {r: 0.7, g: 1, b: 0.92268044, a: 1}
+  - {r: 0.7, g: 1, b: 1, a: 1}
+  - {r: 1, g: 0.9258824, b: 0.7, a: 1}
 --- !u!1 &2075366200165417289
 GameObject:
   m_ObjectHideFlags: 0
@@ -8758,9 +8809,9 @@ SpriteRenderer:
   m_SortingLayerID: 1497286539
   m_SortingLayer: -1
   m_SortingOrder: 4
-  m_Sprite: {fileID: 5758081775557906060, guid: 771fe7e27fe174daeb3d2a9375c3606d,
+  m_Sprite: {fileID: -1207097036720815679, guid: 63de3d273381f9443a471339b60c966b,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.69803923, g: 1, b: 0.92156863, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8780,6 +8831,7 @@ GameObject:
   m_Component:
   - component: {fileID: 790529476030600423}
   - component: {fileID: 13285994242101464}
+  - component: {fileID: 3163601472470357285}
   m_Layer: 0
   m_Name: background 3
   m_TagString: Untagged
@@ -8787,6 +8839,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3163601472470357285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3163601472470357284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c99e60e9a390d4ba26a9462befd058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  palette:
+  - {r: 0.7, g: 1, b: 0.92268044, a: 1}
+  - {r: 0.7, g: 1, b: 1, a: 1}
+  - {r: 1, g: 0.9258824, b: 0.7, a: 1}
 --- !u!4 &3196298523469185923
 Transform:
   m_ObjectHideFlags: 0
@@ -8840,9 +8908,9 @@ SpriteRenderer:
   m_SortingLayerID: 1497286539
   m_SortingLayer: -1
   m_SortingOrder: 19
-  m_Sprite: {fileID: -6615932746355660831, guid: b5649f99b08984535887b7396602b642,
+  m_Sprite: {fileID: 2339629625687740191, guid: 376870a096490be4c9ff54e38db87147,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.89411765, g: 1, b: 0.69803923, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8878,6 +8946,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2355184739437469055}
   - component: {fileID: 3635063093553508054}
+  - component: {fileID: 3619701018581696216}
   m_Layer: 0
   m_Name: Hills_2_1
   m_TagString: Untagged
@@ -8885,6 +8954,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3619701018581696216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3619701018581696215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c99e60e9a390d4ba26a9462befd058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  palette:
+  - {r: 0.89571404, g: 1, b: 0.69803923, a: 1}
+  - {r: 0.69803923, g: 1, b: 0.71961373, a: 1}
+  - {r: 1, g: 0.9254902, b: 0.69803923, a: 1}
 --- !u!1 &3633152203802732432
 GameObject:
   m_ObjectHideFlags: 0
@@ -8941,9 +9026,9 @@ SpriteRenderer:
   m_SortingLayerID: 1497286539
   m_SortingLayer: -1
   m_SortingOrder: 14
-  m_Sprite: {fileID: 5121962227135585933, guid: 771fe7e27fe174daeb3d2a9375c3606d,
+  m_Sprite: {fileID: -6097146772983886064, guid: 63de3d273381f9443a471339b60c966b,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.89411765, g: 1, b: 0.69803923, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9006,8 +9091,9 @@ SpriteRenderer:
   m_SortingLayerID: 1497286539
   m_SortingLayer: -1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 299774601754029775, guid: 771fe7e27fe174daeb3d2a9375c3606d, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 3992151584530821959, guid: 63de3d273381f9443a471339b60c966b,
+    type: 3}
+  m_Color: {r: 0.69803923, g: 1, b: 0.92156863, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9041,6 +9127,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7322952336983889015}
   - component: {fileID: 5988528595386731383}
+  - component: {fileID: 4418119005417416527}
   m_Layer: 0
   m_Name: background 2
   m_TagString: Untagged
@@ -9048,6 +9135,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4418119005417416527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4418119005417416526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c99e60e9a390d4ba26a9462befd058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  palette:
+  - {r: 0.7, g: 1, b: 0.92268044, a: 1}
+  - {r: 0.7, g: 1, b: 1, a: 1}
+  - {r: 1, g: 0.9258824, b: 0.7, a: 1}
 --- !u!4 &4491874093193213385
 Transform:
   m_ObjectHideFlags: 0
@@ -9101,9 +9204,9 @@ SpriteRenderer:
   m_SortingLayerID: 1497286539
   m_SortingLayer: -1
   m_SortingOrder: 7
-  m_Sprite: {fileID: 9055920624903825093, guid: 771fe7e27fe174daeb3d2a9375c3606d,
+  m_Sprite: {fileID: -971061270962556809, guid: 63de3d273381f9443a471339b60c966b,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.89411765, g: 1, b: 0.69803923, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9205,6 +9308,7 @@ GameObject:
   m_Component:
   - component: {fileID: 666070027863038377}
   - component: {fileID: 4515733367953466968}
+  - component: {fileID: 4719367326232185026}
   m_Layer: 0
   m_Name: Mountain_2
   m_TagString: Untagged
@@ -9212,6 +9316,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4719367326232185026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4719367326232185025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c99e60e9a390d4ba26a9462befd058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  palette:
+  - {r: 0.89571404, g: 1, b: 0.69803923, a: 1}
+  - {r: 0.69803923, g: 1, b: 0.71961373, a: 1}
+  - {r: 1, g: 0.9254902, b: 0.69803923, a: 1}
 --- !u!212 &4807580993829535590
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9251,9 +9371,9 @@ SpriteRenderer:
   m_SortingLayerID: 1497286539
   m_SortingLayer: -1
   m_SortingOrder: 1
-  m_Sprite: {fileID: -2143093484665915144, guid: b5649f99b08984535887b7396602b642,
+  m_Sprite: {fileID: -2959680224625387917, guid: 376870a096490be4c9ff54e38db87147,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.69803923, g: 1, b: 0.92156863, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9273,6 +9393,7 @@ GameObject:
   m_Component:
   - component: {fileID: 92820649602568749}
   - component: {fileID: 2919209017396505530}
+  - component: {fileID: 4810349549542505996}
   m_Layer: 0
   m_Name: background 1
   m_TagString: Untagged
@@ -9280,6 +9401,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4810349549542505996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4810349549542505995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c99e60e9a390d4ba26a9462befd058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  palette:
+  - {r: 0.7, g: 1, b: 0.92268044, a: 1}
+  - {r: 0.7, g: 1, b: 1, a: 1}
+  - {r: 1, g: 0.9258824, b: 0.7, a: 1}
 --- !u!4 &5043198215249878036
 Transform:
   m_ObjectHideFlags: 0
@@ -9304,6 +9441,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3196298523469185923}
   - component: {fileID: 4807580993829535590}
+  - component: {fileID: 5101316190498575735}
   m_Layer: 0
   m_Name: background 4
   m_TagString: Untagged
@@ -9311,6 +9449,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5101316190498575735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5101316190498575734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c99e60e9a390d4ba26a9462befd058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  palette:
+  - {r: 0.7, g: 1, b: 0.92268044, a: 1}
+  - {r: 0.7, g: 1, b: 1, a: 1}
+  - {r: 1, g: 0.9258824, b: 0.7, a: 1}
 --- !u!1 &5103386814911470873
 GameObject:
   m_ObjectHideFlags: 0
@@ -9321,6 +9475,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6689639275835154812}
   - component: {fileID: 7725099800292967874}
+  - component: {fileID: 5103386814911470874}
   m_Layer: 0
   m_Name: background 2
   m_TagString: Untagged
@@ -9328,6 +9483,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5103386814911470874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5103386814911470873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c99e60e9a390d4ba26a9462befd058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  palette:
+  - {r: 0.7, g: 1, b: 0.92268044, a: 1}
+  - {r: 0.7, g: 1, b: 1, a: 1}
+  - {r: 1, g: 0.9258824, b: 0.7, a: 1}
 --- !u!1 &5120546074590206938
 GameObject:
   m_ObjectHideFlags: 0
@@ -9338,6 +9509,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2849206861967763424}
   - component: {fileID: 1606530312873890572}
+  - component: {fileID: 5120546074590206939}
   m_Layer: 0
   m_Name: Hills_2_1
   m_TagString: Untagged
@@ -9345,6 +9517,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &5120546074590206939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5120546074590206938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c99e60e9a390d4ba26a9462befd058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  palette:
+  - {r: 0.89571404, g: 1, b: 0.69803923, a: 1}
+  - {r: 0.69803923, g: 1, b: 0.71961373, a: 1}
+  - {r: 1, g: 0.9254902, b: 0.69803923, a: 1}
 --- !u!4 &5260848596307212203
 Transform:
   m_ObjectHideFlags: 0
@@ -9403,9 +9591,9 @@ SpriteRenderer:
   m_SortingLayerID: 1497286539
   m_SortingLayer: -1
   m_SortingOrder: 8
-  m_Sprite: {fileID: 8394049953172138649, guid: b5649f99b08984535887b7396602b642,
+  m_Sprite: {fileID: 4662373851564152568, guid: 376870a096490be4c9ff54e38db87147,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.89411765, g: 1, b: 0.69803923, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9454,9 +9642,9 @@ SpriteRenderer:
   m_SortingLayerID: 1497286539
   m_SortingLayer: -1
   m_SortingOrder: 3
-  m_Sprite: {fileID: 1961001894261306590, guid: b5649f99b08984535887b7396602b642,
+  m_Sprite: {fileID: -8503851189258207332, guid: 376870a096490be4c9ff54e38db87147,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.69803923, g: 1, b: 0.92156863, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9556,9 +9744,9 @@ SpriteRenderer:
   m_SortingLayerID: 1497286539
   m_SortingLayer: -1
   m_SortingOrder: 18
-  m_Sprite: {fileID: 8715854068936322624, guid: b5649f99b08984535887b7396602b642,
+  m_Sprite: {fileID: -8370999608857091758, guid: 376870a096490be4c9ff54e38db87147,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.89411765, g: 1, b: 0.69803923, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9592,6 +9780,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2549438695903567228}
   - component: {fileID: 6948282865742615351}
+  - component: {fileID: 6379610962987682443}
   m_Layer: 0
   m_Name: Hills_2
   m_TagString: Untagged
@@ -9599,6 +9788,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6379610962987682443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6379610962987682442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c99e60e9a390d4ba26a9462befd058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  palette:
+  - {r: 0.89571404, g: 1, b: 0.69803923, a: 1}
+  - {r: 0.69803923, g: 1, b: 0.71961373, a: 1}
+  - {r: 1, g: 0.9254902, b: 0.69803923, a: 1}
 --- !u!1 &6605079940885044345
 GameObject:
   m_ObjectHideFlags: 0
@@ -9609,6 +9814,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6310261708437038025}
   - component: {fileID: 1593051371368863681}
+  - component: {fileID: 6605079940885044346}
   m_Layer: 0
   m_Name: Hills_1_1
   m_TagString: Untagged
@@ -9616,6 +9822,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6605079940885044346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6605079940885044345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c99e60e9a390d4ba26a9462befd058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  palette:
+  - {r: 0.89571404, g: 1, b: 0.69803923, a: 1}
+  - {r: 0.69803923, g: 1, b: 0.71961373, a: 1}
+  - {r: 1, g: 0.9254902, b: 0.69803923, a: 1}
 --- !u!4 &6683624546755059123
 Transform:
   m_ObjectHideFlags: 0
@@ -9750,9 +9972,9 @@ SpriteRenderer:
   m_SortingLayerID: 1497286539
   m_SortingLayer: -1
   m_SortingOrder: 17
-  m_Sprite: {fileID: 2043352110674129214, guid: b5649f99b08984535887b7396602b642,
+  m_Sprite: {fileID: -5883666016316733052, guid: 376870a096490be4c9ff54e38db87147,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.89411765, g: 1, b: 0.69803923, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9789,6 +10011,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7643383090456407171}
   - component: {fileID: 6205050688111139752}
+  - component: {fileID: 6999450194524025186}
   m_Layer: 0
   m_Name: Hills_1_1
   m_TagString: Untagged
@@ -9796,6 +10019,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6999450194524025186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6999450194524025185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c99e60e9a390d4ba26a9462befd058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  palette:
+  - {r: 0.89571404, g: 1, b: 0.69803923, a: 1}
+  - {r: 0.69803923, g: 1, b: 0.71961373, a: 1}
+  - {r: 1, g: 0.9254902, b: 0.69803923, a: 1}
 --- !u!1 &7118363905833563288
 GameObject:
   m_ObjectHideFlags: 0
@@ -9867,6 +10106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8353756285337560192}
   - component: {fileID: 3369281981063677366}
+  - component: {fileID: 7533927499052326853}
   m_Layer: 0
   m_Name: Hills_1
   m_TagString: Untagged
@@ -9874,6 +10114,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7533927499052326853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7533927499052326852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c99e60e9a390d4ba26a9462befd058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  palette:
+  - {r: 0.89571404, g: 1, b: 0.69803923, a: 1}
+  - {r: 0.69803923, g: 1, b: 0.71961373, a: 1}
+  - {r: 1, g: 0.9254902, b: 0.69803923, a: 1}
 --- !u!4 &7643383090456407171
 Transform:
   m_ObjectHideFlags: 0
@@ -9941,9 +10197,9 @@ SpriteRenderer:
   m_SortingLayerID: 1497286539
   m_SortingLayer: -1
   m_SortingOrder: 3
-  m_Sprite: {fileID: -6042334317361848414, guid: 771fe7e27fe174daeb3d2a9375c3606d,
+  m_Sprite: {fileID: -3628731363700875918, guid: 63de3d273381f9443a471339b60c966b,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.69803923, g: 1, b: 0.92156863, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10039,9 +10295,9 @@ SpriteRenderer:
   m_SortingLayerID: 1497286539
   m_SortingLayer: -1
   m_SortingOrder: 4
-  m_Sprite: {fileID: 2145998401471086152, guid: b5649f99b08984535887b7396602b642,
+  m_Sprite: {fileID: -6295790826386070371, guid: 376870a096490be4c9ff54e38db87147,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.69803923, g: 1, b: 0.92156863, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10075,6 +10331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7488328721224938924}
   - component: {fileID: 1360595202744641063}
+  - component: {fileID: 8385133666419692966}
   m_Layer: 0
   m_Name: Mountain_1
   m_TagString: Untagged
@@ -10082,6 +10339,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8385133666419692966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8385133666419692965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c99e60e9a390d4ba26a9462befd058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  palette:
+  - {r: 0.89571404, g: 1, b: 0.69803923, a: 1}
+  - {r: 0.69803923, g: 1, b: 0.71961373, a: 1}
+  - {r: 1, g: 0.9254902, b: 0.69803923, a: 1}
 --- !u!1001 &8507378198289417972
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10239,6 +10512,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4572120142050469893}
   - component: {fileID: 8294722660304704213}
+  - component: {fileID: 9091833662660912112}
   m_Layer: 0
   m_Name: background 1
   m_TagString: Untagged
@@ -10246,6 +10520,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &9091833662660912112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9091833662660912111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c99e60e9a390d4ba26a9462befd058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  palette:
+  - {r: 0.7, g: 1, b: 0.92268044, a: 1}
+  - {r: 0.7, g: 1, b: 1, a: 1}
+  - {r: 1, g: 0.9258824, b: 0.7, a: 1}
 --- !u!1 &9172652136248366565
 GameObject:
   m_ObjectHideFlags: 0
@@ -10256,6 +10546,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8040343839909849566}
   - component: {fileID: 3829338768404942069}
+  - component: {fileID: 9172652136248366566}
   m_Layer: 0
   m_Name: background 4
   m_TagString: Untagged
@@ -10263,3 +10554,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &9172652136248366566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9172652136248366565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84c99e60e9a390d4ba26a9462befd058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  palette:
+  - {r: 0.7, g: 1, b: 0.92268044, a: 1}
+  - {r: 0.7, g: 1, b: 1, a: 1}
+  - {r: 1, g: 0.9258824, b: 0.7, a: 1}
