@@ -19,7 +19,7 @@ public class ResourceController : MonoBehaviour
         resSub = EventBus.Subscribe<ResourceChangeEvent>(ResourceChangeHandler);
         spdSub = EventBus.Subscribe<SpeedChangeEvent>(SpeedChangeHandler);
         EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, 1000));
-        StartCoroutine(AutoGenerate());
+        //StartCoroutine(AutoGenerate());
     }
 
     // Update is called once per frame
@@ -65,6 +65,10 @@ public class ResourceController : MonoBehaviour
             resource += NaturalGrowth;
             EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
         }
+    }
+
+    private void OnEnable() {
+        StartCoroutine(AutoGenerate());
     }
 }
 

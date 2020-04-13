@@ -25,7 +25,13 @@ public class GameMaster : MonoBehaviour
     int[] goal_point;
     bool isTutorial;
     public Camera cam1, cam2;
+    static public GameMaster inst;
     private void Start() {
+        if (!inst) {
+            inst = this;
+        } else {
+            Destroy(gameObject);
+        }
         sub = EventBus.Subscribe<HeightChangeEvent>(Judge);
         chestSub = EventBus.Subscribe<HeightChangeEvent>(ConvertChest);
         buffSub = EventBus.Subscribe<BuffEvent>(BuffEventHandler);

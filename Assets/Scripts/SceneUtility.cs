@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneUtility : MonoBehaviour
 {
     public static readonly int[] GameScenes = {1, 2}, TutorialScenes = {3};
+    public static readonly int background = 4;
     public static IEnumerator LoadSceneAsync(int SceneID) {
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(SceneID, LoadSceneMode.Additive);
 
@@ -43,6 +44,9 @@ public class SceneUtility : MonoBehaviour
     }
 
     public static IEnumerator LoadGame(int round) {
+        yield return SceneUtility.LoadSceneAsync(background);
+        EventBus.Publish<TransitionEvent>(new TransitionEvent(round));
+        yield return new WaitForSeconds(3.5f);
         foreach (int i in GameScenes) {
             yield return SceneUtility.LoadSceneAsync(i);
         }

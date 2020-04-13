@@ -5,12 +5,12 @@ using UnityEngine;
 public class SpriteCrossfader : MonoBehaviour
 {
     public List<Color> palette;
-    Subscription<NewRoundEvent> subscription;
+    Subscription<TransitionEvent> subscription;
 
     // Start is called before the first frame update
     void Start()
     {
-        subscription = EventBus.Subscribe<NewRoundEvent>(NewRound);
+        subscription = EventBus.Subscribe<TransitionEvent>(NewRound);
         GetComponent<SpriteRenderer>().color = palette[0];
     }
 
@@ -20,7 +20,7 @@ public class SpriteCrossfader : MonoBehaviour
         
     }
 
-    void NewRound(NewRoundEvent nr) {
+    void NewRound(TransitionEvent nr) {
         StartCoroutine(Crossfade(nr.round, 3.0f));
     }
 
@@ -38,5 +38,12 @@ public class SpriteCrossfader : MonoBehaviour
                 yield return null;
             }
         }
+    }
+}
+
+class TransitionEvent {
+    public int round;
+    public TransitionEvent(int r) {
+        round = r;
     }
 }

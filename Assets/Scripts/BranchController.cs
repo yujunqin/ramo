@@ -147,7 +147,7 @@ public class BranchController : MonoBehaviour
             resourcesNeeded += Context.countCost(genome);
         }
         // TODO: figure out the growth rate of the cost
-        return (int) (resourcesNeeded * Mathf.Pow(1.03f, depth));
+        return (int) (resourcesNeeded * Mathf.Pow(0.95f, depth));
     }
 
     [ContextMenu("Grow")]
