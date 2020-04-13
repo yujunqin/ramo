@@ -137,6 +137,7 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         List<BranchController> deletion_list = new List<BranchController>();
+        bool growSuccess = false, play_sound = false;
         if (selected_branches != null)
         {
             if (selected_branches.Count > 0 && firstGrow) {
@@ -149,20 +150,27 @@ public class PlayerMovement : MonoBehaviour
                     deletion_list.Add(branch);
                     continue;
                 }
-
+                play_sound = true;
                 if (resource == 0)
                 {
-                    AudioClip clip = Resources.Load<AudioClip>("Sound Effects/GrowError");
-                    AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position, 1f);
+                    growSuccess = false;
                 }
                 else
                 {
-                    AudioClip clip = Resources.Load<AudioClip>("Sound Effects/Grow");
-                    AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position, 1f);
+                    growSuccess = true;
                 }
 
                 resource -= branch.Grow(resource);
                 EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
+            }
+            if (play_sound) {
+                if (growSuccess) {
+                    AudioClip clip = Resources.Load<AudioClip>("Sound Effects/Grow");
+                    AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position, 1f);
+                } else {
+                    AudioClip clip = Resources.Load<AudioClip>("Sound Effects/GrowError");
+                    AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position, 1f);
+                }
             }
         }
         foreach (var branch in deletion_list) {
