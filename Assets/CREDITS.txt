@@ -12,3 +12,4 @@ Checkpoint sfx: https://www.soundsnap.com/search/audio/checkpoint/score
 Shield sprite: https://opengameart.org/node/109387
 Pixel UI: https://assetstore.unity.com/packages/2d/gui/icons/pixel-gui-pack-58442
 Ambient bird sound: https://assetstore.unity.com/packages/audio/ambient/nature/high-quality-nature-sounds-birds-158832
+Wood Log UI: https://opengameart.org/content/wood-log-pixel-art
