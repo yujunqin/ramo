@@ -20,9 +20,10 @@ public class ChestConverter : MonoBehaviour
 
     void Convert() {
         GetComponent<SpriteRenderer>().sprite = Resources.LoadAll<Sprite>("Images/treasure_chests_32x32")[5];
+        GetComponent<SpriteRenderer>().size = new Vector2(0.2f, 0.2f);
         transform.rotation = Quaternion.identity;
-        transform.localScale = new Vector3(2f, 2f, 1f);
-        GetComponent<BoxCollider>().size = new Vector3(0.25f, 0.25f, 1f);
+        transform.localScale = new Vector3(2.5f, 2.5f, 1f);
+        GetComponent<BoxCollider>().size = new Vector3(0.5f, 0.2f, 1f);
         _isChest = true;
     }
 

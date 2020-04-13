@@ -93,7 +93,7 @@ public class GameMaster : MonoBehaviour
     }
 
     void ConvertChest(HeightChangeEvent h) {
-        if (finished) return;
+        if (finished || isTutorial) return;
         height[h.PlayerID] = h.height;
         if (height[1] >= 50f || height[2] >= 50f) {
             if (!chest_converted[2] && resources[2] < 1000 && height[1] - height[2] > 20f) {
