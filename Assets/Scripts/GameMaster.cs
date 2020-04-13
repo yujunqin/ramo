@@ -80,12 +80,12 @@ public class GameMaster : MonoBehaviour
             if (h.PlayerID == 1) { ++bluewin; }
 
             int yellow_win = round - bluewin;
-            if (yellow_win * 2 > total_round || bluewin * 2 > total_round) {
-                EventBus.Publish<GameOverEvent>(new GameOverEvent(h.PlayerID, bluewin, round - bluewin));
+            if (round == total_round) {
+                int winner = (bluewin > yellow_win) ? 1 : 2;
+                EventBus.Publish<GameOverEvent>(new GameOverEvent(winner, bluewin, round - bluewin));
                 return;
             } else {
                 EventBus.Publish<RoundWinnerEvent>(new RoundWinnerEvent(h.PlayerID, round, bluewin, round - bluewin));
-                Debug.Log("WIN");
             }
             ++round;
             StartCoroutine(WaitAndReset());
