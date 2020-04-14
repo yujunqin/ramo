@@ -12,18 +12,18 @@ public class PositionResetter : MonoBehaviour
     }
 
     void ResetPos(TransitionEvent e) {
-        GameMaster.inst.StartCoroutine(resetPosition(gameObject));
+        StartCoroutine(resetPosition(gameObject));
     }
 
     IEnumerator resetPosition(GameObject go) {
+        
+        transform.position = new Vector2(-14.5f, -2.5f);
+        yield return new WaitForSeconds(3.5f);
         if (GetComponent<PlayerMovement>().PlayerID == 1) {
             transform.position = new Vector2(-4.5f, -2.5f);
         } else {
             transform.position = new Vector2(4.5f, -2.5f);
         }
-        //go.SetActive(false);
-        yield return new WaitForSeconds(3.5f);
-        //go.SetActive(true);
     }
 
 }
