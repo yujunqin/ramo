@@ -9,6 +9,7 @@ public class ResourceReaderBomb : MonoBehaviour
     public float cost = 1000f;
     Subscription<ResourceChangeEvent> resourceStatusSubscription;
     Subscription<FreeBombEvent> fbs;
+    Subscription<NewRoundEvent> nrs;
     Image panelImage;
     Image bombImage; 
     Image progressImage;
@@ -20,6 +21,7 @@ public class ResourceReaderBomb : MonoBehaviour
     {
         resourceStatusSubscription = EventBus.Subscribe<ResourceChangeEvent>(_OnResourceStatusUpdated);
         fbs = EventBus.Subscribe<FreeBombEvent>(FreeBombEventHandler);
+        nrs = EventBus.Subscribe<NewRoundEvent>(ResetFreeBomb);
         panelImage = GetComponent<Image>();
         bombImage = transform.Find("BombImage").GetComponent<Image>();
         progressImage = transform.Find("Progress").GetComponent<Image>();
@@ -47,6 +49,9 @@ public class ResourceReaderBomb : MonoBehaviour
                 text.color = new Color(text.color.r, text.color.g, text.color.b, 1.0f);
                 if (text.name == "Cost") {
                     text.text = cost.ToString();
+                    if (cost == 0) {
+                        text.text = "Free";
+                    }
                 }
             }
         }
@@ -58,6 +63,9 @@ public class ResourceReaderBomb : MonoBehaviour
                 text.color = new Color(text.color.r, text.color.g, text.color.b, 0.4f);
                 if (text.name == "Cost") {
                     text.text = cost.ToString();
+                }
+                if (cost == 0) {
+                    text.text = "Free";
                 }
             }
         }
@@ -72,6 +80,10 @@ public class ResourceReaderBomb : MonoBehaviour
             }
         }
         _OnResourceStatusUpdated(new ResourceChangeEvent(PlayerID, resource));
+    }
+
+    void ResetFreeBomb(NewRoundEvent nr) {
+        free_bomb = 0;
     }
 
 }

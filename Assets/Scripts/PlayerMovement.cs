@@ -276,7 +276,10 @@ public class PlayerMovement : MonoBehaviour
             {
                 bombIns.GetComponent<BombController>().ThrowBomb();
                 bombIns = null;
-                EventBus.Publish<PlayerProgressEvent>(new PlayerProgressEvent("first bomb", PlayerID));
+                if (firstBomb) {
+                    firstBomb = false;
+                    EventBus.Publish<PlayerProgressEvent>(new PlayerProgressEvent("first bomb", PlayerID));
+                }  
             }
         }
         if (analytics)

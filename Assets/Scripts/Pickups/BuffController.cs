@@ -48,10 +48,10 @@ public class BuffController : MonoBehaviour
             if (GetComponent<ChestConverter>().isChest()) {
                 EventBus.Publish<FreeBombEvent>(new FreeBombEvent(playerIndex, true));
                 GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Images/wood");
-                transform.localScale = new Vector3(0.01f, 0.02f, 1.0f);
+                transform.localScale = new Vector3(1f, 1f, 1.0f);
                 GameObject bomb = Instantiate(gameObject, transform.position, Quaternion.identity);
                 bomb.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Images/bomb");
-                bomb.transform.localScale = new Vector3(0.05f, 0.05f, 1.0f);
+                bomb.transform.localScale = new Vector3(1f, 1f, 1.0f);
                 StartCoroutine(BuffJuicyDisappear(bomb.transform, uiBombPos, 0.5f));
             }
             StartCoroutine(BuffJuicyDisappear(transform, uiResourcePos, 0.5f));
