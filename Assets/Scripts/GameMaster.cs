@@ -154,8 +154,13 @@ public class GameMaster : MonoBehaviour
     }
 
     public void StartGame(GameStartEvent e) {
+        StartCoroutine(StartGameCR());
+    }
+
+    IEnumerator StartGameCR() {
+        EventBus.Publish<SceneTransitionEvent>(new SceneTransitionEvent());
+        yield return new WaitForSeconds(TransitionController.duration / 2);
         SplitScreen();
-        StartCoroutine(SceneUtility.LoadGame(round));
         EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(1, 1000));
         EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(2, 1000));
         EventBus.Publish<SpeedChangeEvent>(new SpeedChangeEvent(1, 50));
@@ -164,6 +169,7 @@ public class GameMaster : MonoBehaviour
         chest_converted[1] = chest_converted[2] = false;
         goal_point[1] = goal_point[2] = 0;
         isTutorial = false;
+        yield return SceneUtility.LoadGame(round);
     }
 
     public void StartTutorial(TutorialEvent e) {

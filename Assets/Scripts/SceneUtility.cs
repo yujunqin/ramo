@@ -24,10 +24,12 @@ public class SceneUtility : MonoBehaviour
     }
 
     public static IEnumerator UnloadAll(bool isTutorial) {
+        EventBus.Publish<SceneTransitionEvent>(new SceneTransitionEvent());
+        yield return new WaitForSeconds(TransitionController.duration / 2);
         var rootObjects = SceneManager.GetActiveScene().GetRootGameObjects();
         foreach (var obj in rootObjects)
         {
-            if (!obj.CompareTag("Player") && !obj.name.Contains("Main Camera") && obj.name != "GameMaster")
+            if (!obj.CompareTag("Player") && !obj.name.Contains("Main Camera") && obj.name != "GameMaster" && !obj.name.Contains("Transition"))
             {
                 Destroy(obj);
             }
@@ -45,17 +47,24 @@ public class SceneUtility : MonoBehaviour
 
     public static IEnumerator LoadGame(int round) {
         yield return SceneUtility.LoadSceneAsync(background);
-        EventBus.Publish<TransitionEvent>(new TransitionEvent(round));
-        yield return new WaitForSeconds(3.5f);
+        EventBus.Publish<TransitionEvent>(new TransitionEvent(round)); // color change and set position
+        yield return new WaitForSeconds(TransitionController.duration / 2); // wait transition to end
+        yield return new WaitForSeconds(3.5f - TransitionController.duration / 2); //color change end
+        EventBus.Publish<SceneTransitionEvent>(new SceneTransitionEvent()); // Scene Trans
+        yield return new WaitForSeconds(TransitionController.duration / 2);
         foreach (int i in GameScenes) {
             yield return SceneUtility.LoadSceneAsync(i);
         }
         EventBus.Publish<NewRoundEvent>(new NewRoundEvent(round));
+        yield return new WaitForSeconds(TransitionController.duration / 2); // Scene Trans End
     }
 
     public static IEnumerator LoadTutorial() {
+        EventBus.Publish<SceneTransitionEvent>(new SceneTransitionEvent()); // Scene Trans
+        yield return new WaitForSeconds(TransitionController.duration / 2);
         foreach (int i in TutorialScenes) {
             yield return SceneUtility.LoadSceneAsync(i);
         }
+        yield return new WaitForSeconds(TransitionController.duration / 2);
     }
 }
