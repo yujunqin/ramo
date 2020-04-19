@@ -2369,7 +2369,8 @@ MonoBehaviour:
 
     &&
 
-    Destroy enemy''s tree with bomb!'
+    Destroy enemy''s tree with
+    bomb!'
 --- !u!222 &472575963
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5816,7 +5817,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1430160749
 Transform:
   m_ObjectHideFlags: 0
@@ -8346,7 +8347,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2043316643
 Transform:
   m_ObjectHideFlags: 0
