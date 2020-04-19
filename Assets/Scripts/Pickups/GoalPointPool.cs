@@ -53,14 +53,14 @@ public class GoalPointPool : MonoBehaviour
     void generateLine(Vector2 position1, Vector2 position2, int index)
     {
         GameObject lineL = (GameObject)Instantiate(line, Vector2.zero, Quaternion.identity);
-        lineL.GetComponent<LineRenderer>().SetPosition(0, new Vector3(position1.x, position1.y, 1));
-        lineL.GetComponent<LineRenderer>().SetPosition(1, new Vector3(position2.x, position2.y, 1));
+        lineL.GetComponent<LineRenderer>().SetPosition(0, position1);
+        lineL.GetComponent<LineRenderer>().SetPosition(1, position2);
         lineL.GetComponent<LineController>().targetIndex = index;
         lineL.GetComponent<LineController>().playerID = 1;
 
         GameObject lineR = (GameObject)Instantiate(line, Vector2.zero, Quaternion.identity);
-        lineR.GetComponent<LineRenderer>().SetPosition(1, new Vector3(-position1.x, position1.y, 1));
-        lineR.GetComponent<LineRenderer>().SetPosition(1, new Vector3(-position2.x, position2.y, 1));
+        lineR.GetComponent<LineRenderer>().SetPosition(0, new Vector2(-position1.x, position1.y));
+        lineR.GetComponent<LineRenderer>().SetPosition(1, new Vector2(-position2.x, position2.y));
         lineR.GetComponent<LineController>().targetIndex = index;
         lineR.GetComponent<LineController>().playerID = 2;
     }
