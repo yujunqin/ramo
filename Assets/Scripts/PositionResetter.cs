@@ -18,7 +18,7 @@ public class PositionResetter : MonoBehaviour
     IEnumerator resetPosition(GameObject go) {
         
         transform.position = new Vector2(-14.5f, -2.5f);
-        yield return new WaitForSeconds(3.5f);
+        yield return new WaitForSeconds(3.5f + TransitionController.duration / 2);
         if (GetComponent<PlayerMovement>().PlayerID == 1) {
             transform.position = new Vector2(-4.5f, -2.5f);
         } else {
