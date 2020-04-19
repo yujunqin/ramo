@@ -7,6 +7,7 @@ public class GoalPointPool : MonoBehaviour
     public GameObject goalPoint1;
     public GameObject goalPoint2;
     public GameObject goalPoint3;
+    public GameObject line;
 
     float Ymax = 3f;
     float Ymin = -3.6f;
@@ -30,6 +31,9 @@ public class GoalPointPool : MonoBehaviour
         generateCheckPoint(position1, goalPoint1);
         generateCheckPoint(position2, goalPoint2);
         generateCheckPoint(position3, goalPoint3);
+
+        generateLine(position1, position2, 1);
+        generateLine(position2, position3, 2);
     }
 
     // Update is called once per frame
@@ -44,6 +48,21 @@ public class GoalPointPool : MonoBehaviour
         currentCheckPointL.GetComponent<GoalPointController>().playerID = 1;
         GameObject currentCheckPointR = (GameObject)Instantiate(currentCheckPoint, new Vector2(-position.x, position.y), Quaternion.identity);
         currentCheckPointR.GetComponent<GoalPointController>().playerID = 2;
+    }
+
+    void generateLine(Vector2 position1, Vector2 position2, int index)
+    {
+        GameObject lineL = (GameObject)Instantiate(line, Vector2.zero, Quaternion.identity);
+        lineL.GetComponent<LineRenderer>().SetPosition(0, new Vector3(position1.x, position1.y, 1));
+        lineL.GetComponent<LineRenderer>().SetPosition(1, new Vector3(position2.x, position2.y, 1));
+        lineL.GetComponent<LineController>().targetIndex = index;
+        lineL.GetComponent<LineController>().playerID = 1;
+
+        GameObject lineR = (GameObject)Instantiate(line, Vector2.zero, Quaternion.identity);
+        lineR.GetComponent<LineRenderer>().SetPosition(1, new Vector3(-position1.x, position1.y, 1));
+        lineR.GetComponent<LineRenderer>().SetPosition(1, new Vector3(-position2.x, position2.y, 1));
+        lineR.GetComponent<LineController>().targetIndex = index;
+        lineR.GetComponent<LineController>().playerID = 2;
     }
 
     Vector2 generateRandomPosition(int x, int y)
