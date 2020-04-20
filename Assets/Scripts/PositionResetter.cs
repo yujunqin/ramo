@@ -12,7 +12,15 @@ public class PositionResetter : MonoBehaviour
     }
 
     void ResetPos(TransitionEvent e) {
-        StartCoroutine(resetPosition(gameObject));
+        if (e.round == 0) {
+            if (GetComponent<PlayerMovement>().PlayerID == 1) {
+                transform.position = new Vector2(-4.5f, -2.5f);
+            } else {
+                transform.position = new Vector2(4.5f, -2.5f);
+            }
+        } else {
+            StartCoroutine(resetPosition(gameObject));
+        }    
     }
 
     IEnumerator resetPosition(GameObject go) {

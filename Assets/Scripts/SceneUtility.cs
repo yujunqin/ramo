@@ -62,6 +62,7 @@ public class SceneUtility : MonoBehaviour
     public static IEnumerator LoadTutorial() {
         EventBus.Publish<SceneTransitionEvent>(new SceneTransitionEvent()); // Scene Trans
         yield return new WaitForSeconds(TransitionController.duration / 2);
+        EventBus.Publish<TransitionEvent>(new TransitionEvent(0));
         var rootObjects = SceneManager.GetActiveScene().GetRootGameObjects();
         foreach (var obj in rootObjects)
         {
