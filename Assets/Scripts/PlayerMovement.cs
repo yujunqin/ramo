@@ -228,8 +228,7 @@ public class PlayerMovement : MonoBehaviour
                 if (branch && !branch.IsDead()) {
                     AudioClip clip = Resources.Load<AudioClip>("Sound Effects/Prune");
                     AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position, 1f);
-                    total_farmed += branch.Damage(1000);
-                    break;
+                    total_farmed += branch.Damage(10000);
                 }
             }
 
