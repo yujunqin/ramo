@@ -34,7 +34,9 @@ public class PlayerMovement : MonoBehaviour
     private Animator playerAnim;
 
     int resource;
-    int free_bomb = 0;
+
+    // int free_bomb = 0;
+    public BombProduction bombProduction = new BombProduction();
     Subscription<ResourceChangeEvent> resSub;
     Subscription<FreeBombEvent> fbs;
 
@@ -42,11 +44,31 @@ public class PlayerMovement : MonoBehaviour
 
     bool analytics;
 
+    static List<PlayerMovement> playerMovements = new List<PlayerMovement>();
+
+    public static PlayerMovement GetPlayerByID(int id)
+    {
+        foreach (var player in playerMovements)
+        {
+            if (player.PlayerID == id)
+            {
+                return player;
+            }
+        }
+        return null;
+    }
+
+    public int GetResource()
+    {
+        return resource;
+    }
+
     void Awake()
     {
         PlayerID = nextPlayerID;
         nextPlayerID++;
         Debug.Log(PlayerID);
+        playerMovements.Add(this);
     }
 
     void Start() {
@@ -256,17 +278,13 @@ public class PlayerMovement : MonoBehaviour
                     return;
                 }
 
-                if (free_bomb == 0 && resource < 1000)
-                {
-                    return;
-                }
-                if (free_bomb > 0) {
-                    --free_bomb;
-                    EventBus.Publish<FreeBombEvent>(new FreeBombEvent(PlayerID, false));
-                } else {
-                    resource -= 1000;
-                    EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
-                }
+                var cost = bombProduction.BombCost();
+                // if (!bombProduction.tryProduceBomb(resource))
+                // {
+                //     return;
+                // }
+                resource -= cost;
+                EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
                 bombIns = Instantiate(bomb, transform.position, Quaternion.identity);
                 bombIns.GetComponent<BombController>().PlayerID = PlayerID;
             }
@@ -399,7 +417,7 @@ public class PlayerMovement : MonoBehaviour
     void FreeBombEventHandler(FreeBombEvent e) {
         if (e.PlayerID == PlayerID) {
             if (e.isGet) {
-                ++free_bomb;
+                bombProduction.AddFreeBomb();
             }
         }
     }
