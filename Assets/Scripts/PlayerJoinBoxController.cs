@@ -18,6 +18,7 @@ public class PlayerJoinBoxController : MonoBehaviour
     {
         sb = GetComponent<SpriteRenderer>();
         normalColor = sb.color;
+        StartCoroutine(PulseSprite());
     }
 
     private void Update()
@@ -68,5 +69,23 @@ public class PlayerJoinBoxController : MonoBehaviour
 
     public void OnSkipTutorial(bool skip) {
         skipTutorial = skip;
+    }
+
+    private IEnumerator PulseSprite()
+    {
+        while (true)
+        {
+            for (float i = 1.0f; i < 1.2f; i += 0.01f)
+            {
+                transform.localScale = new Vector3(i, i, 0);
+                yield return new WaitForSeconds(0.01f);
+            }
+
+            for (float i = 1.2f; i >= 1.0f; i -= 0.01f)
+            {
+                transform.localScale = new Vector3(i, i, 0);
+                yield return new WaitForSeconds(0.01f);
+            }
+        }
     }
 }
