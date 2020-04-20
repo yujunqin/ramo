@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class ResourceReaderBomb : MonoBehaviour
 {
     public int PlayerID = 1;
-    public float cost = 1000f;
+    // public float cost = 1000f;
     Subscription<ResourceChangeEvent> resourceStatusSubscription;
     Subscription<FreeBombEvent> fbs;
     Subscription<NewRoundEvent> nrs;
@@ -14,8 +14,8 @@ public class ResourceReaderBomb : MonoBehaviour
     Image bombImage; 
     Image progressImage;
     Text[] texts;
-    int free_bomb = 0;
-    public int resource = 0;
+    // int free_bomb = 0;
+    // public int resource = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,19 +28,16 @@ public class ResourceReaderBomb : MonoBehaviour
         texts = GetComponentsInChildren<Text>();
     }
 
-    void _OnResourceStatusUpdated(ResourceChangeEvent e)
+    void Update()
     {
-        if (PlayerID == e.PlayerID)
+        var player = PlayerMovement.GetPlayerByID(PlayerID);
+        if (player == null)
         {
-            resource = e.resource;
+            return;
         }
 
-        if (free_bomb == 0) {
-            cost = 1000;
-        } else {
-            cost = 0;
-        }
-
+        var resource = player.GetResource();
+        var cost = player.bombProduction.BombCost();
         if (resource >= cost) {
             panelImage.color = new Color(1.0f, 1.0f, 1.0f, 0.4f);
             bombImage.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
@@ -71,19 +68,62 @@ public class ResourceReaderBomb : MonoBehaviour
         }
     }
 
+    void _OnResourceStatusUpdated(ResourceChangeEvent e)
+    {
+        // if (PlayerID == e.PlayerID)
+        // {
+        //     resource = e.resource;
+        // }
+
+        // if (free_bomb == 0) {
+        //     cost = 1000;
+        // } else {
+        //     cost = 0;
+        // }
+
+        // if (resource >= cost) {
+        //     panelImage.color = new Color(1.0f, 1.0f, 1.0f, 0.4f);
+        //     bombImage.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+        //     progressImage.fillAmount = 1.0f;
+        //     foreach (Text text in texts){
+        //         text.color = new Color(text.color.r, text.color.g, text.color.b, 1.0f);
+        //         if (text.name == "Cost") {
+        //             text.text = cost.ToString();
+        //             if (cost == 0) {
+        //                 text.text = "Free";
+        //             }
+        //         }
+        //     }
+        // }
+        // else {
+        //     panelImage.color = new Color(1.0f, 1.0f, 1.0f, 0.2f);
+        //     bombImage.color = new Color(1.0f, 1.0f, 1.0f, 0.4f);
+        //     progressImage.fillAmount = (cost == 0) ? 1 : resource / cost;
+        //     foreach (Text text in texts){
+        //         text.color = new Color(text.color.r, text.color.g, text.color.b, 0.4f);
+        //         if (text.name == "Cost") {
+        //             text.text = cost.ToString();
+        //         }
+        //         if (cost == 0) {
+        //             text.text = "Free";
+        //         }
+        //     }
+        // }
+    }
+
     void FreeBombEventHandler(FreeBombEvent e) {
-        if (e.PlayerID == PlayerID) {
-            if (e.isGet) {
-                ++free_bomb;
-            } else {
-                --free_bomb;
-            }
-        }
-        _OnResourceStatusUpdated(new ResourceChangeEvent(PlayerID, resource));
+        // if (e.PlayerID == PlayerID) {
+        //     if (e.isGet) {
+        //         ++free_bomb;
+        //     } else {
+        //         --free_bomb;
+        //     }
+        // }
+        // _OnResourceStatusUpdated(new ResourceChangeEvent(PlayerID, resource));
     }
 
     void ResetFreeBomb(NewRoundEvent nr) {
-        free_bomb = 0;
+        // free_bomb = 0;
     }
 
 }
