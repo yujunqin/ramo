@@ -160,6 +160,14 @@ public class GameMaster : MonoBehaviour
     IEnumerator StartGameCR() {
         EventBus.Publish<SceneTransitionEvent>(new SceneTransitionEvent());
         yield return new WaitForSeconds(TransitionController.duration / 2);
+        var rootObjects = SceneManager.GetActiveScene().GetRootGameObjects();
+        foreach (var obj in rootObjects)
+        {
+            if (!obj.CompareTag("Player") && !obj.name.Contains("Main Camera") && obj.name != "GameMaster" && !obj.name.Contains("Transition"))
+            {
+                Destroy(obj);
+            }
+        }
         SplitScreen();
         EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(1, 1000));
         EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(2, 1000));

@@ -62,6 +62,14 @@ public class SceneUtility : MonoBehaviour
     public static IEnumerator LoadTutorial() {
         EventBus.Publish<SceneTransitionEvent>(new SceneTransitionEvent()); // Scene Trans
         yield return new WaitForSeconds(TransitionController.duration / 2);
+        var rootObjects = SceneManager.GetActiveScene().GetRootGameObjects();
+        foreach (var obj in rootObjects)
+        {
+            if (!obj.CompareTag("Player") && !obj.name.Contains("Main Camera") && obj.name != "GameMaster" && !obj.name.Contains("Transition"))
+            {
+                Destroy(obj);
+            }
+        }
         foreach (int i in TutorialScenes) {
             yield return SceneUtility.LoadSceneAsync(i);
         }

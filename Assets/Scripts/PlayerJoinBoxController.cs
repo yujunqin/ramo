@@ -26,14 +26,6 @@ public class PlayerJoinBoxController : MonoBehaviour
         if (playersJoined >= 2)
         {
             playersJoined = 0;
-            var rootObjects = SceneManager.GetActiveScene().GetRootGameObjects();
-            foreach (var obj in rootObjects)
-            {
-                if (!obj.CompareTag("Player") && !obj.name.Contains("Main Camera") && obj.name != "GameMaster" && !obj.name.Contains("Transition"))
-                {
-                    Destroy(obj);
-                }
-            }
             if (skipTutorial) {
                 EventBus.Publish<GameStartEvent>(new GameStartEvent());
             } else {
