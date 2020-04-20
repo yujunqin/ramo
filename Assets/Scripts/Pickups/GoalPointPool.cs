@@ -24,6 +24,7 @@ public class GoalPointPool : MonoBehaviour
         // int[] orderY = GetRandomNum(order);
         // monotonically increase y
 
+        Vector2 position0 = new Vector2(-4.5f, -4.5f);
         Vector2 position1 = generateRandomPosition(orderX[0], 0);
         Vector2 position2 = generateRandomPosition(orderX[1], 1);
         Vector2 position3 = generateRandomPosition(orderX[2], 2);
@@ -32,6 +33,7 @@ public class GoalPointPool : MonoBehaviour
         generateCheckPoint(position2, goalPoint2);
         generateCheckPoint(position3, goalPoint3);
 
+        generateLine(position0, position1, 0);
         generateLine(position1, position2, 1);
         generateLine(position2, position3, 2);
     }
@@ -53,16 +55,26 @@ public class GoalPointPool : MonoBehaviour
     void generateLine(Vector2 position1, Vector2 position2, int index)
     {
         GameObject lineL = (GameObject)Instantiate(line, Vector2.zero, Quaternion.identity);
-        lineL.GetComponent<LineRenderer>().SetPosition(0, position1);
-        lineL.GetComponent<LineRenderer>().SetPosition(1, position2);
+        //lineL.GetComponent<LineRenderer>().SetPosition(0, position1);
+        //lineL.GetComponent<LineRenderer>().SetPosition(1, position2);
         lineL.GetComponent<LineController>().targetIndex = index;
         lineL.GetComponent<LineController>().playerID = 1;
+        lineL.transform.position = position1;
+        lineL.transform.LookAt(position2);
+        var main = lineL.GetComponent<ParticleSystem>().main;
+        main.startLifetime = (position2 - position1).magnitude / main.startSpeed.constant;
+
+
 
         GameObject lineR = (GameObject)Instantiate(line, Vector2.zero, Quaternion.identity);
-        lineR.GetComponent<LineRenderer>().SetPosition(0, new Vector2(-position1.x, position1.y));
-        lineR.GetComponent<LineRenderer>().SetPosition(1, new Vector2(-position2.x, position2.y));
+        // lineR.GetComponent<LineRenderer>().SetPosition(0, new Vector2(-position1.x, position1.y));
+        // lineR.GetComponent<LineRenderer>().SetPosition(1, new Vector2(-position2.x, position2.y));
         lineR.GetComponent<LineController>().targetIndex = index;
         lineR.GetComponent<LineController>().playerID = 2;
+        lineR.transform.position = new Vector2(-position1.x, position1.y);
+        lineR.transform.LookAt(new Vector2(-position2.x, position2.y));
+        var mainR = lineR.GetComponent<ParticleSystem>().main;
+        mainR.startLifetime = (position2 - position1).magnitude / mainR.startSpeed.constant;
     }
 
     Vector2 generateRandomPosition(int x, int y)

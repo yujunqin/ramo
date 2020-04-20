@@ -1725,7 +1725,7 @@ MonoBehaviour:
     type: 3}
   goalPoint3: {fileID: 1579715399819642418, guid: d2d0339cecb3a924888c45c70269f27f,
     type: 3}
-  line: {fileID: 8088148940476985608, guid: f0425dde740c4ef4f850307b9096bc6a, type: 3}
+  line: {fileID: 6940345922974203316, guid: 402627d9ff9ba8942bad3593a5f79379, type: 3}
 --- !u!4 &338819234
 Transform:
   m_ObjectHideFlags: 0
