@@ -166,10 +166,10 @@ public class PlayerMovement : MonoBehaviour
             if (play_sound) {
                 if (growSuccess) {
                     AudioClip clip = Resources.Load<AudioClip>("Sound Effects/Grow");
-                    AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position, 1f);
+                    AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position, 0.25f);
                 } else {
                     AudioClip clip = Resources.Load<AudioClip>("Sound Effects/GrowError");
-                    AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position, 1f);
+                    AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position, 0.25f);
                 }
             }
         }
