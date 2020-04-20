@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BombProduction : MonoBehaviour
+public class BombProduction : ScriptableObject
 {
     int free_bombs = 0;
     float last_produced = 0f;
@@ -52,7 +52,7 @@ public class BombProduction : MonoBehaviour
         }
     }
 
-    public bool tryProduceBomb(int current_resource)
+    public bool tryProduceBomb(int current_resources)
     {
         // returns whether a bomb can be produced
         if (free_bombs > 0)
@@ -61,7 +61,7 @@ public class BombProduction : MonoBehaviour
             last_produced = Time.time;
             return true;
         }
-        else if (BombCost() > current_resource)
+        else if (BombCost() > current_resources)
         {
             return false;
         }

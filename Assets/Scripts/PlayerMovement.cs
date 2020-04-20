@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
     int resource;
 
     // int free_bomb = 0;
-    public BombProduction bombProduction = new BombProduction();
+    public BombProduction bombProduction;
     Subscription<ResourceChangeEvent> resSub;
     Subscription<FreeBombEvent> fbs;
 
@@ -98,6 +98,7 @@ public class PlayerMovement : MonoBehaviour
         fbs = EventBus.Subscribe<FreeBombEvent>(FreeBombEventHandler);
         playerAnim = playerIns.GetComponent<Animator>();
 
+        bombProduction = new BombProduction();
         analytics = GameObject.FindWithTag("GameController").GetComponent<GameMaster>().analytics;
     }
 
@@ -279,10 +280,10 @@ public class PlayerMovement : MonoBehaviour
                 }
 
                 var cost = bombProduction.BombCost();
-                // if (!bombProduction.tryProduceBomb(resource))
-                // {
-                //     return;
-                // }
+                if (!bombProduction.tryProduceBomb(resource))
+                {
+                    return;
+                }
                 resource -= cost;
                 EventBus.Publish<ResourceChangeEvent>(new ResourceChangeEvent(PlayerID, resource));
                 bombIns = Instantiate(bomb, transform.position, Quaternion.identity);
